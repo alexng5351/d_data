@@ -1,0 +1,180 @@
+.manage-template-card {
+  width: 270px;
+  background: #222;
+  border: 1px solid #414141;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 12px;
+  gap: 12px;
+}
+
+.cover-image-container {
+  width: 100%;
+  aspect-ratio: 246/327.7;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-menu {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  min-width: 90px;
+  width: auto;
+  background: rgba(34, 34, 34, 0.9);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 8px;
+}
+
+.menu-item {
+  padding: 0;
+  margin: 0 0 24px 0;
+  cursor: pointer;
+}
+
+.menu-item:last-child {
+  margin-bottom: 0;
+}
+
+.menu-item-button {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  font-family: 'TikTok Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.menu-item-button:hover,
+.menu-item-button:active,
+.menu-item-button.active {
+  color: #c9ff4c;
+}
+
+.card-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-title {
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.info-icon {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.info-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-text {
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tag-label {
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tags-wrapper {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.tags-wrapper-second {
+  margin-top: 4px;
+}
+
+.tag {
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.dot-icon-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.dot-icon {
+  width: 24px;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+}

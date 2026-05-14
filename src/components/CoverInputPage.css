@@ -1,0 +1,741 @@
+.cover-input-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #0f0f0f;
+}
+
+.cover-input-content {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  height: 100%;
+  position: relative;
+}
+
+.cover-input-back-button {
+  position: absolute;
+  left: 24px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'TikTok Sans', sans-serif;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.cover-input-back-icon {
+  font-size: 18px;
+}
+
+.cover-input-page-title {
+  position: absolute;
+  left: 24px;
+  top: 50px;
+  font-size: 24px;
+  font-family: 'TikTok Sans Black Oblique', 'TikTok Sans', sans-serif;
+  font-weight: 900;
+  font-style: oblique;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  z-index: 10;
+}
+
+.cover-input-content-card {
+  position: absolute;
+  left: 24px;
+  top: 98px;
+  right: auto;
+  bottom: 24px;
+  background: #222;
+  border-radius: 12px;
+  width: 298px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cover-input-template-display {
+  margin-bottom: 12px;
+  overflow: hidden;
+  position: relative;
+  margin-right: -24px;
+}
+
+.cover-input-cover-images {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  overflow-x: hidden;
+  position: relative;
+  padding-right: 30px;
+}
+
+.cover-input-cover-images::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  background: linear-gradient(to right, transparent, #222);
+  pointer-events: none;
+}
+
+.cover-input-cover-image-item {
+  position: relative;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s;
+  width: 120px;
+  height: 160px;
+  flex-shrink: 0;
+}
+
+.cover-input-cover-image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.cover-input-template-hint {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-family: 'TikTok Sans', sans-serif;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.cover-input-upload-area {
+  display: grid;
+  grid-template-columns: repeat(3, 76px);
+  row-gap: 11px;
+  column-gap: 11px;
+  overflow: hidden;
+  flex: 1;
+  align-content: start;
+}
+
+.cover-input-upload-placeholder {
+  width: 76px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px dashed #878787;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+
+
+.cover-input-upload-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+}
+
+.cover-input-uploaded-item {
+  position: relative;
+  width: 76px;
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cover-input-upload-empty-slot {
+  width: 76px;
+  height: 100px;
+  /* 完全透明，不可见 */
+  background: transparent;
+}
+
+.cover-input-uploaded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-input-remove-image-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-input-remove-image-btn:hover {
+  background: rgba(255, 0, 0, 0.7);
+}
+
+.cover-input-generate-button {
+  width: 250px;
+  height: 48px;
+  background: #c9ff4c;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  font-size: 14px;
+  font-family: 'TikTok Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.cover-input-generate-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.cover-input-generate-container-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.cover-input-content-card {
+  position: absolute;
+  left: 24px;
+  top: 98px;
+  right: auto;
+  bottom: 24px;
+  background: #222;
+  border-radius: 12px;
+  width: 298px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cover-input-generate-container {
+  position: absolute;
+  left: 334px;
+  top: 98px;
+  width: 270px;
+  height: 352px;
+  background: #222222;
+  border: 1px solid #414141;
+  border-radius: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.cover-input-generate-container.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-input-generate-container.show.complete {
+  width: auto;
+  height: auto;
+  padding: 0;
+  flex-direction: column;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  left: 334px;
+  top: 98px;
+  align-items: flex-start;
+}
+
+.cover-input-generate-container.regenerating {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: auto;
+  height: auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  left: 334px;
+  top: 98px;
+}
+
+.cover-input-generate-container.has-old-results {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cover-input-generate-container .new-results {
+  display: flex;
+  gap: 12px;
+  order: 1;
+}
+
+.cover-input-generate-container .history-results {
+  display: flex;
+  gap: 12px;
+  order: 2;
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+.cover-input-generate-container .history-results .cover-input-generate-result-item {
+  opacity: 1;
+  animation: none;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.cover-input-generate-results {
+  display: flex;
+  gap: 12px;
+}
+
+.cover-input-generate-result-item {
+  width: 270px;
+  height: 423.71px;
+  background: #222222;
+  border: 1px solid #414141;
+  border-radius: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.cover-input-generate-result-item-0 {
+  animation-delay: 0ms;
+}
+
+.cover-input-generate-result-item-1 {
+  animation-delay: 100ms;
+}
+
+.cover-input-generate-result-item-2 {
+  animation-delay: 200ms;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cover-input-generate-result-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-top: 12px;
+}
+
+.cover-input-generate-result-image {
+  width: 246px;
+  height: 328px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.cover-input-generate-result-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-input-generate-result-info {
+  font-family: 'TikTok Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.cover-input-generate-result-menu-button {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+}
+
+.cover-input-generate-result-menu-button img {
+  width: 24px;
+  height: auto;
+  object-fit: contain;
+}
+
+.cover-input-generate-result-menu {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  min-width: 90px;
+  width: auto;
+  background: rgba(34, 34, 34, 0.9);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 8px;
+}
+
+.cover-input-generate-result-menu-item {
+  padding: 0;
+  margin: 0 0 24px 0;
+  cursor: pointer;
+}
+
+.cover-input-generate-result-menu-item:last-child {
+  margin-bottom: 0;
+}
+
+.cover-input-generate-result-menu-item-button {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  font-family: 'TikTok Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.cover-input-generate-result-menu-item-button:hover,
+.cover-input-generate-result-menu-item-button:active,
+.cover-input-generate-result-menu-item-button.active {
+  color: #c9ff4c;
+}
+
+.cover-input-generate-inner-frame {
+  width: 246px;
+  height: 328px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-input-generate-inner-frame::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    #c9ff4c 0deg,
+    rgba(255, 255, 255, 0.1) 90deg,
+    rgba(255, 255, 255, 0.1) 180deg,
+    rgba(255, 255, 255, 0.1) 270deg,
+    #c9ff4c 360deg
+  );
+  animation: rotateGradient 2s linear infinite;
+  z-index: 0;
+}
+
+.cover-input-generate-inner-frame::after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  background: #222222;
+  border-radius: 11px;
+  z-index: 1;
+}
+
+@keyframes rotateGradient {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cover-input-generate-inner-icon {
+  position: relative;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+}
+
+.cover-input-image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.cover-input-image-modal-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cover-input-image-modal-image {
+  width: 525px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cover-input-image-modal-prev,
+.cover-input-image-modal-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-input-image-modal-prev {
+  left: -80px;
+}
+
+.cover-input-image-modal-next {
+  right: -80px;
+}
+
+.cover-input-image-modal-prev img,
+.cover-input-image-modal-next img {
+  width: 40px;
+  height: 40px;
+}
+
+.cover-input-image-modal-prev.disabled,
+.cover-input-image-modal-next.disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.cover-input-image-modal-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.cover-input-image-modal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.cover-input-image-modal-dot.active {
+  background: #c9ff4c;
+  opacity: 1;
+}
+
+/* Exit Confirmation Modal */
+.cover-input-exit-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+.cover-input-exit-modal {
+  background: #222;
+  border: 1px solid #414141;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 656px;
+  min-height: 215px;
+  position: relative;
+  animation: slideUp 0.3s ease-out forwards;
+  padding: 24px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3), 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cover-input-exit-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.cover-input-exit-modal-title {
+  flex: 1;
+  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cover-input-exit-modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.cover-input-exit-modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cover-input-exit-modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+  width: 100%;
+}
+
+.cover-input-exit-modal-message {
+  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.cover-input-exit-modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  height: 52px;
+  padding-top: 2px;
+}
+
+.cover-input-exit-modal-button {
+  width: 198px;
+  height: 48px;
+  border-radius: 12px;
+  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cover-input-exit-modal-button-exit {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid #c9ff4c;
+}
+
+.cover-input-exit-modal-button-exit:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.cover-input-exit-modal-button-cancel {
+  background: #c9ff4c;
+  color: #000000;
+  backdrop-filter: blur(5px);
+}
+
+.cover-input-exit-modal-button-cancel:hover {
+  background: #d8ff70;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
