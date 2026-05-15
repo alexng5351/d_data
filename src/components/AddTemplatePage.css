@@ -67,6 +67,11 @@
   margin-bottom: 16px;
 }
 
+.section-title .required {
+  color: #c9ff4c;
+  margin-left: 4px;
+}
+
 .section-header .section-title {
   margin-bottom: 0;
 }
@@ -123,10 +128,23 @@
   border-radius: 12px;
 }
 
+.template-name-input {
+  width: 100%;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 16px;
+  outline: none;
+  font-family: inherit;
+}
+
 .prompt-input,
 .json-input {
   width: 100%;
-  height: 160px;
+  height: 120px;
   min-height: 120px;
   max-height: 400px;
   background: rgba(0, 0, 0, 0.4);
@@ -140,6 +158,7 @@
   font-family: inherit;
 }
 
+.template-name-input::placeholder,
 .prompt-input::placeholder,
 .json-input::placeholder {
   color: rgba(255, 255, 255, 0.4);
@@ -167,4 +186,74 @@
 
 .save-button:disabled {
   cursor: not-allowed;
+}
+
+.add-template-page .tags-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.add-template-page .tags-container .tag-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  white-space: nowrap;
+  width: auto;
+  min-width: auto;
+  max-width: none;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.add-template-page .tags-container .tag-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.add-template-page .tags-container .tag-button.active {
+  background: rgba(201, 255, 76, 0.2);
+  border-color: #c9ff4c;
+  color: #c9ff4c;
+}
+
+.add-template-page .tags-container .tag-button.add-tag-button {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 8px 12px;
+}
+
+.custom-tag-input {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #c9ff4c;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  font-family: inherit;
+  white-space: nowrap;
+  width: 150px;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.custom-tag-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
 }

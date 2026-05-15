@@ -4,9 +4,9 @@ import './Sidebar.css'
 function Sidebar({ activeTab = 'Cover', onTabChange, collapsed, onToggleCollapse }) {
   const [showText, setShowText] = useState(!collapsed)
   const navItems = [
-    { name: 'Cover', icon: '/assets/icon_cover.png' },
-    { name: 'IP Pet', icon: '/assets/icon_ippet.png' },
-    { name: 'Emoji', icon: '/assets/icon_emoji.png' }
+    { name: 'Cover', icon: '/aicover/assets/icon_cover.png' },
+    { name: 'IP Pet', icon: '/aicover/assets/icon_ippet.png' },
+    { name: 'Emoji', icon: '/aicover/assets/icon_emoji.png' }
   ]
 
   useEffect(() => {
@@ -29,10 +29,10 @@ function Sidebar({ activeTab = 'Cover', onTabChange, collapsed, onToggleCollapse
   return (
     <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
       <div className="header-section">
-        <img src="/assets/webname.png" alt="D_DATA" className="logo" />
+        <img src="/aicover/assets/webname.png" alt="D_DATA" className="logo" />
         <div className="header-actions">
           <img 
-            src="/assets/icon_sidebar.png" 
+            src="/aicover/assets/icon_sidebar.png" 
             alt="sidebar" 
             className="header-icon" 
             onClick={onToggleCollapse}
@@ -62,7 +62,7 @@ function Sidebar({ activeTab = 'Cover', onTabChange, collapsed, onToggleCollapse
         <div className="avatar">
           <span className="avatar-text">i</span>
         </div>
-        <span className="username">iloupar</span>
+        <span className="username">username</span>
         <div className="settings-icon-container">
           <svg className="settings-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <circle cx="12" cy="12" r="3"></circle>

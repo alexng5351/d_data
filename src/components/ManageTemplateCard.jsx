@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './ManageTemplateCard.css'
 
-function ManageTemplateCard({ id, name = 'Template Name', addedAt = '2026-05-06 18:13:04', templateId = '2026050610125686600', tags = ['Extrinsic', 'Record', 'Products', 'Help and Interaction', 'Other'], onEdit, onDelete }) {
+function ManageTemplateCard({ id, name = 'Template Name', addedAt = '2026-05-06 18:13:04', templateId = '2026050610125686600', tags = ['Extrinsic', 'Record', 'Products', 'Help and Interaction', 'Other'], images = [], onEdit, onDelete }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [hoveredMenuItem, setHoveredMenuItem] = useState(null)
 
@@ -45,7 +45,11 @@ function ManageTemplateCard({ id, name = 'Template Name', addedAt = '2026-05-06 
   return (
     <div className="manage-template-card">
       <div className="cover-image-container">
-        <img src={`/assets/cover/cover${id}.png`} alt={name} className="cover-image" />
+        <img 
+          src={images && images.length > 0 ? images[0] : `/aicover/assets/cover/cover${id}.png`} 
+          alt={name} 
+          className="cover-image" 
+        />
         {menuOpen && (
           <div className="card-menu" onClick={(e) => e.stopPropagation()}>
             <div className="menu-item">
@@ -54,9 +58,7 @@ function ManageTemplateCard({ id, name = 'Template Name', addedAt = '2026-05-06 
                 onMouseEnter={() => setHoveredMenuItem('edit')}
                 onMouseLeave={() => setHoveredMenuItem(null)}
                 onClick={handleEdit}
-              >
-                Edit
-              </button>
+              >Edit</button>
             </div>
             <div className="menu-item">
               <button 
@@ -64,9 +66,7 @@ function ManageTemplateCard({ id, name = 'Template Name', addedAt = '2026-05-06 
                 onMouseEnter={() => setHoveredMenuItem('delete')}
                 onMouseLeave={() => setHoveredMenuItem(null)}
                 onClick={handleDelete}
-              >
-                Delete
-              </button>
+              >Delete</button>
             </div>
           </div>
         )}
@@ -77,7 +77,7 @@ function ManageTemplateCard({ id, name = 'Template Name', addedAt = '2026-05-06 
           <div className="card-header">
             <h3 className="card-title">{name}</h3>
             <div className="info-icon">
-              <img src="/assets/icon_info.png" alt="info" className="info-icon-img" />
+              <img src="/aicover/assets/icon_info.png" alt="info" className="info-icon-img" />
             </div>
           </div>
           
@@ -105,7 +105,7 @@ function ManageTemplateCard({ id, name = 'Template Name', addedAt = '2026-05-06 
         
         <div className="dot-icon-container">
           <img 
-            src="/assets/icon_dot.png" 
+            src="/aicover/assets/icon_dot.png" 
             alt="dot" 
             className="dot-icon" 
             onClick={handleDotClick}

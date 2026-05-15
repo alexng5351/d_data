@@ -10,13 +10,21 @@ function CoverCard({ id, onClick, images: propImages }) {
   const timeoutRef = useRef(null)
   
   const defaultImages = [
-    `/assets/cover/cover${id}-1.png`,
-    `/assets/cover/cover${id}-2.png`,
-    `/assets/cover/cover${id}-3.png`
+    `/aicover/assets/cover/cover${id}-1.png`,
+    `/aicover/assets/cover/cover${id}-2.png`,
+    `/aicover/assets/cover/cover${id}-3.png`
   ]
-  const images = propImages && propImages.length > 0 ? propImages : defaultImages
+  const allImages = propImages && propImages.length > 0 ? propImages : defaultImages
+  // 最多取前3张图片用于轮播
+  const images = allImages.slice(0, 3)
+  // 判断是否需要轮播（至少2张图片才轮播）
+  const shouldCarousel = images.length >= 2
 
   const startCarousel = () => {
+    if (!shouldCarousel) {
+      return
+    }
+    
     setIsHovering(true)
     setCurrentIndex(0)
     setNextIndex(1)
@@ -25,7 +33,7 @@ function CoverCard({ id, onClick, images: propImages }) {
       setIsAnimating(true)
       setTimeout(() => {
         setCurrentIndex(1)
-        setNextIndex(2)
+        setNextIndex(images.length > 2 ? 2 : 0)
         setIsAnimating(false)
       }, 500)
       intervalRef.current = setInterval(() => {
@@ -78,7 +86,7 @@ function CoverCard({ id, onClick, images: propImages }) {
           className="carousel-image current"
           style={{ zIndex: 1 }}
         />
-        {isHovering && (
+        {isHovering && shouldCarousel && (
           <img
             key={`next-${id}-${nextIndex}-${Date.now()}`}
             src={images[nextIndex]}

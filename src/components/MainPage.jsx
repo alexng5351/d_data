@@ -7,7 +7,14 @@ function MainPage({ onCoverClick, onTabChange, collapsed, onToggleCollapse, user
   const tabs = ['All', 'Single Image', 'Multiple Images', 'Shared Records', 'Tutorial Post', 'Community Discussion', 'Other']
   const [activeTabIndex, setActiveTabIndex] = useState(0)
   
-  const coverIds = [1, 2, 3, 4, 5, 6, 7, 8]
+  const defaultCoverIds = [1, 2, 3, 4, 5, 6, 7, 8]
+  const allTemplates = [
+    ...userTemplates,
+    ...defaultCoverIds.map(id => ({
+      id,
+      isDefault: true
+    }))
+  ]
 
   return (
     <div className="main-page">
@@ -19,7 +26,7 @@ function MainPage({ onCoverClick, onTabChange, collapsed, onToggleCollapse, user
           <div className="top-actions">
             <button className="manage-template-btn" onClick={onManageTemplateClick}>Manage Template</button>
             <button className="add-btn" onClick={onAddClick}>
-              <img src="/assets/icon_add.png" alt="Add" className="add-icon" />
+              <img src="/aicover/assets/icon_add.png" alt="Add" className="add-icon" />
             </button>
           </div>
         </div>
@@ -37,19 +44,12 @@ function MainPage({ onCoverClick, onTabChange, collapsed, onToggleCollapse, user
         </div>
         
         <div className="covers-grid">
-          {userTemplates.map((template) => (
+          {allTemplates.map((template) => (
             <CoverCard
               key={template.id}
               id={template.id}
               images={template.images}
               onClick={() => onCoverClick(template.id)}
-            />
-          ))}
-          {coverIds.map((id) => (
-            <CoverCard
-              key={id}
-              id={id}
-              onClick={() => onCoverClick(id)}
             />
           ))}
         </div>

@@ -6,6 +6,7 @@ function EditTemplateModal({ template, isOpen, onClose, onSave }) {
   const [name, setName] = useState('')
   const [createdAt, setCreatedAt] = useState('')
   const [json, setJson] = useState('')
+  const [tags, setTags] = useState([])
 
   useEffect(() => {
     if (template) {
@@ -13,6 +14,7 @@ function EditTemplateModal({ template, isOpen, onClose, onSave }) {
       setName(template.name || '')
       setCreatedAt(template.addedAt || '')
       setJson('')
+      setTags(template.tags || [])
     }
   }, [template])
 
@@ -22,7 +24,8 @@ function EditTemplateModal({ template, isOpen, onClose, onSave }) {
         ...template,
         templateId,
         name,
-        addedAt: createdAt
+        addedAt: createdAt,
+        tags
       })
     }
     onClose()
@@ -84,6 +87,17 @@ function EditTemplateModal({ template, isOpen, onClose, onSave }) {
               value={json}
               onChange={(e) => setJson(e.target.value)}
               rows="4"
+            />
+          </div>
+
+          <div className="edit-template-field">
+            <label className="edit-template-label">Tags</label>
+            <input
+              type="text"
+              className="edit-template-input"
+              value={tags.join(', ')}
+              onChange={(e) => setTags(e.target.value.split(',').map(t => t.trim()).filter(t => t !== ''))}
+              placeholder="tag1, tag2, tag3"
             />
           </div>
         </div>

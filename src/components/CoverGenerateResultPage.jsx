@@ -2,8 +2,37 @@ import { useState } from 'react'
 import './CoverGenerateResultPage.css'
 import Sidebar from './Sidebar'
 
-function CoverGenerateResultPage({ onBack, onRegenerate, images, onTabChange, collapsed, onToggleCollapse }) {
+function CoverGenerateResultPage({ onBack, onRegenerate, images, onTabChange, collapsed, onToggleCollapse, onDeleteResult }) {
   const [menuOpen, setMenuOpen] = useState(null)
+  const [localImages, setLocalImages] = useState(images.map((img, index) => ({
+    id: Date.now() + index,
+    image: img,
+    addedAt: new Date().toLocaleString(),
+    resultId: `202605061012568660${index}`,
+    aiMode: 'Seedream 4.5(ModelHub)'
+  })))
+
+  const handleDownload = (imageUrl, fileName = 'cover-image.png') => {
+    const link = document.createElement('a')
+    link.href = imageUrl
+    link.download = fileName
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    setMenuOpen(null)
+  }
+
+  const handleDelete = (index) => {
+    setLocalImages(prev => {
+      const newList = [...prev]
+      newList.splice(index, 1)
+      return newList
+    })
+    setMenuOpen(null)
+    if (onDeleteResult) {
+      onDeleteResult(index)
+    }
+  }
 
   return (
     <div className="cover-result-page">
@@ -28,7 +57,7 @@ function CoverGenerateResultPage({ onBack, onRegenerate, images, onTabChange, co
             <div className="template-display">
               <div className="selected-template">
                 <div className="template-preview">
-                  <img src={images[0]} alt="Template" />
+                  <img src={localImages[0]?.image || images[0]} alt="Template" />
                 </div>
               </div>
             </div>
@@ -61,15 +90,15 @@ function CoverGenerateResultPage({ onBack, onRegenerate, images, onTabChange, co
 
           <div className="right-panel">
             <div className="results-grid">
-              {images.map((image, index) => (
-                <div key={index} className="result-card">
+              {localImages.map((result, index) => (
+                <div key={result.id} className="result-card">
                   <div className="result-image">
-                    <img src={image} alt={`Generated ${index + 1}`} />
+                    <img src={result.image} alt={`Generated ${index + 1}`} />
                   </div>
                   <div className="result-info">
-                    <p>Added At: {new Date().toLocaleString()}</p>
-                    <p>ID: 2026050610125686600</p>
-                    <p>Seedream 4.5(ModelHub)</p>
+                    <p>Added At: {result.addedAt}</p>
+                    <p>ID: {result.resultId}</p>
+                    <p>{result.aiMode}</p>
                   </div>
                   <div className="menu-container">
                     <button
@@ -79,10 +108,23 @@ function CoverGenerateResultPage({ onBack, onRegenerate, images, onTabChange, co
                       ⋮
                     </button>
                     {menuOpen === index && (
-                      <div className="dropdown-menu">
-                        <button className="menu-item">Edit</button>
-                        <button className="menu-item">Prompt</button>
-                        <button className="menu-item delete">Delete</button>
+                      <div className="card-menu">
+                        <div className="menu-item">
+                          <button 
+                            className="menu-item-button"
+                            onClick={() => handleDownload(result.image, `cover-result-${result.resultId}.png`)}
+                          >
+                            Download
+                          </button>
+                        </div>
+                        <div className="menu-item">
+                          <button 
+                            className="menu-item-button"
+                            onClick={() => handleDelete(index)}
+                          >
+                            Delete
+                          </button>
+                        </div>
                       </div>
                     )}
                   </div>

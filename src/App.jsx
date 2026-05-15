@@ -71,15 +71,26 @@ function App() {
   }
 
   const handleSaveTemplate = (templateData) => {
+    const now = new Date()
+    const addedAt = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`
+    const templateId = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}${String(now.getHours()).padStart(2, '0')}${String(now.getMinutes()).padStart(2, '0')}${String(now.getSeconds()).padStart(2, '0')}${String(now.getMilliseconds()).padStart(3, '0')}`
+    
     const newTemplate = {
       id: Date.now(),
-      name: 'User Template',
-      images: templateData.coverImages.filter(img => img !== null),
+      name: templateData.name,
+      templateId: templateId,
+      addedAt: addedAt,
+      images: templateData.images.filter(img => img !== null),
       prompt: templateData.prompt,
-      json: templateData.json
+      json: templateData.json,
+      tags: templateData.tags
     }
     setUserTemplates([newTemplate, ...userTemplates])
-    setCoverPageState('main')
+    setCoverPageState('manageTemplate')
+  }
+
+  const handleDeleteTemplate = (templateId) => {
+    setUserTemplates(userTemplates.filter(template => template.id !== templateId))
   }
 
   const renderCoverPages = () => {
@@ -100,6 +111,8 @@ function App() {
           onTabChange={handleTabChange}
           collapsed={collapsed}
           onToggleCollapse={handleToggleCollapse}
+          userTemplates={userTemplates}
+          onDeleteTemplate={handleDeleteTemplate}
         />
       case 'addTemplate':
         return <AddTemplatePage
