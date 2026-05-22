@@ -3,6 +3,7 @@
   width: 100%;
   height: 100%;
   background: #0a0a0a;
+  overflow-x: auto;
 }
 
 .main-content {
@@ -11,26 +12,423 @@
   flex-direction: column;
   padding: 24px;
   overflow-y: auto;
+  min-width: 1200px;
+  flex-shrink: 0;
 }
 
-.empty-state {
+.top-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
 }
 
 .page-title {
-  font-size: 36px;
-  font-weight: 700;
+  font-family: 'TikTok Sans Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  font-style: oblique;
   color: #ffffff;
-  margin: 0 0 16px 0;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 0;
 }
 
-.page-description {
-  font-size: 16px;
+.top-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.manage-template-btn {
+  width: 198px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #C9FF4C;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn {
+  width: 148px;
+  height: 48px;
+  background: #C9FF4C;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.tabs-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.tab-item {
+  padding: 8px 20px;
+  background: transparent;
+  border: none;
+  border-radius: 9999px;
+  color: #888888;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab-item:hover {
+  color: #ffffff;
+}
+
+.tab-item.active {
+  background: #C9FF4C;
+  color: #000000;
+}
+
+/* 实时热梗字条展示区 */
+.trending-section {
+  display: flex;
+  margin-bottom: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  overflow: hidden;
+  height: 280px;
+  flex-shrink: 0;
+  min-width: 1200px;
+}
+
+.trending-left {
+  width: 480px;
+  flex-shrink: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trending-right {
+  flex: 1;
+  min-width: 720px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.banner-emoji-placeholder {
+  position: absolute;
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  background: rgba(201, 255, 76, 0.1);
+}
+
+.banner-emoji-placeholder.size-160 {
+  width: 160px;
+  height: 160px;
+}
+
+.banner-emoji-placeholder.size-120 {
+  width: 120px;
+  height: 120px;
+}
+
+.banner-emoji-placeholder.size-80 {
+  width: 80px;
+  height: 80px;
+}
+
+.banner-emoji-placeholder.size-170 {
+  width: 170px;
+  height: 170px;
+}
+
+.banner-emoji-placeholder.emoji-1 {
+  top: auto;
+  bottom: 80px;
+  right: 470px;
+  background: rgba(254, 44, 48, 0.3);
+  border-color: #FE2C30;
+}
+
+.banner-emoji-placeholder.emoji-2 {
+  top: 10px;
+  right: 320px;
+  background: rgba(76, 175, 80, 0.3);
+  border-color: #4CAF50;
+}
+
+.banner-emoji-placeholder.emoji-3 {
+  top: 190px;
+  right: 375px;
+  background: rgba(33, 150, 243, 0.3);
+  border-color: #2196F3;
+}
+
+.banner-emoji-placeholder.emoji-4 {
+  bottom: 5px;
+  right: 145px;
+  background: rgba(156, 39, 176, 0.3);
+  border-color: #9C27B0;
+}
+
+.banner-emoji-placeholder.emoji-5 {
+  bottom: 130px;
+  right: 30px;
+  background: rgba(255, 193, 7, 0.3);
+  border-color: #FFC107;
+}
+
+.emoji-banner {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.trending-date {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  font-family: 'TikTok Sans', sans-serif;
+}
+
+.trending-memes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.meme-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  color: #ffffff;
+  font-family: 'TikTok Sans', sans-serif;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.meme-item:hover {
+  background: linear-gradient(90deg, #FE2C30, #FFA0A6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: translateX(4px);
+}
+
+.meme-flame {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.emoji-preview {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.emoji-bubble {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.emoji-icon {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.emoji-bubble-1 {
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  left: 20px;
+}
+
+.emoji-bubble-2 {
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 140px;
+}
+
+.emoji-bubble-3 {
+  width: 90px;
+  height: 90px;
+  top: 20px;
+  right: 30px;
+}
+
+.emoji-bubble-4 {
+  width: 70px;
+  height: 70px;
+  bottom: 30px;
+  left: 80px;
+}
+
+.emoji-bubble-5 {
+  width: 110px;
+  height: 110px;
+  bottom: 10px;
+  left: 180px;
+}
+
+.emoji-bubble-6 {
+  width: 85px;
+  height: 85px;
+  bottom: 0;
+  right: 10px;
+}
+
+/* 分类标签栏 */
+.category-tabs-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #1a1a1a;
+  flex-shrink: 0;
+}
+
+.category-tab-item {
+  padding: 8px 20px;
+  background: transparent;
+  border: none;
+  border-radius: 9999px;
+  color: #888888;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'TikTok Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-tab-item:hover {
+  color: #ffffff;
+}
+
+.category-tab-item.active {
+  background: #C9FF4C;
+  color: #000000;
+}
+
+/* emoji 卡片网格 */
+.emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1400px) {
+  .emoji-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .emoji-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .emoji-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .emoji-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .emoji-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.emoji-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  aspect-ratio: 1 / 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+.emoji-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 1px;
+  background: linear-gradient(to bottom, #414141 0%, rgba(56, 56, 56, 0.7) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.emoji-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-2px);
+}
+
+.emoji-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+}
+
+.emoji-card-emoji {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.emoji-card-label {
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.7);
-  margin: 0;
+  font-weight: 600;
+  font-family: 'TikTok Sans', sans-serif;
+  text-align: center;
+  flex-shrink: 0;
 }
