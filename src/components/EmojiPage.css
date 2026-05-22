@@ -461,9 +461,8 @@
   pointer-events: none;
 }
 
-.emoji-card:hover {
-  background: rgba(255, 255, 255, 0.06);
-  transform: translateY(-2px);
+.emoji-card:active {
+  transform: scale(0.98);
 }
 
 .emoji-card-content {
@@ -478,6 +477,11 @@
   width: 80%;
   height: 80%;
   object-fit: contain;
+  transition: transform 0.2s ease-out;
+}
+
+.emoji-card:hover .emoji-card-emoji {
+  transform: scale(1.1);
 }
 
 .emoji-card-label {

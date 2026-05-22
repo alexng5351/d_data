@@ -1,0 +1,388 @@
+.emoji-detail-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+.emoji-detail-modal {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 20px;
+  box-sizing: border-box;
+  position: relative;
+  animation: scaleIn 0.25s ease-out forwards;
+  padding: 40px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3), 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.emoji-detail-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.emoji-detail-title {
+  font-family: 'TikTok Sans Display', 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.emoji-detail-ai-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.emoji-detail-modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.emoji-detail-modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.emoji-detail-modal-body {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex: 1;
+}
+
+.emoji-detail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.emoji-detail-main-image {
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.emoji-detail-main-image.clicking {
+  animation: clickScale 0.2s ease-out forwards;
+}
+
+@keyframes clickScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.emoji-detail-description {
+  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: left;
+  max-width: 360px;
+}
+
+.emoji-detail-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.emoji-detail-nav-button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-out;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.emoji-detail-nav-button:hover:not(.disabled) {
+  opacity: 0.7;
+}
+
+.emoji-detail-nav-button.disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.emoji-detail-nav-prev {
+  left: 12px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.emoji-detail-nav-next {
+  right: 12px;
+}
+
+.emoji-detail-page-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji-detail-page-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.emoji-detail-page-dots {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.emoji-detail-page-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: background 0.2s ease-out;
+}
+
+.emoji-detail-page-dot.active {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.emoji-detail-phone-frame {
+  width: 380px;
+  height: 486px;
+  background: #2B2B2B;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #414141;
+}
+
+.chatpage-image {
+  width: 200px;
+  height: 434px;
+  object-fit: contain;
+  position: absolute;
+  top: 20px;
+}
+
+.storypage-container {
+  position: absolute;
+  top: 20px;
+  width: 200px;
+  height: 434px;
+}
+
+.storypage-image {
+  width: 200px;
+  height: 434px;
+  object-fit: contain;
+}
+
+.storypage-emojis {
+  position: absolute;
+  top: calc(50% - 75px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, 28px);
+  grid-template-rows: repeat(2, 28px);
+  row-gap: 10px;
+  column-gap: 24px;
+  z-index: 5;
+}
+
+.storypage-emoji-item {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+
+.storypage-emoji-item:hover {
+  transform: scale(1.2);
+}
+
+.commentpage-container {
+  position: absolute;
+  top: 20px;
+  width: 200px;
+  height: 434px;
+}
+
+.commentpage-image {
+  width: 200px;
+  height: 434px;
+  object-fit: contain;
+}
+
+.commentpage-emojis {
+  position: absolute;
+  top: 172px;
+  left: 28px;
+  display: flex;
+  gap: 0;
+  z-index: 5;
+}
+
+.commentpage-emoji-item {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+
+.emoji-detail-page-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.emoji-detail-chat-area {
+  position: absolute;
+  top: 80px;
+  width: 200px;
+  height: 150px;
+  box-sizing: border-box;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.emoji-detail-chat-messages {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-out;
+  transform: translateY(0);
+}
+
+.emoji-detail-chat-messages-animating {
+  transform: translateY(0);
+}
+
+.emoji-detail-chat-messages-prepare {
+  transform: translateY(58px);
+  transition: none !important;
+}
+
+.emoji-detail-phone-emoji {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  position: relative;
+  margin-top: 8px;
+  flex-shrink: 0;
+  transform: scale(1);
+}
+
+.emoji-detail-phone-emoji-new {
+  animation: emojiFadeIn 0.2s ease-out forwards;
+}
+
+@keyframes emojiFadeIn {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.emoji-detail-chat-bar {
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translateX(-100px);
+  padding-left: 6px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.emoji-detail-chat-bar-emoji {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.emoji-detail-chat-bar-emoji:hover {
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

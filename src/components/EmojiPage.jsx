@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react'
 import './EmojiPage.css'
 import Sidebar from './Sidebar'
+import EmojiDetailModal from './EmojiDetailModal'
 
 function EmojiPage({ onTabChange, collapsed, onToggleCollapse }) {
   const [activeCategoryIndex, setActiveCategoryIndex] = useState(0)
   const [currentDate, setCurrentDate] = useState('')
+  const [selectedEmoji, setSelectedEmoji] = useState(null)
+  const [showDetailModal, setShowDetailModal] = useState(false)
 
   useEffect(() => {
     const date = new Date()
@@ -25,7 +28,12 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse }) {
 
   const emojiData = {
     basic: [
-      { image: '/aicover/assets/emoji_design/basic/emoji_basic_1.png', label: 'Basic 1' },
+      { 
+        image: '/aicover/assets/emoji_design/basic/emoji_basic_1.png', 
+        label: 'Basic 1',
+        title: 'Lobster Slay',
+        description: 'OpenClaw turned "raising lobsters" into a tech craze, making the red lobster an unlikely AI mascot.'
+      },
       { image: '/aicover/assets/emoji_design/basic/emoji_basic_2.png', label: 'Basic 2' },
       { image: '/aicover/assets/emoji_design/basic/emoji_basic_3.png', label: 'Basic 3' },
       { image: '/aicover/assets/emoji_design/basic/emoji_basic_4.png', label: 'Basic 4' },
@@ -182,6 +190,16 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse }) {
 
   const filteredEmojiData = getFilteredEmojiData()
 
+  const handleEmojiClick = (emoji) => {
+    setSelectedEmoji(emoji)
+    setShowDetailModal(true)
+  }
+
+  const handleCloseModal = () => {
+    setShowDetailModal(false)
+    setSelectedEmoji(null)
+  }
+
   return (
     <div className="emoji-page">
       <Sidebar activeTab="Emoji" onTabChange={onTabChange} collapsed={collapsed} onToggleCollapse={onToggleCollapse} />
@@ -251,7 +269,7 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse }) {
         {/* emoji 卡片网格 */}
         <div className="emoji-grid">
           {filteredEmojiData.map((item, index) => (
-            <div key={index} className="emoji-card">
+            <div key={index} className="emoji-card" onClick={() => handleEmojiClick(item)}>
               <div className="emoji-card-content">
                 <img src={item.image} alt={item.label} className="emoji-card-emoji" />
               </div>
@@ -260,6 +278,12 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse }) {
           ))}
         </div>
       </div>
+
+      <EmojiDetailModal
+        emoji={selectedEmoji}
+        isOpen={showDetailModal}
+        onClose={handleCloseModal}
+      />
     </div>
   )
 }
