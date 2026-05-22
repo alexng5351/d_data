@@ -8,10 +8,12 @@ import CoverGeneratePage from './components/CoverGeneratePage'
 import CoverGenerateResultPage from './components/CoverGenerateResultPage'
 import IPPetPage from './components/IPPetPage'
 import EmojiPage from './components/EmojiPage'
+import MemeDetailPage from './components/MemeDetailPage'
 
 function App() {
   const [activeTab, setActiveTab] = useState('Cover')
   const [coverPageState, setCoverPageState] = useState('main')
+  const [emojiPageState, setEmojiPageState] = useState('main')
   const [selectedTemplateId, setSelectedTemplateId] = useState(null)
   const [selectedTemplate, setSelectedTemplate] = useState(null)
   const [userImage, setUserImage] = useState(null)
@@ -24,6 +26,9 @@ function App() {
     setActiveTab(tabName)
     if (tabName === 'Cover') {
       setCoverPageState('main')
+    }
+    if (tabName === 'Emoji') {
+      setEmojiPageState('main')
     }
   }
 
@@ -91,6 +96,14 @@ function App() {
 
   const handleDeleteTemplate = (templateId) => {
     setUserTemplates(userTemplates.filter(template => template.id !== templateId))
+  }
+
+  const handleGoToMemeDetail = () => {
+    setEmojiPageState('memeDetail')
+  }
+
+  const handleBackToEmojiMain = () => {
+    setEmojiPageState('main')
   }
 
   const renderCoverPages = () => {
@@ -165,11 +178,37 @@ function App() {
     }
   }
 
+  const renderEmojiPages = () => {
+    switch (emojiPageState) {
+      case 'main':
+        return <EmojiPage 
+          onTabChange={handleTabChange} 
+          collapsed={collapsed} 
+          onToggleCollapse={handleToggleCollapse}
+          onMemeClick={handleGoToMemeDetail}
+        />
+      case 'memeDetail':
+        return <MemeDetailPage 
+          onBack={handleBackToEmojiMain}
+          onTabChange={handleTabChange}
+          collapsed={collapsed}
+          onToggleCollapse={handleToggleCollapse}
+        />
+      default:
+        return <EmojiPage 
+          onTabChange={handleTabChange} 
+          collapsed={collapsed} 
+          onToggleCollapse={handleToggleCollapse}
+          onMemeClick={handleGoToMemeDetail}
+        />
+    }
+  }
+
   return (
     <div className="app">
       {activeTab === 'Cover' && renderCoverPages()}
       {activeTab === 'IP Pet' && <IPPetPage onTabChange={handleTabChange} collapsed={collapsed} onToggleCollapse={handleToggleCollapse} />}
-      {activeTab === 'Emoji' && <EmojiPage onTabChange={handleTabChange} collapsed={collapsed} onToggleCollapse={handleToggleCollapse} />}
+      {activeTab === 'Emoji' && renderEmojiPages()}
     </div>
   )
 }

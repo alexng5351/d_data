@@ -146,6 +146,7 @@
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .emoji-bubble-container:hover {
@@ -258,9 +259,29 @@
   object-fit: contain;
 }
 
+.trending-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .trending-date {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-family: 'TikTok Sans', sans-serif;
+}
+
+.trending-separator {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-family: 'TikTok Sans', sans-serif;
+}
+
+.trending-title {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
   font-family: 'TikTok Sans', sans-serif;
 }
@@ -297,6 +318,11 @@
   width: 20px;
   height: 20px;
   object-fit: contain;
+  transition: transform 0.2s ease-out;
+}
+
+.meme-item:hover .meme-flame {
+  transform: scale(1.2);
 }
 
 .emoji-preview {
