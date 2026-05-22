@@ -89,6 +89,7 @@ function EmojiDetailModal({ emoji, isOpen, onClose }) {
         <div className="emoji-detail-modal-header">
           <div className="emoji-detail-title">
             {emoji.label || 'Emoji Detail'}
+            <img src="/aicover/assets/icon_airemix.png" alt="AI Remix" className="emoji-detail-ai-icon" />
           </div>
           <div className="emoji-detail-modal-close" onClick={onClose}>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

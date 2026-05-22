@@ -21,6 +21,7 @@ function App() {
   const [isRegenerating, setIsRegenerating] = useState(false)
   const [collapsed, setCollapsed] = useState(false)
   const [userTemplates, setUserTemplates] = useState([])
+  const [targetMemeCardIndex, setTargetMemeCardIndex] = useState(null)
 
   const handleTabChange = (tabName) => {
     setActiveTab(tabName)
@@ -98,12 +99,14 @@ function App() {
     setUserTemplates(userTemplates.filter(template => template.id !== templateId))
   }
 
-  const handleGoToMemeDetail = () => {
+  const handleGoToMemeDetail = (index) => {
+    setTargetMemeCardIndex(index)
     setEmojiPageState('memeDetail')
   }
 
   const handleBackToEmojiMain = () => {
     setEmojiPageState('main')
+    setTargetMemeCardIndex(null)
   }
 
   const renderCoverPages = () => {
@@ -193,6 +196,7 @@ function App() {
           onTabChange={handleTabChange}
           collapsed={collapsed}
           onToggleCollapse={handleToggleCollapse}
+          targetCardIndex={targetMemeCardIndex}
         />
       default:
         return <EmojiPage 

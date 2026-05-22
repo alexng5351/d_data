@@ -1,12 +1,42 @@
 import Sidebar from './Sidebar'
+import EmojiDetailModal from './EmojiDetailModal'
 import './MemeDetailPage.css'
+import { useState, useRef, useEffect } from 'react'
 
-function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse }) {
+function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, targetCardIndex }) {
+  const [selectedEmoji, setSelectedEmoji] = useState(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const cardRefs = useRef([])
+
+  const handleEmojiClick = (emojiImage, index) => {
+    const emoji = {
+      image: emojiImage,
+      label: `Emoji ${index + 1}`,
+      description: 'This is a remixed emoji based on popular meme references.'
+    }
+    setSelectedEmoji(emoji)
+    setIsModalOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false)
+    setSelectedEmoji(null)
+  }
+
+  useEffect(() => {
+    if (targetCardIndex !== null && cardRefs.current[targetCardIndex]) {
+      cardRefs.current[targetCardIndex].scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }, [targetCardIndex])
+
   // 热梗meme数据
   const memeData = [
     {
       id: 1,
-      name: 'Raise a lobster',
+      name: 'Fruitcore Meme Culture',
       source: 'TikTok trend, May 2026',
       referenceImage: '/aicover/assets/emoji_design/memes/meme_ref_1.png',
       emojis: [
@@ -31,30 +61,30 @@ function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse }) {
     },
     {
       id: 3,
-      name: 'The Internet Is Becoming Chinese',
-      source: 'Global internet trend, Mar 2026',
+      name: 'Side-Eye Dog',
+      source: 'TikTok trend, May 2026',
       referenceImage: '/aicover/assets/emoji_design/memes/meme_ref_3.png',
       emojis: [
         '/aicover/assets/emoji_design/memes/meme3_emoji1.png',
         '/aicover/assets/emoji_design/memes/meme3_emoji2.png',
-        '/aicover/assets/emoji_design/memes/meme3_emoji3.png',
-        '/aicover/assets/emoji_design/memes/meme3_emoji4.png'
+        '/aicover/assets/emoji_design/memes/meme3_emoji3.png'
       ]
     },
     {
       id: 4,
-      name: 'AI Fruit Drama Is Addictive',
+      name: 'Viral Lobster Creature',
       source: 'TikTok trend, May 2026',
       referenceImage: '/aicover/assets/emoji_design/memes/meme_ref_4.png',
       emojis: [
         '/aicover/assets/emoji_design/memes/meme4_emoji1.png',
         '/aicover/assets/emoji_design/memes/meme4_emoji2.png',
-        '/aicover/assets/emoji_design/memes/meme4_emoji3.png'
+        '/aicover/assets/emoji_design/memes/meme4_emoji3.png',
+        '/aicover/assets/emoji_design/memes/meme4_emoji4.png'
       ]
     },
     {
       id: 5,
-      name: 'AI Fruit Drama Is Addictive',
+      name: 'Chaotic Pigtail Reaction',
       source: 'TikTok trend, May 2026',
       referenceImage: '/aicover/assets/emoji_design/memes/meme_ref_5.png',
       emojis: [
@@ -81,8 +111,12 @@ function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse }) {
 
         <div className="meme-detail-grid-wrapper">
           <div className="meme-detail-grid">
-            {memeData.map((meme) => (
-              <div key={meme.id} className="meme-detail-card">
+            {memeData.map((meme, index) => (
+              <div 
+                key={meme.id} 
+                className="meme-detail-card"
+                ref={(el) => (cardRefs.current[index] = el)}
+              >
                 <div className="meme-detail-card-header">
                   <img src="/aicover/assets/icon_fire.png" alt="Fire" className="meme-detail-fire-icon" />
                   <div className="meme-detail-header-content">
@@ -97,7 +131,11 @@ function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse }) {
                   </div>
                   <div className="meme-detail-emojis-section">
                     {meme.emojis.map((emoji, index) => (
-                      <div key={index} className="meme-detail-emoji-wrapper">
+                      <div 
+                        key={index} 
+                        className="meme-detail-emoji-wrapper"
+                        onClick={() => handleEmojiClick(emoji, index)}
+                      >
                         <img src={emoji} alt={`Emoji ${index + 1}`} className="meme-detail-emoji" />
                       </div>
                     ))}
@@ -107,6 +145,11 @@ function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse }) {
             ))}
           </div>
         </div>
+        <EmojiDetailModal 
+          emoji={selectedEmoji}
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+        />
       </div>
     </div>
   )

@@ -104,7 +104,7 @@
 .trending-section {
   display: flex;
   margin-bottom: 24px;
-  background: rgba(255, 255, 255, 0.03);
+  background: #1E1E20;
   border-radius: 16px;
   overflow: hidden;
   height: 280px;

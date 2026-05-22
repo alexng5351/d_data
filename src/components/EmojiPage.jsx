@@ -19,11 +19,11 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse, onMemeClick }) {
 
   const categories = ['All', 'Basic', 'Styles', 'Animals', 'Hands', 'Words', 'Others']
   const trendingMemes = [
-    'Raise a lobster',
+    'Fruitcore Meme Culture',
     'Lei Jun\'s Selfie Moment',
-    'The Internet Is Becoming Chinese',
-    'AI Fruit Drama Is Addictive',
-    'AI Fruit Drama Is Addictive'
+    'Side-Eye Dog',
+    'Viral Lobster Creature',
+    'Chaotic Pigtail Reaction'
   ]
 
   const emojiData = {
@@ -200,9 +200,9 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse, onMemeClick }) {
     setSelectedEmoji(null)
   }
 
-  const handleMemeItemClick = () => {
+  const handleMemeItemClick = (index) => {
     if (onMemeClick) {
-      onMemeClick()
+      onMemeClick(index)
     }
   }
 
@@ -231,7 +231,7 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse, onMemeClick }) {
             </div>
             <div className="trending-memes">
               {trendingMemes.map((meme, index) => (
-                <div key={index} className="meme-item" onClick={handleMemeItemClick}>
+                <div key={index} className="meme-item" onClick={() => handleMemeItemClick(index === 0 ? null : index)}>
                   <img src="/aicover/assets/icon_fire.png" alt="Fire" className="meme-flame" />
                   <span className="meme-text">{meme}</span>
                 </div>
@@ -240,25 +240,25 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse, onMemeClick }) {
           </div>
           <div className="trending-right">
             <img src="/aicover/assets/emoji_banner.png" alt="Emoji Banner" className="emoji-banner" />
-            <div className="emoji-bubble-container emoji-1-container" onClick={handleMemeItemClick}>
+            <div className="emoji-bubble-container emoji-1-container" onClick={() => handleMemeItemClick(null)}>
               <img src="/aicover/assets/bubble.png" alt="Bubble 1" className="banner-bubble size-208" />
-              <img src="/aicover/assets/emoji_design/memes/emoji_meme_1.png" alt="Emoji 1" className="banner-emoji size-160" />
+              <img src="/aicover/assets/emoji_design/memes/meme1_emoji1.png" alt="Emoji 1" className="banner-emoji size-160" />
             </div>
-            <div className="emoji-bubble-container emoji-2-container" onClick={handleMemeItemClick}>
+            <div className="emoji-bubble-container emoji-2-container" onClick={() => handleMemeItemClick(1)}>
               <img src="/aicover/assets/bubble.png" alt="Bubble 2" className="banner-bubble size-156" />
-              <img src="/aicover/assets/emoji_design/memes/emoji_meme_2.png" alt="Emoji 2" className="banner-emoji size-120" />
+              <img src="/aicover/assets/emoji_design/memes/meme2_emoji1.png" alt="Emoji 2" className="banner-emoji size-120" />
             </div>
-            <div className="emoji-bubble-container emoji-3-container" onClick={handleMemeItemClick}>
+            <div className="emoji-bubble-container emoji-3-container" onClick={() => handleMemeItemClick(2)}>
               <img src="/aicover/assets/bubble.png" alt="Bubble 3" className="banner-bubble size-104" />
-              <img src="/aicover/assets/emoji_design/memes/emoji_meme_3.png" alt="Emoji 3" className="banner-emoji size-80" />
+              <img src="/aicover/assets/emoji_design/memes/meme3_emoji1.png" alt="Emoji 3" className="banner-emoji size-80" />
             </div>
-            <div className="emoji-bubble-container emoji-4-container" onClick={handleMemeItemClick}>
+            <div className="emoji-bubble-container emoji-4-container" onClick={() => handleMemeItemClick(3)}>
               <img src="/aicover/assets/bubble.png" alt="Bubble 4" className="banner-bubble size-221" />
-              <img src="/aicover/assets/emoji_design/memes/emoji_meme_4.png" alt="Emoji 4" className="banner-emoji size-170" />
+              <img src="/aicover/assets/emoji_design/memes/meme4_emoji1.png" alt="Emoji 4" className="banner-emoji size-170" />
             </div>
-            <div className="emoji-bubble-container emoji-5-container" onClick={handleMemeItemClick}>
+            <div className="emoji-bubble-container emoji-5-container" onClick={() => handleMemeItemClick(4)}>
               <img src="/aicover/assets/bubble.png" alt="Bubble 5" className="banner-bubble size-156" />
-              <img src="/aicover/assets/emoji_design/memes/emoji_meme_5.png" alt="Emoji 5" className="banner-emoji size-120" />
+              <img src="/aicover/assets/emoji_design/memes/meme5_emoji1.png" alt="Emoji 5" className="banner-emoji size-120" />
             </div>
           </div>
         </div>
