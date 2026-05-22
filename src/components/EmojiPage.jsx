@@ -212,11 +212,26 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse }) {
           </div>
           <div className="trending-right">
             <img src="/aicover/assets/emoji_banner.png" alt="Emoji Banner" className="emoji-banner" />
-            <div className="banner-emoji-placeholder emoji-1 size-160"></div>
-            <div className="banner-emoji-placeholder emoji-2 size-120"></div>
-            <div className="banner-emoji-placeholder emoji-3 size-80"></div>
-            <div className="banner-emoji-placeholder emoji-4 size-170"></div>
-            <div className="banner-emoji-placeholder emoji-5 size-120"></div>
+            <div className="emoji-bubble-container emoji-1-container">
+              <img src="/aicover/assets/bubble.png" alt="Bubble 1" className="banner-bubble size-208" />
+              <img src="/aicover/assets/emoji_design/memes/emoji_meme_1.png" alt="Emoji 1" className="banner-emoji size-160" />
+            </div>
+            <div className="emoji-bubble-container emoji-2-container">
+              <img src="/aicover/assets/bubble.png" alt="Bubble 2" className="banner-bubble size-156" />
+              <img src="/aicover/assets/emoji_design/memes/emoji_meme_2.png" alt="Emoji 2" className="banner-emoji size-120" />
+            </div>
+            <div className="emoji-bubble-container emoji-3-container">
+              <img src="/aicover/assets/bubble.png" alt="Bubble 3" className="banner-bubble size-104" />
+              <img src="/aicover/assets/emoji_design/memes/emoji_meme_3.png" alt="Emoji 3" className="banner-emoji size-80" />
+            </div>
+            <div className="emoji-bubble-container emoji-4-container">
+              <img src="/aicover/assets/bubble.png" alt="Bubble 4" className="banner-bubble size-221" />
+              <img src="/aicover/assets/emoji_design/memes/emoji_meme_4.png" alt="Emoji 4" className="banner-emoji size-170" />
+            </div>
+            <div className="emoji-bubble-container emoji-5-container">
+              <img src="/aicover/assets/bubble.png" alt="Bubble 5" className="banner-bubble size-156" />
+              <img src="/aicover/assets/emoji_design/memes/emoji_meme_5.png" alt="Emoji 5" className="banner-emoji size-120" />
+            </div>
           </div>
         </div>
 
