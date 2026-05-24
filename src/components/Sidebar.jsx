@@ -4,9 +4,9 @@ import './Sidebar.css'
 function Sidebar({ activeTab = 'Cover', onTabChange, collapsed, onToggleCollapse }) {
   const [showText, setShowText] = useState(!collapsed)
   const navItems = [
-    { name: 'Cover', icon: '/d_data/assets/icon_cover.png' },
-    { name: 'Emoji', icon: '/d_data/assets/icon_emoji.png' },
-    { name: 'IP Pet', icon: '/d_data/assets/icon_ippet.png' }
+    { name: 'Cover', icon: '/assets/icon_cover.png' },
+    { name: 'Emoji', icon: '/assets/icon_emoji.png' },
+    { name: 'IP Pet', icon: '/assets/icon_ippet.png' }
   ]
 
   useEffect(() => {
@@ -29,10 +29,10 @@ function Sidebar({ activeTab = 'Cover', onTabChange, collapsed, onToggleCollapse
   return (
     <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
       <div className="header-section">
-        <img src="/d_data/assets/webname.png" alt="D_DATA" className="logo" />
+        <img src="/assets/webname.png" alt="D_DATA" className="logo" />
         <div className="header-actions">
           <img 
-            src="/d_data/assets/icon_sidebar.png" 
+            src="/assets/icon_sidebar.png" 
             alt="sidebar" 
             className="header-icon" 
             onClick={onToggleCollapse}

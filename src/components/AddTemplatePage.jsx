@@ -121,7 +121,7 @@ function AddTemplatePage({ onBack, onTabChange, collapsed, onToggleCollapse, onS
                     <img src={img} alt={`Cover ${index + 1}`} className="cover-preview" />
                   ) : (
                     <div className="upload-icon-container">
-                      <img src="/d_data/assets/icon_addimages.png" alt="Add" className="upload-icon" />
+                      <img src="/assets/icon_addimages.png" alt="Add" className="upload-icon" />
                     </div>
                   )}
                   <input

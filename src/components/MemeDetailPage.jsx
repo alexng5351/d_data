@@ -38,59 +38,59 @@ function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, targ
       id: 1,
       name: 'Fruitcore Meme Culture',
       source: 'TikTok trend, May 2026',
-      referenceImage: '/d_data/assets/emoji_design/memes/meme_ref_1.png',
+      referenceImage: '/assets/emoji_design/memes/meme_ref_1.png',
       emojis: [
-        '/d_data/assets/emoji_design/memes/meme1_emoji1.png',
-        '/d_data/assets/emoji_design/memes/meme1_emoji2.png',
-        '/d_data/assets/emoji_design/memes/meme1_emoji3.png',
-        '/d_data/assets/emoji_design/memes/meme1_emoji4.png',
-        '/d_data/assets/emoji_design/memes/meme1_emoji5.png'
+        '/assets/emoji_design/memes/meme1_emoji1.png',
+        '/assets/emoji_design/memes/meme1_emoji2.png',
+        '/assets/emoji_design/memes/meme1_emoji3.png',
+        '/assets/emoji_design/memes/meme1_emoji4.png',
+        '/assets/emoji_design/memes/meme1_emoji5.png'
       ]
     },
     {
       id: 2,
       name: 'Lei Jun\'s Selfie Moment',
       source: 'Social media viral, Apr 2026',
-      referenceImage: '/d_data/assets/emoji_design/memes/meme_ref_2.png',
+      referenceImage: '/assets/emoji_design/memes/meme_ref_2.png',
       emojis: [
-        '/d_data/assets/emoji_design/memes/meme2_emoji1.png',
-        '/d_data/assets/emoji_design/memes/meme2_emoji2.png',
-        '/d_data/assets/emoji_design/memes/meme2_emoji3.png',
-        '/d_data/assets/emoji_design/memes/meme2_emoji4.png'
+        '/assets/emoji_design/memes/meme2_emoji1.png',
+        '/assets/emoji_design/memes/meme2_emoji2.png',
+        '/assets/emoji_design/memes/meme2_emoji3.png',
+        '/assets/emoji_design/memes/meme2_emoji4.png'
       ]
     },
     {
       id: 3,
       name: 'Side-Eye Dog',
       source: 'TikTok trend, May 2026',
-      referenceImage: '/d_data/assets/emoji_design/memes/meme_ref_3.png',
+      referenceImage: '/assets/emoji_design/memes/meme_ref_3.png',
       emojis: [
-        '/d_data/assets/emoji_design/memes/meme3_emoji1.png',
-        '/d_data/assets/emoji_design/memes/meme3_emoji2.png',
-        '/d_data/assets/emoji_design/memes/meme3_emoji3.png'
+        '/assets/emoji_design/memes/meme3_emoji1.png',
+        '/assets/emoji_design/memes/meme3_emoji2.png',
+        '/assets/emoji_design/memes/meme3_emoji3.png'
       ]
     },
     {
       id: 4,
       name: 'Viral Lobster Creature',
       source: 'TikTok trend, May 2026',
-      referenceImage: '/d_data/assets/emoji_design/memes/meme_ref_4.png',
+      referenceImage: '/assets/emoji_design/memes/meme_ref_4.png',
       emojis: [
-        '/d_data/assets/emoji_design/memes/meme4_emoji1.png',
-        '/d_data/assets/emoji_design/memes/meme4_emoji2.png',
-        '/d_data/assets/emoji_design/memes/meme4_emoji3.png',
-        '/d_data/assets/emoji_design/memes/meme4_emoji4.png'
+        '/assets/emoji_design/memes/meme4_emoji1.png',
+        '/assets/emoji_design/memes/meme4_emoji2.png',
+        '/assets/emoji_design/memes/meme4_emoji3.png',
+        '/assets/emoji_design/memes/meme4_emoji4.png'
       ]
     },
     {
       id: 5,
       name: 'Chaotic Pigtail Reaction',
       source: 'TikTok trend, May 2026',
-      referenceImage: '/d_data/assets/emoji_design/memes/meme_ref_5.png',
+      referenceImage: '/assets/emoji_design/memes/meme_ref_5.png',
       emojis: [
-        '/d_data/assets/emoji_design/memes/meme5_emoji1.png',
-        '/d_data/assets/emoji_design/memes/meme5_emoji2.png',
-        '/d_data/assets/emoji_design/memes/meme5_emoji3.png'
+        '/assets/emoji_design/memes/meme5_emoji1.png',
+        '/assets/emoji_design/memes/meme5_emoji2.png',
+        '/assets/emoji_design/memes/meme5_emoji3.png'
       ]
     }
   ]
@@ -118,7 +118,7 @@ function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, targ
                 ref={(el) => (cardRefs.current[index] = el)}
               >
                 <div className="meme-detail-card-header">
-                  <img src="/d_data/assets/icon_fire.png" alt="Fire" className="meme-detail-fire-icon" />
+                  <img src="/assets/icon_fire.png" alt="Fire" className="meme-detail-fire-icon" />
                   <div className="meme-detail-header-content">
                     <h3 className="meme-detail-card-name">{meme.name}</h3>
                     <p className="meme-detail-card-source">Source: {meme.source}</p>
