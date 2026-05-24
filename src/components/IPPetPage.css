@@ -22,6 +22,24 @@
   text-align: center;
 }
 
+.in-process-illustration {
+  width: 180px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.coming-soon-text {
+  font-family: 'TikTok Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: oblique;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
 .page-title {
   font-size: 36px;
   font-weight: 700;

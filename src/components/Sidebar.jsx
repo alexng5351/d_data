@@ -5,8 +5,8 @@ function Sidebar({ activeTab = 'Cover', onTabChange, collapsed, onToggleCollapse
   const [showText, setShowText] = useState(!collapsed)
   const navItems = [
     { name: 'Cover', icon: '/aicover/assets/icon_cover.png' },
-    { name: 'IP Pet', icon: '/aicover/assets/icon_ippet.png' },
-    { name: 'Emoji', icon: '/aicover/assets/icon_emoji.png' }
+    { name: 'Emoji', icon: '/aicover/assets/icon_emoji.png' },
+    { name: 'IP Pet', icon: '/aicover/assets/icon_ippet.png' }
   ]
 
   useEffect(() => {

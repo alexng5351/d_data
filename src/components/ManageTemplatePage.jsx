@@ -3,6 +3,7 @@ import './ManageTemplatePage.css'
 import Sidebar from './Sidebar'
 import ManageTemplateCard from './ManageTemplateCard'
 import EditTemplateModal from './EditTemplateModal'
+import { getCoverImages } from './MainPage'
 
 function ManageTemplatePage({ onBack, onTabChange, collapsed, onToggleCollapse, userTemplates = [], onDeleteTemplate }) {
   const tabs = ['All', 'Single Image', 'Multiple Images', 'Shared Records', 'Tutorial Post', 'Community Discussion', 'Other']
@@ -12,16 +13,32 @@ function ManageTemplatePage({ onBack, onTabChange, collapsed, onToggleCollapse, 
   const [showDeleteModal, setShowDeleteModal] = useState(false)
   const [deletingTemplateId, setDeletingTemplateId] = useState(null)
   
-  const defaultTemplates = [
-    { id: 9, name: 'Minimal Modern', addedAt: '2026-05-06 18:13:04', templateId: '2026050610125686600', tags: ['Extrinsic', 'Record', 'Products', 'Help and Interaction', 'Other'], images: [] },
-    { id: 10, name: 'Cozy Aesthetic', addedAt: '2026-05-06 18:13:04', templateId: '2026050610125686601', tags: ['Extrinsic', 'Record', 'Products', 'Help and Interaction', 'Other'], images: [] },
-    { id: 11, name: 'Clean Editorial', addedAt: '2026-05-06 18:13:04', templateId: '2026050610125686602', tags: ['Extrinsic', 'Record', 'Products', 'Help and Interaction', 'Other'], images: [] },
-    { id: 12, name: 'Dark Elegance', addedAt: '2026-05-06 18:13:04', templateId: '2026050610125686603', tags: ['Extrinsic', 'Record', 'Products', 'Help and Interaction', 'Other'], images: [] },
-    { id: 13, name: 'Bright Pop', addedAt: '2026-05-06 18:13:04', templateId: '2026050610125686604', tags: ['Extrinsic', 'Record', 'Products', 'Help and Interaction', 'Other'], images: [] },
-    { id: 14, name: 'Retro Vibe', addedAt: '2026-05-06 18:13:04', templateId: '2026050610125686605', tags: ['Extrinsic', 'Record', 'Products', 'Help and Interaction', 'Other'], images: [] },
-    { id: 15, name: 'Minimalist Chic', addedAt: '2026-05-06 18:13:04', templateId: '2026050610125686606', tags: ['Extrinsic', 'Record', 'Products', 'Help and Interaction', 'Other'], images: [] },
-    { id: 16, name: 'Urban Style', addedAt: '2026-05-06 18:13:04', templateId: '2026050610125686607', tags: ['Extrinsic', 'Record', 'Products', 'Help and Interaction', 'Other'], images: [] }
+  const templateNames = [
+    'Instagram Style', 'Rednote Design', 'Youtube Banner', 'Pinterest Layout', 'VSCO Aesthetic',
+    'Minimal Modern', 'Cozy Aesthetic', 'Clean Editorial', 'Dark Elegance', 'Bright Pop',
+    'Retro Vibe', 'Minimalist Chic', 'Urban Style', 'Artistic Flair', 'Elegant Design',
+    'Creative Layout', 'Modern Minimal', 'Bold Colors', 'Soft Pastel', 'Geometric Style'
   ]
+  
+  const allTags = ['Single Image', 'Multiple Images', 'Shared Records', 'Tutorial Post', 'Community Discussion', 'Other']
+  
+  // 随机选择3个标签
+  const getRandomTags = () => {
+    const shuffled = [...allTags].sort(() => Math.random() - 0.5)
+    return shuffled.slice(0, 3)
+  }
+  
+  const defaultTemplates = Array.from({ length: 20 }, (_, i) => {
+    const id = i + 1
+    return {
+      id,
+      name: templateNames[i],
+      addedAt: '2026-05-06 18:13:04',
+      templateId: `2026050610125686${String(i).padStart(3, '0')}`,
+      tags: getRandomTags(),
+      images: getCoverImages(id)
+    }
+  })
 
   const allTemplates = [...userTemplates, ...defaultTemplates]
 

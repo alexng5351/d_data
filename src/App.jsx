@@ -9,6 +9,7 @@ import CoverGenerateResultPage from './components/CoverGenerateResultPage'
 import IPPetPage from './components/IPPetPage'
 import EmojiPage from './components/EmojiPage'
 import MemeDetailPage from './components/MemeDetailPage'
+import TrendingDetailPage from './components/TrendingDetailPage'
 
 function App() {
   const [activeTab, setActiveTab] = useState('Cover')
@@ -22,6 +23,7 @@ function App() {
   const [collapsed, setCollapsed] = useState(false)
   const [userTemplates, setUserTemplates] = useState([])
   const [targetMemeCardIndex, setTargetMemeCardIndex] = useState(null)
+  const [targetTrendingCardIndex, setTargetTrendingCardIndex] = useState(null)
 
   const handleTabChange = (tabName) => {
     setActiveTab(tabName)
@@ -109,6 +111,16 @@ function App() {
     setTargetMemeCardIndex(null)
   }
 
+  const handleGoToTrendingDetail = (index) => {
+    setTargetTrendingCardIndex(index === 0 ? null : index)
+    setCoverPageState('trendingDetail')
+  }
+
+  const handleBackToCoverMain = () => {
+    setCoverPageState('main')
+    setTargetTrendingCardIndex(null)
+  }
+
   const renderCoverPages = () => {
     switch (coverPageState) {
       case 'main':
@@ -120,6 +132,7 @@ function App() {
           userTemplates={userTemplates}
           onAddClick={handleGoToAddTemplate}
           onManageTemplateClick={handleGoToManageTemplate}
+          onTrendingClick={handleGoToTrendingDetail}
         />
       case 'manageTemplate':
         return <ManageTemplatePage
@@ -171,6 +184,14 @@ function App() {
             onToggleCollapse={handleToggleCollapse}
           />
         )
+      case 'trendingDetail':
+        return <TrendingDetailPage
+          onBack={handleBackToCoverMain}
+          onTabChange={handleTabChange}
+          collapsed={collapsed}
+          onToggleCollapse={handleToggleCollapse}
+          targetCardIndex={targetTrendingCardIndex}
+        />
       default:
         return <MainPage 
           onCoverClick={handleGoToCoverInput} 

@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import './CoverInputPage.css'
 import Sidebar from './Sidebar'
+import { getCoverImages } from './MainPage'
 
 function CoverInputPage({ onBack, onGenerate, onTabChange, collapsed, onToggleCollapse, templateId = null, userTemplates = [] }) {
   const [currentId, setCurrentId] = useState(templateId || 1)
@@ -73,16 +74,12 @@ function CoverInputPage({ onBack, onGenerate, onTabChange, collapsed, onToggleCo
   const getTemplateImages = () => {
     const userTemplate = userTemplates.find(t => t.id === currentId)
     if (userTemplate && userTemplate.images && userTemplate.images.length > 0) {
-      // 用户模板：返回实际数量（最多3张）
-      return userTemplate.images.slice(0, 3)
+      // 用户模板：返回所有提供的图片
+      return userTemplate.images
     }
     const id = typeof currentId === 'number' ? currentId : 1
-    // 默认模板：固定返回3张
-    return [
-      `/aicover/assets/cover/cover${id}-1.png`,
-      `/aicover/assets/cover/cover${id}-2.png`,
-      `/aicover/assets/cover/cover${id}-3.png`,
-    ]
+    // 默认模板：根据实际素材数量返回
+    return getCoverImages(id)
   }
 
   const coverImages = getTemplateImages()

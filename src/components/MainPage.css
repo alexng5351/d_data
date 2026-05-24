@@ -3,6 +3,7 @@
   width: 100%;
   height: 100%;
   background: #0a0a0a;
+  overflow-x: auto;
 }
 
 .main-content {
@@ -11,6 +12,8 @@
   flex-direction: column;
   padding: 24px;
   overflow-y: auto;
+  min-width: 1200px;
+  flex-shrink: 0;
 }
 
 .top-bar {
@@ -95,6 +98,141 @@
 .tab-item.active {
   background: #C9FF4C;
   color: #000000;
+}
+
+/* 热门模版精选展示区 */
+.trending-section {
+  display: flex;
+  margin-bottom: 24px;
+  background: #1E1E20;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 280px;
+  flex-shrink: 0;
+  min-width: 1200px;
+}
+
+.trending-left {
+  width: 200px;
+  flex-shrink: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trending-right {
+  flex: 1;
+  min-width: 1000px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.cover-banner {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.trending-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.trending-date {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-family: 'TikTok Sans', sans-serif;
+}
+
+.trending-separator {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-family: 'TikTok Sans', sans-serif;
+}
+
+.trending-title {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-family: 'TikTok Sans', sans-serif;
+}
+
+.trending-memes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.meme-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  color: #ffffff;
+  font-family: 'TikTok Sans', sans-serif;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.meme-item:hover {
+  background: linear-gradient(90deg, #FE2C30, #FFA0A6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: translateX(12px);
+}
+
+.meme-flame {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: transform 0.2s ease-out;
+}
+
+.meme-item:hover .meme-flame {
+  transform: scale(1.2);
+}
+
+.trending-covers-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  padding-right: 40px;
+  overflow-x: auto;
+  width: 100%;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.trending-cover {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.trending-cover:hover {
+  transform: scale(1.1) translateY(-10px) rotate(8deg);
 }
 
 .covers-grid {

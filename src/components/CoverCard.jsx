@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './CoverCard.css'
+import { getCoverImages } from './MainPage'
 
 function CoverCard({ id, onClick, images: propImages }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -9,14 +10,19 @@ function CoverCard({ id, onClick, images: propImages }) {
   const intervalRef = useRef(null)
   const timeoutRef = useRef(null)
   
-  const defaultImages = [
-    `/aicover/assets/cover/cover${id}-1.png`,
-    `/aicover/assets/cover/cover${id}-2.png`,
-    `/aicover/assets/cover/cover${id}-3.png`
-  ]
-  const allImages = propImages && propImages.length > 0 ? propImages : defaultImages
-  // 最多取前3张图片用于轮播
-  const images = allImages.slice(0, 3)
+  const handleImageError = (e, index) => {
+    const img = e.target
+    const currentSrc = img.src
+    // 如果是png格式，尝试回退到jpg
+    if (currentSrc.endsWith('.png')) {
+      const jpgSrc = currentSrc.replace('.png', '.jpg')
+      img.src = jpgSrc
+    }
+  }
+  
+  const allImages = propImages && propImages.length > 0 ? propImages : getCoverImages(id)
+  // 使用所有提供的图片，不限制数量
+  const images = allImages
   // 判断是否需要轮播（至少2张图片才轮播）
   const shouldCarousel = images.length >= 2
 
@@ -85,6 +91,7 @@ function CoverCard({ id, onClick, images: propImages }) {
           alt={`Cover ${id} - ${currentIndex + 1}`}
           className="carousel-image current"
           style={{ zIndex: 1 }}
+          onError={(e) => handleImageError(e, currentIndex)}
         />
         {isHovering && shouldCarousel && (
           <img
@@ -93,6 +100,7 @@ function CoverCard({ id, onClick, images: propImages }) {
             alt={`Cover ${id} - ${nextIndex + 1}`}
             className={`carousel-image next ${isAnimating ? 'sliding' : ''}`}
             style={{ zIndex: isAnimating ? 10 : 0 }}
+            onError={(e) => handleImageError(e, nextIndex)}
           />
         )}
       </div>

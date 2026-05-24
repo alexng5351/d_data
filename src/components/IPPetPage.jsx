@@ -7,8 +7,8 @@ function IPPetPage({ onTabChange, collapsed, onToggleCollapse }) {
       <Sidebar activeTab="IP Pet" onTabChange={onTabChange} collapsed={collapsed} onToggleCollapse={onToggleCollapse} />
       <div className="main-content">
         <div className="empty-state">
-          <h1 className="page-title">IP Pet</h1>
-          <p className="page-description">Coming soon...</p>
+          <img src="/aicover/assets/illustration_inprocess.png" alt="In process" className="in-process-illustration" />
+          <p className="coming-soon-text">Hatching Soon</p>
         </div>
       </div>
     </div>
