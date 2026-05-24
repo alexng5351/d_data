@@ -45,83 +45,83 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
       id: 1,
       name: 'Instagram',
       source: 'Social media viral, May 2026',
-      referenceImage: '/aicover/assets/cover_trend/cover_trend1-1.png',
+      referenceImage: '/d_data/assets/cover_trend/cover_trend1-1.png',
       covers: [
-        '/aicover/assets/cover_trend/cover_trend1-2.png',
-        '/aicover/assets/cover_trend/cover_trend1-3.png',
-        '/aicover/assets/cover_trend/cover_trend1-4.png'
+        '/d_data/assets/cover_trend/cover_trend1-2.png',
+        '/d_data/assets/cover_trend/cover_trend1-3.png',
+        '/d_data/assets/cover_trend/cover_trend1-4.png'
       ],
       allImages: [
-        '/aicover/assets/cover_trend/cover_trend1-1.png',
-        '/aicover/assets/cover_trend/cover_trend1-2.png',
-        '/aicover/assets/cover_trend/cover_trend1-3.png',
-        '/aicover/assets/cover_trend/cover_trend1-4.png'
+        '/d_data/assets/cover_trend/cover_trend1-1.png',
+        '/d_data/assets/cover_trend/cover_trend1-2.png',
+        '/d_data/assets/cover_trend/cover_trend1-3.png',
+        '/d_data/assets/cover_trend/cover_trend1-4.png'
       ]
     },
     {
       id: 2,
       name: 'Rednote',
       source: 'Social media viral, May 2026',
-      referenceImage: '/aicover/assets/cover_trend/cover_trend2-1.png',
+      referenceImage: '/d_data/assets/cover_trend/cover_trend2-1.png',
       covers: [
-        '/aicover/assets/cover_trend/cover_trend2-2.png',
-        '/aicover/assets/cover_trend/cover_trend2-3.png',
-        '/aicover/assets/cover_trend/cover_trend2-4.png'
+        '/d_data/assets/cover_trend/cover_trend2-2.png',
+        '/d_data/assets/cover_trend/cover_trend2-3.png',
+        '/d_data/assets/cover_trend/cover_trend2-4.png'
       ],
       allImages: [
-        '/aicover/assets/cover_trend/cover_trend2-1.png',
-        '/aicover/assets/cover_trend/cover_trend2-2.png',
-        '/aicover/assets/cover_trend/cover_trend2-3.png',
-        '/aicover/assets/cover_trend/cover_trend2-4.png'
+        '/d_data/assets/cover_trend/cover_trend2-1.png',
+        '/d_data/assets/cover_trend/cover_trend2-2.png',
+        '/d_data/assets/cover_trend/cover_trend2-3.png',
+        '/d_data/assets/cover_trend/cover_trend2-4.png'
       ]
     },
     {
       id: 3,
       name: 'Youtube',
       source: 'Social media viral, May 2026',
-      referenceImage: '/aicover/assets/cover_trend/cover_trend3-1.png',
+      referenceImage: '/d_data/assets/cover_trend/cover_trend3-1.png',
       covers: [
-        '/aicover/assets/cover_trend/cover_trend3-2.png',
-        '/aicover/assets/cover_trend/cover_trend3-3.png'
+        '/d_data/assets/cover_trend/cover_trend3-2.png',
+        '/d_data/assets/cover_trend/cover_trend3-3.png'
       ],
       allImages: [
-        '/aicover/assets/cover_trend/cover_trend3-1.png',
-        '/aicover/assets/cover_trend/cover_trend3-2.png',
-        '/aicover/assets/cover_trend/cover_trend3-3.png'
+        '/d_data/assets/cover_trend/cover_trend3-1.png',
+        '/d_data/assets/cover_trend/cover_trend3-2.png',
+        '/d_data/assets/cover_trend/cover_trend3-3.png'
       ]
     },
     {
       id: 4,
       name: 'Pinterest',
       source: 'Social media viral, May 2026',
-      referenceImage: '/aicover/assets/cover_trend/cover_trend4-1.png',
+      referenceImage: '/d_data/assets/cover_trend/cover_trend4-1.png',
       covers: [
-        '/aicover/assets/cover_trend/cover_trend4-2.png',
-        '/aicover/assets/cover_trend/cover_trend4-3.png',
-        '/aicover/assets/cover_trend/cover_trend4-4.png'
+        '/d_data/assets/cover_trend/cover_trend4-2.png',
+        '/d_data/assets/cover_trend/cover_trend4-3.png',
+        '/d_data/assets/cover_trend/cover_trend4-4.png'
       ],
       allImages: [
-        '/aicover/assets/cover_trend/cover_trend4-1.png',
-        '/aicover/assets/cover_trend/cover_trend4-2.png',
-        '/aicover/assets/cover_trend/cover_trend4-3.png',
-        '/aicover/assets/cover_trend/cover_trend4-4.png'
+        '/d_data/assets/cover_trend/cover_trend4-1.png',
+        '/d_data/assets/cover_trend/cover_trend4-2.png',
+        '/d_data/assets/cover_trend/cover_trend4-3.png',
+        '/d_data/assets/cover_trend/cover_trend4-4.png'
       ]
     },
     {
       id: 5,
       name: 'VSCO',
       source: 'Social media viral, May 2026',
-      referenceImage: '/aicover/assets/cover_trend/cover_trend5-1.png',
+      referenceImage: '/d_data/assets/cover_trend/cover_trend5-1.png',
       covers: [
-        '/aicover/assets/cover_trend/cover_trend5-2.png',
-        '/aicover/assets/cover_trend/cover_trend5-3.png',
-        '/aicover/assets/cover_trend/cover_trend5-4.png'
+        '/d_data/assets/cover_trend/cover_trend5-2.png',
+        '/d_data/assets/cover_trend/cover_trend5-3.png',
+        '/d_data/assets/cover_trend/cover_trend5-4.png'
       ],
       allImages: [
-        '/aicover/assets/cover_trend/cover_trend5-1.png',
-        '/aicover/assets/cover_trend/cover_trend5-2.png',
-        '/aicover/assets/cover_trend/cover_trend5-3.png',
-        '/aicover/assets/cover_trend/cover_trend5-4.png'
+        '/d_data/assets/cover_trend/cover_trend5-1.png',
+        '/d_data/assets/cover_trend/cover_trend5-2.png',
+        '/d_data/assets/cover_trend/cover_trend5-3.png',
+        '/d_data/assets/cover_trend/cover_trend5-4.png'
       ]
     }
   ]
@@ -149,7 +149,7 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
                 ref={(el) => (cardRefs.current[index] = el)}
               >
                 <div className="trending-detail-card-header">
-                  <img src="/aicover/assets/icon_fire.png" alt="Fire" className="trending-detail-fire-icon" />
+                  <img src="/d_data/assets/icon_fire.png" alt="Fire" className="trending-detail-fire-icon" />
                   <div className="trending-detail-header-content">
                     <h3 className="trending-detail-card-name">{trending.name}</h3>
                     <p className="trending-detail-card-source">Source: {trending.source}</p>
@@ -190,13 +190,13 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
               className={`trending-detail-image-modal-prev ${modalImageIndex === 0 ? 'disabled' : ''}`}
               onClick={handlePrevImage}
             >
-              <img src="/aicover/assets/icon_previous.png" alt="Previous" />
+              <img src="/d_data/assets/icon_previous.png" alt="Previous" />
             </button>
             <button 
               className={`trending-detail-image-modal-next ${modalImageIndex === currentTrendingCovers.length - 1 ? 'disabled' : ''}`}
               onClick={handleNextImage}
             >
-              <img src="/aicover/assets/icon_next.png" alt="Next" />
+              <img src="/d_data/assets/icon_next.png" alt="Next" />
             </button>
             <div className="trending-detail-image-modal-dots">
               {currentTrendingCovers.map((_, index) => (
