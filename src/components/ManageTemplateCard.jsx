@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { getAssetPath } from '../utils'
 import './ManageTemplateCard.css'
 
 function ManageTemplateCard({ id, name = 'Template Name', addedAt = '2026-05-06 18:13:04', templateId = '2026050610125686600', tags = ['Extrinsic', 'Record', 'Products', 'Help and Interaction', 'Other'], images = [], onEdit, onDelete }) {
@@ -46,7 +47,7 @@ function ManageTemplateCard({ id, name = 'Template Name', addedAt = '2026-05-06 
     <div className="manage-template-card">
       <div className="cover-image-container">
         <img 
-          src={images && images.length > 0 ? images[0] : `/assets/cover/cover${id}.png`} 
+          src={images && images.length > 0 ? images[0] : getAssetPath(`assets/cover/cover${id}.png`)} 
           alt={name} 
           className="cover-image" 
         />
@@ -77,7 +78,7 @@ function ManageTemplateCard({ id, name = 'Template Name', addedAt = '2026-05-06 
           <div className="card-header">
             <h3 className="card-title">{name}</h3>
             <div className="info-icon">
-              <img src="/assets/icon_info.png" alt="info" className="info-icon-img" />
+              <img src={getAssetPath("assets/icon_info.png")} alt="info" className="info-icon-img" />
             </div>
           </div>
           
@@ -105,7 +106,7 @@ function ManageTemplateCard({ id, name = 'Template Name', addedAt = '2026-05-06 
         
         <div className="dot-icon-container">
           <img 
-            src="/assets/icon_dot.png" 
+            src={getAssetPath("assets/icon_dot.png")} 
             alt="dot" 
             className="dot-icon" 
             onClick={handleDotClick}

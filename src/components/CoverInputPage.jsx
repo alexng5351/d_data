@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { getAssetPath } from '../utils'
 import './CoverInputPage.css'
 import Sidebar from './Sidebar'
 import { getCoverImages } from './MainPage'
@@ -132,7 +133,7 @@ function CoverInputPage({ onBack, onGenerate, onTabChange, collapsed, onToggleCo
   const generateResultImages = () => {
     return [0, 1, 2].map((i) => ({
       id: Date.now() + i,
-      image: `/assets/cover_generate${i + 1}.png`,
+      image: getAssetPath(`assets/cover_generate${i + 1}.png`),
       addedAt: new Date().toLocaleString(),
       resultId: `202605061012568660${i}`,
       aiMode: selectedAIMode
@@ -332,7 +333,7 @@ function CoverInputPage({ onBack, onGenerate, onTabChange, collapsed, onToggleCo
                   // 第一个空位置，显示上传按钮
                   return (
                     <label key={`pos-${index}`} className="cover-input-upload-placeholder">
-                      <img src="/assets/icon_addimages.png" alt="Add" className="cover-input-upload-icon" />
+                      <img src={getAssetPath("assets/icon_addimages.png")} alt="Add" className="cover-input-upload-icon" />
                       <input id="image-upload" name="images" type="file" accept="image/*" multiple style={{ display: 'none' }} onChange={handleImageUpload} />
                     </label>
                   )
@@ -396,7 +397,7 @@ function CoverInputPage({ onBack, onGenerate, onTabChange, collapsed, onToggleCo
 
           <button className="cover-input-generate-button" onClick={handleGenerate}>
             <span>Generating</span>
-            <img src="/assets/icon_generate_black.png" alt="Generate" className="cover-input-generate-icon" />
+            <img src={getAssetPath("assets/icon_generate_black.png")} alt="Generate" className="cover-input-generate-icon" />
           </button>
         </div>
 
@@ -404,7 +405,7 @@ function CoverInputPage({ onBack, onGenerate, onTabChange, collapsed, onToggleCo
           {/* 加载状态：只显示在正在生成时 */}
           {!generateComplete && (
             <div className="cover-input-generate-inner-frame">
-              <img src="/assets/icon_generate.png" alt="Generating" className="cover-input-generate-inner-icon" />
+              <img src={getAssetPath("assets/icon_generate.png")} alt="Generating" className="cover-input-generate-inner-icon" />
             </div>
           )}
           
@@ -450,7 +451,7 @@ function CoverInputPage({ onBack, onGenerate, onTabChange, collapsed, onToggleCo
                       e.stopPropagation()
                       toggleMenu(index)
                     }}>
-                      <img src="/assets/icon_dot.png" alt="Menu" />
+                      <img src={getAssetPath("assets/icon_dot.png")} alt="Menu" />
                     </div>
                   </div>
                 </div>
@@ -500,7 +501,7 @@ function CoverInputPage({ onBack, onGenerate, onTabChange, collapsed, onToggleCo
                       e.stopPropagation()
                       toggleHistoryMenu(historyIndex, index)
                     }}>
-                      <img src="/assets/icon_dot.png" alt="Menu" />
+                      <img src={getAssetPath("assets/icon_dot.png")} alt="Menu" />
                     </div>
                   </div>
                 </div>
@@ -522,13 +523,13 @@ function CoverInputPage({ onBack, onGenerate, onTabChange, collapsed, onToggleCo
               className={`cover-input-image-modal-prev ${modalImageIndex === 0 ? 'disabled' : ''}`}
               onClick={handlePrevImage}
             >
-              <img src="/assets/icon_previous.png" alt="Previous" />
+              <img src={getAssetPath("assets/icon_previous.png")} alt="Previous" />
             </button>
             <button 
               className={`cover-input-image-modal-next ${modalImageIndex === coverImages.length - 1 ? 'disabled' : ''}`}
               onClick={handleNextImage}
             >
-              <img src="/assets/icon_next.png" alt="Next" />
+              <img src={getAssetPath("assets/icon_next.png")} alt="Next" />
             </button>
             <div className="cover-input-image-modal-dots">
               {coverImages.map((_, index) => (

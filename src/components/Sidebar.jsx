@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
 import './Sidebar.css'
+import { getAssetPath } from '../utils'
 
 function Sidebar({ activeTab = 'Cover', onTabChange, collapsed, onToggleCollapse }) {
   const [showText, setShowText] = useState(!collapsed)
   const navItems = [
-    { name: 'Cover', icon: '/assets/icon_cover.png' },
-    { name: 'Emoji', icon: '/assets/icon_emoji.png' },
-    { name: 'IP Pet', icon: '/assets/icon_ippet.png' }
+    { name: 'Cover', icon: getAssetPath('assets/icon_cover.png') },
+    { name: 'Emoji', icon: getAssetPath('assets/icon_emoji.png') },
+    { name: 'IP Pet', icon: getAssetPath('assets/icon_ippet.png') }
   ]
 
   useEffect(() => {
@@ -29,10 +30,10 @@ function Sidebar({ activeTab = 'Cover', onTabChange, collapsed, onToggleCollapse
   return (
     <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
       <div className="header-section">
-        <img src="/assets/webname.png" alt="D_DATA" className="logo" />
+        <img src={getAssetPath('assets/webname.png')} alt="D_DATA" className="logo" />
         <div className="header-actions">
           <img 
-            src="/assets/icon_sidebar.png" 
+            src={getAssetPath('assets/icon_sidebar.png')} 
             alt="sidebar" 
             className="header-icon" 
             onClick={onToggleCollapse}

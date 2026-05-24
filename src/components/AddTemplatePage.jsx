@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { getAssetPath } from '../utils'
 import './AddTemplatePage.css'
 import Sidebar from './Sidebar'
 
@@ -121,7 +122,7 @@ function AddTemplatePage({ onBack, onTabChange, collapsed, onToggleCollapse, onS
                     <img src={img} alt={`Cover ${index + 1}`} className="cover-preview" />
                   ) : (
                     <div className="upload-icon-container">
-                      <img src="/assets/icon_addimages.png" alt="Add" className="upload-icon" />
+                      <img src={getAssetPath("assets/icon_addimages.png")} alt="Add" className="upload-icon" />
                     </div>
                   )}
                   <input

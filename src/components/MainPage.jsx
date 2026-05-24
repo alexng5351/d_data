@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './MainPage.css'
 import Sidebar from './Sidebar'
 import CoverCard from './CoverCard'
+import { getAssetPath } from '../utils'
 
 // 封面素材信息映射
 export const getCoverInfo = (id) => {
@@ -36,7 +37,7 @@ export const getCoverInfo = (id) => {
 export const getCoverImages = (id) => {
   const info = getCoverInfo(id)
   return info.extensions.map((ext, index) => 
-    `/assets/cover/cover${id}-${index + 1}.${ext}`
+    getAssetPath(`assets/cover/cover${id}-${index + 1}.${ext}`)
   )
 }
 
@@ -113,7 +114,7 @@ function MainPage({ onCoverClick, onTabChange, collapsed, onToggleCollapse, user
           <div className="top-actions">
             <button className="manage-template-btn" onClick={onManageTemplateClick}>Manage Template</button>
             <button className="add-btn" onClick={onAddClick}>
-              <img src="/assets/icon_add.png" alt="Add" className="add-icon" />
+              <img src={getAssetPath('assets/icon_add.png')} alt="Add" className="add-icon" />
             </button>
           </div>
         </div>
@@ -129,19 +130,19 @@ function MainPage({ onCoverClick, onTabChange, collapsed, onToggleCollapse, user
             <div className="trending-memes">
               {trendingTemplates.map((template, index) => (
                 <div key={index} className="meme-item" onClick={() => onTrendingClick(index)} style={{ cursor: 'pointer' }}>
-                  <img src="/assets/icon_fire.png" alt="Fire" className="meme-flame" />
+                  <img src={getAssetPath('assets/icon_fire.png')} alt="Fire" className="meme-flame" />
                   <span className="meme-text">{template}</span>
                 </div>
               ))}
             </div>
           </div>
           <div className="trending-right">
-            <img src="/assets/cover_banner.png" alt="Cover Banner" className="cover-banner" />
+            <img src={getAssetPath('assets/cover_banner.png')} alt="Cover Banner" className="cover-banner" />
             <div className="trending-covers-container">
               {[1, 2, 3, 4, 5].map((id, index) => (
                 <img
                   key={id}
-                  src={`/assets/cover_trend/cover_trend${id}-1.png`}
+                  src={getAssetPath(`assets/cover_trend/cover_trend${id}-1.png`)}
                   alt={`Cover ${id}`}
                   className="trending-cover"
                   onClick={() => onTrendingClick(index)}
