@@ -37,7 +37,7 @@ function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, targ
   const memeData = [
     {
       id: 1,
-      name: 'Fruitcore Meme Culture',
+      name: 'Cheating AI Fruit',
       source: 'TikTok trend, May 2026',
       referenceImage: getAssetPath('assets/emoji_design/memes/meme_ref_1.png'),
       emojis: [
@@ -50,7 +50,7 @@ function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, targ
     },
     {
       id: 2,
-      name: 'Lei Jun\'s Selfie Moment',
+      name: 'Elon Musk and Lei Jun State Dinner Selfie',
       source: 'Social media viral, Apr 2026',
       referenceImage: getAssetPath('assets/emoji_design/memes/meme_ref_2.png'),
       emojis: [
@@ -62,7 +62,7 @@ function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, targ
     },
     {
       id: 3,
-      name: 'Side-Eye Dog',
+      name: 'Evil Chihuahua Smiling',
       source: 'TikTok trend, May 2026',
       referenceImage: getAssetPath('assets/emoji_design/memes/meme_ref_3.png'),
       emojis: [

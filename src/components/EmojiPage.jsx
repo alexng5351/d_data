@@ -20,9 +20,9 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse, onMemeClick }) {
 
   const categories = ['All', 'Basic', 'Styles', 'Animals', 'Hands', 'Words', 'Others']
   const trendingMemes = [
-    'Fruitcore Meme Culture',
-    'Lei Jun\'s Selfie Moment',
-    'Side-Eye Dog',
+    'Cheating AI Fruit',
+    'Elon Musk and Lei Jun State Dinner Selfie',
+    'Evil Chihuahua Smiling',
     'Viral Lobster Creature',
     'Chaotic Pigtail Reaction'
   ]
