@@ -107,6 +107,13 @@
   gap: 8px;
 }
 
+.meme-detail-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .meme-detail-card-name {
   font-size: 20px;
   font-weight: 700;
@@ -115,6 +122,39 @@
   font-family: 'TikTok Sans', sans-serif;
   line-height: 24px;
   font-style: italic;
+}
+
+.meme-detail-info-button {
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  font-family: 'TikTok Sans Bold', 'TikTok Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 16px;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.meme-detail-info-button:hover,
+.meme-detail-info-button.active {
+  border-color: #C9FF4D;
+  color: #000;
+  background: #C9FF4D;
+}
+
+.meme-detail-info-description {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: 'TikTok Sans', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-style: normal;
 }
 
 .meme-detail-card-source {
