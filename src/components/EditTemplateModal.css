@@ -37,7 +37,7 @@
 }
 
 .edit-template-modal-title {
-  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-family: 'TikTok Sans VF', 'Inter', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -82,7 +82,7 @@
 }
 
 .edit-template-label {
-  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-family: 'TikTok Sans VF', 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -107,7 +107,7 @@
   background: #000000;
   border: 1px solid rgba(28, 31, 35, 0.1);
   border-radius: 8px;
-  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-family: 'TikTok Sans VF', 'Inter', sans-serif;
   font-size: 12px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
@@ -127,7 +127,7 @@
   background: #000000;
   border: 1px solid rgba(28, 31, 35, 0.1);
   border-radius: 8px;
-  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-family: 'TikTok Sans VF', 'Inter', sans-serif;
   font-size: 12px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
@@ -166,7 +166,7 @@
   width: 198px;
   height: 48px;
   border-radius: 12px;
-  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-family: 'TikTok Sans VF', 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.3;

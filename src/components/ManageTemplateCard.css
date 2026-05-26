@@ -55,7 +55,7 @@
   background: transparent;
   border: 0;
   border-radius: 10px;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: white;
@@ -102,7 +102,7 @@
 }
 
 .card-title {
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'TikTok Sans VF', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 12px;
   font-weight: 600;
   color: white;
@@ -132,7 +132,7 @@
 }
 
 .meta-text {
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'TikTok Sans VF', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
@@ -145,7 +145,7 @@
 }
 
 .tag-label {
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'TikTok Sans VF', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -161,7 +161,7 @@
 }
 
 .tag {
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'TikTok Sans VF', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 10px;
   color: rgba(255, 255, 255, 0.6);
   padding: 6px 10px;

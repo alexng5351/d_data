@@ -43,7 +43,7 @@
   color: rgba(255, 255, 255, 0.65);
   cursor: pointer;
   font-size: 14px;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   font-weight: 500;
   transition: color 0.2s ease;
 }
@@ -58,7 +58,7 @@
 
 .trending-detail-page-title {
   font-size: 24px;
-  font-family: 'TikTok Sans Black Oblique', 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans Display', 'TikTok Sans VF', sans-serif;
   font-weight: 900;
   font-style: oblique;
   color: rgba(255, 255, 255, 0.7);
@@ -110,7 +110,7 @@
 .trending-detail-title-row {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
 }
 
 .trending-detail-card-name {
@@ -118,9 +118,8 @@
   font-weight: 700;
   color: #fff;
   margin: 0;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans Display Bold', sans-serif;
   line-height: 24px;
-  font-style: italic;
 }
 
 .trending-detail-airemix-icon {
@@ -137,7 +136,7 @@
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   margin: 0;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
 }
 
 .trending-detail-source-icon {
@@ -161,11 +160,25 @@
   gap: 25px;
 }
 
-.trending-detail-reference-image {
+.trending-detail-reference-section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.trending-detail-reference-image-wrapper {
   width: 222px;
   height: 296px;
-  object-fit: cover;
+  flex-shrink: 0;
   border-radius: 12px;
+  overflow: hidden;
+}
+
+.trending-detail-reference-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .trending-detail-divider {

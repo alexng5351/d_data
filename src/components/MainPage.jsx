@@ -67,13 +67,13 @@ function MainPage({ onCoverClick, onTabChange, collapsed, onToggleCollapse, user
   const trendingTemplates = [
     'Instagram',
     'Rednote',
-    'Youtube',
+    'Canvas',
     'Pinterest',
-    'VSCO'
+    'Adobe Express'
   ]
   
   const templateNames = [
-    'Instagram Style', 'Rednote Design', 'Youtube Banner', 'Pinterest Layout', 'VSCO Aesthetic',
+    'Instagram Style', 'Rednote Design', 'Canvas Banner', 'Pinterest Layout', 'Adobe Express Aesthetic',
     'Minimal Modern', 'Cozy Aesthetic', 'Clean Editorial', 'Dark Elegance', 'Bright Pop',
     'Retro Vibe', 'Minimalist Chic', 'Urban Style', 'Artistic Flair', 'Elegant Design',
     'Creative Layout', 'Modern Minimal', 'Bold Colors', 'Soft Pastel', 'Geometric Style'

@@ -29,10 +29,10 @@
 }
 
 .coming-soon-text {
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   font-size: 20px;
   font-weight: 700;
-  font-style: oblique;
+  font-style: normal;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

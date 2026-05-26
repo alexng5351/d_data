@@ -46,46 +46,48 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
       id: 1,
       name: 'Instagram',
       source: 'Social media viral, May 2026',
-      referenceImage: getAssetPath('assets/cover_trend/cover_trend1-1.png'),
+      referenceImage: getAssetPath('assets/cover_trend/cover_trend_ref1.jpg'),
       covers: [
-        getAssetPath('assets/cover_trend/cover_trend1-2.png'),
-        getAssetPath('assets/cover_trend/cover_trend1-3.png'),
-        getAssetPath('assets/cover_trend/cover_trend1-4.png')
-      ],
-      allImages: [
         getAssetPath('assets/cover_trend/cover_trend1-1.png'),
         getAssetPath('assets/cover_trend/cover_trend1-2.png'),
-        getAssetPath('assets/cover_trend/cover_trend1-3.png'),
-        getAssetPath('assets/cover_trend/cover_trend1-4.png')
+        getAssetPath('assets/cover_trend/cover_trend1-3.png')
+      ],
+      allImages: [
+        getAssetPath('assets/cover_trend/cover_trend_ref1.jpg'),
+        getAssetPath('assets/cover_trend/cover_trend1-1.png'),
+        getAssetPath('assets/cover_trend/cover_trend1-2.png'),
+        getAssetPath('assets/cover_trend/cover_trend1-3.png')
       ]
     },
     {
       id: 2,
       name: 'Rednote',
       source: 'Social media viral, May 2026',
-      referenceImage: getAssetPath('assets/cover_trend/cover_trend2-1.png'),
+      referenceImage: getAssetPath('assets/cover_trend/cover_trend_ref2.jpg'),
       covers: [
-        getAssetPath('assets/cover_trend/cover_trend2-2.png'),
-        getAssetPath('assets/cover_trend/cover_trend2-3.png'),
-        getAssetPath('assets/cover_trend/cover_trend2-4.png')
-      ],
-      allImages: [
         getAssetPath('assets/cover_trend/cover_trend2-1.png'),
         getAssetPath('assets/cover_trend/cover_trend2-2.png'),
-        getAssetPath('assets/cover_trend/cover_trend2-3.png'),
-        getAssetPath('assets/cover_trend/cover_trend2-4.png')
+        getAssetPath('assets/cover_trend/cover_trend2-3.png')
+      ],
+      allImages: [
+        getAssetPath('assets/cover_trend/cover_trend_ref2.jpg'),
+        getAssetPath('assets/cover_trend/cover_trend2-1.png'),
+        getAssetPath('assets/cover_trend/cover_trend2-2.png'),
+        getAssetPath('assets/cover_trend/cover_trend2-3.png')
       ]
     },
     {
       id: 3,
-      name: 'Youtube',
+      name: 'Canvas',
       source: 'Social media viral, May 2026',
-      referenceImage: getAssetPath('assets/cover_trend/cover_trend3-1.png'),
+      referenceImage: getAssetPath('assets/cover_trend/cover_trend_ref3.jpg'),
       covers: [
+        getAssetPath('assets/cover_trend/cover_trend3-1.png'),
         getAssetPath('assets/cover_trend/cover_trend3-2.png'),
         getAssetPath('assets/cover_trend/cover_trend3-3.png')
       ],
       allImages: [
+        getAssetPath('assets/cover_trend/cover_trend_ref3.jpg'),
         getAssetPath('assets/cover_trend/cover_trend3-1.png'),
         getAssetPath('assets/cover_trend/cover_trend3-2.png'),
         getAssetPath('assets/cover_trend/cover_trend3-3.png')
@@ -95,34 +97,34 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
       id: 4,
       name: 'Pinterest',
       source: 'Social media viral, May 2026',
-      referenceImage: getAssetPath('assets/cover_trend/cover_trend4-1.png'),
+      referenceImage: getAssetPath('assets/cover_trend/cover_trend_ref4.jpg'),
       covers: [
-        getAssetPath('assets/cover_trend/cover_trend4-2.png'),
-        getAssetPath('assets/cover_trend/cover_trend4-3.png'),
-        getAssetPath('assets/cover_trend/cover_trend4-4.png')
-      ],
-      allImages: [
         getAssetPath('assets/cover_trend/cover_trend4-1.png'),
         getAssetPath('assets/cover_trend/cover_trend4-2.png'),
-        getAssetPath('assets/cover_trend/cover_trend4-3.png'),
-        getAssetPath('assets/cover_trend/cover_trend4-4.png')
+        getAssetPath('assets/cover_trend/cover_trend4-3.png')
+      ],
+      allImages: [
+        getAssetPath('assets/cover_trend/cover_trend_ref4.jpg'),
+        getAssetPath('assets/cover_trend/cover_trend4-1.png'),
+        getAssetPath('assets/cover_trend/cover_trend4-2.png'),
+        getAssetPath('assets/cover_trend/cover_trend4-3.png')
       ]
     },
     {
       id: 5,
-      name: 'VSCO',
+      name: 'Adobe Express',
       source: 'Social media viral, May 2026',
-      referenceImage: getAssetPath('assets/cover_trend/cover_trend5-1.png'),
+      referenceImage: getAssetPath('assets/cover_trend/cover_trend_ref5.jpg'),
       covers: [
-        getAssetPath('assets/cover_trend/cover_trend5-2.png'),
-        getAssetPath('assets/cover_trend/cover_trend5-3.png'),
-        getAssetPath('assets/cover_trend/cover_trend5-4.png')
-      ],
-      allImages: [
         getAssetPath('assets/cover_trend/cover_trend5-1.png'),
         getAssetPath('assets/cover_trend/cover_trend5-2.png'),
-        getAssetPath('assets/cover_trend/cover_trend5-3.png'),
-        getAssetPath('assets/cover_trend/cover_trend5-4.png')
+        getAssetPath('assets/cover_trend/cover_trend5-3.png')
+      ],
+      allImages: [
+        getAssetPath('assets/cover_trend/cover_trend_ref5.jpg'),
+        getAssetPath('assets/cover_trend/cover_trend5-1.png'),
+        getAssetPath('assets/cover_trend/cover_trend5-2.png'),
+        getAssetPath('assets/cover_trend/cover_trend5-3.png')
       ]
     }
   ]
@@ -164,7 +166,9 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
                 </div>
                 <div className="trending-detail-card-content">
                   <div className="trending-detail-reference-section">
-                    <img src={trending.referenceImage} alt={trending.name} className="trending-detail-reference-image" />
+                    <div className="trending-detail-reference-image-wrapper">
+                      <img src={trending.referenceImage} alt={trending.name} className="trending-detail-reference-image" />
+                    </div>
                     <div className="trending-detail-divider"></div>
                   </div>
                   <div className="trending-detail-covers-section">

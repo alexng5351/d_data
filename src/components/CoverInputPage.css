@@ -23,7 +23,7 @@
   color: rgba(255, 255, 255, 0.65);
   cursor: pointer;
   font-size: 14px;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   font-weight: 500;
   z-index: 10;
 }
@@ -37,7 +37,7 @@
   left: 24px;
   top: 50px;
   font-size: 24px;
-  font-family: 'TikTok Sans Black Oblique', 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans Display', 'TikTok Sans VF', sans-serif;
   font-weight: 900;
   font-style: oblique;
   color: rgba(255, 255, 255, 0.7);
@@ -139,7 +139,7 @@
 .cover-input-template-hint {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   line-height: 1.4;
   margin: 0;
   padding-left: 0;
@@ -230,7 +230,7 @@
 }
 
 .cover-input-section-label {
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: white;
@@ -244,7 +244,7 @@
   border-radius: 12px;
   padding: 12px;
   color: rgba(255, 255, 255, 0.7);
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   font-size: 14px;
   line-height: 1.4;
   resize: vertical;
@@ -285,7 +285,7 @@
   border-radius: 12px;
   padding: 0 12px;
   color: white;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -343,7 +343,7 @@
 .cover-input-ai-mode-menu-item {
   padding: 10px 12px;
   color: rgba(255, 255, 255, 0.7);
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   font-size: 14px;
   cursor: pointer;
 }
@@ -364,7 +364,7 @@
   border-radius: 12px;
   color: black;
   font-size: 14px;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   font-weight: 600;
   cursor: pointer;
   display: flex;
@@ -533,7 +533,7 @@
 }
 
 .cover-input-generate-result-info {
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.5;
@@ -595,7 +595,7 @@
   background: transparent;
   border: 0;
   border-radius: 10px;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: white;
@@ -794,7 +794,7 @@
 
 .cover-input-exit-modal-title {
   flex: 1;
-  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-family: 'TikTok Sans VF', 'Inter', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -831,7 +831,7 @@
 }
 
 .cover-input-exit-modal-message {
-  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-family: 'TikTok Sans VF', 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -852,7 +852,7 @@
   width: 198px;
   height: 48px;
   border-radius: 12px;
-  font-family: 'TikTok Sans', 'Inter', sans-serif;
+  font-family: 'TikTok Sans VF', 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.3;

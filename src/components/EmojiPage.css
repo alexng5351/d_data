@@ -12,7 +12,7 @@
   flex-direction: column;
   padding: 24px;
   overflow-y: auto;
-  min-width: 1200px;
+  min-width: 1300px;
   flex-shrink: 0;
 }
 
@@ -109,11 +109,11 @@
   overflow: hidden;
   height: 280px;
   flex-shrink: 0;
-  min-width: 1200px;
+  min-width: 1300px;
 }
 
 .trending-left {
-  width: 480px;
+  width: 580px;
   flex-shrink: 0;
   padding: 24px;
   display: flex;
@@ -269,21 +269,21 @@
   font-size: 12px;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
 }
 
 .trending-separator {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
 }
 
 .trending-title {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
 }
 
 .trending-memes {
@@ -298,12 +298,12 @@
   gap: 12px;
   font-size: 20px;
   font-weight: 700;
-  font-style: italic;
   color: #ffffff;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans Display Bold', sans-serif;
   line-height: 20px;
   cursor: pointer;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .meme-item:hover {
@@ -407,7 +407,7 @@
   color: #888888;
   font-size: 14px;
   font-weight: 600;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -514,7 +514,7 @@
   font-size: 12px;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 600;
-  font-family: 'TikTok Sans', sans-serif;
+  font-family: 'TikTok Sans VF', sans-serif;
   text-align: center;
   flex-shrink: 0;
 }
