@@ -110,8 +110,7 @@
 .meme-detail-title-row {
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
+  gap: 4px;
 }
 
 .meme-detail-card-name {
@@ -124,44 +123,29 @@
   font-style: italic;
 }
 
-.meme-detail-info-button {
-  width: 18px;
-  height: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: 50%;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.75);
-  cursor: pointer;
-  font-family: 'TikTok Sans Bold', 'TikTok Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  font-style: italic;
-  line-height: 16px;
-  padding: 0;
-  transition: all 0.2s ease;
-}
-
-.meme-detail-info-button:hover,
-.meme-detail-info-button.active {
-  border-color: #C9FF4D;
-  color: #000;
-  background: #C9FF4D;
-}
-
-.meme-detail-info-description {
-  max-width: 760px;
-  color: rgba(255, 255, 255, 0.65);
-  font-family: 'TikTok Sans', sans-serif;
-  font-size: 13px;
-  line-height: 20px;
-  font-style: normal;
+.meme-detail-airemix-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .meme-detail-card-source {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   margin: 0;
   font-family: 'TikTok Sans', sans-serif;
+}
+
+.meme-detail-source-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  opacity: 0.6;
+  flex-shrink: 0;
 }
 
 .meme-detail-card-content {

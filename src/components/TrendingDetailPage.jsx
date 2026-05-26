@@ -152,8 +152,14 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
                 <div className="trending-detail-card-header">
                   <img src={getAssetPath("assets/icon_fire.png")} alt="Fire" className="trending-detail-fire-icon" />
                   <div className="trending-detail-header-content">
-                    <h3 className="trending-detail-card-name">{trending.name}</h3>
-                    <p className="trending-detail-card-source">Source: {trending.source}</p>
+                    <div className="trending-detail-title-row">
+                      <h3 className="trending-detail-card-name">{trending.name}</h3>
+                      <img src={getAssetPath("assets/icon_airemix.png")} alt="" className="trending-detail-airemix-icon" />
+                    </div>
+                    <p className="trending-detail-card-source">
+                      <img src={getAssetPath("assets/icon_link.png")} alt="" className="trending-detail-source-icon" />
+                      <span>Source: {trending.source}</span>
+                    </p>
                   </div>
                 </div>
                 <div className="trending-detail-card-content">

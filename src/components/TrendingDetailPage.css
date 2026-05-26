@@ -107,6 +107,12 @@
   gap: 8px;
 }
 
+.trending-detail-title-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .trending-detail-card-name {
   font-size: 20px;
   font-weight: 700;
@@ -117,11 +123,29 @@
   font-style: italic;
 }
 
+.trending-detail-airemix-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .trending-detail-card-source {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   margin: 0;
   font-family: 'TikTok Sans', sans-serif;
+}
+
+.trending-detail-source-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  opacity: 0.6;
+  flex-shrink: 0;
 }
 
 .trending-detail-card-content {
@@ -177,6 +201,8 @@
   height: 296px;
   object-fit: cover;
   border-radius: 12px;
+  position: relative;
+  z-index: 1;
 }
 
 .trending-detail-cover-wrapper::before {
@@ -190,6 +216,7 @@
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
+  z-index: 2;
 }
 
 @media (max-width: 900px) {
