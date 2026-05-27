@@ -45,7 +45,8 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
     {
       id: 1,
       name: 'Instagram',
-      source: 'Social media viral, May 2026',
+      source: 'Instagram',
+      sourceUrl: 'https://www.instagram.com/p/DYHVfXnDVNs/',
       referenceImage: getAssetPath('assets/cover_trend/cover_trend_ref1.jpg'),
       covers: [
         getAssetPath('assets/cover_trend/cover_trend1-1.png'),
@@ -62,7 +63,8 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
     {
       id: 2,
       name: 'Rednote',
-      source: 'Social media viral, May 2026',
+      source: 'Rednote',
+      sourceUrl: 'https://www.xiaohongshu.com/discovery/item/66e29e4f...',
       referenceImage: getAssetPath('assets/cover_trend/cover_trend_ref2.jpg'),
       covers: [
         getAssetPath('assets/cover_trend/cover_trend2-1.png'),
@@ -79,7 +81,8 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
     {
       id: 3,
       name: 'Canvas',
-      source: 'Social media viral, May 2026',
+      source: 'Canva',
+      sourceUrl: 'https://www.canva.com/templates/EAGvx0qQnPE-...',
       referenceImage: getAssetPath('assets/cover_trend/cover_trend_ref3.jpg'),
       covers: [
         getAssetPath('assets/cover_trend/cover_trend3-1.png'),
@@ -96,7 +99,8 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
     {
       id: 4,
       name: 'Pinterest',
-      source: 'Social media viral, May 2026',
+      source: 'Pinterest',
+      sourceUrl: 'https://www.pinterest.com/pin/510525307770807210/',
       referenceImage: getAssetPath('assets/cover_trend/cover_trend_ref4.jpg'),
       covers: [
         getAssetPath('assets/cover_trend/cover_trend4-1.png'),
@@ -113,7 +117,8 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
     {
       id: 5,
       name: 'Adobe Express',
-      source: 'Social media viral, May 2026',
+      source: 'Adobe Express',
+      sourceUrl: 'https://www.adobe.com/express/create/post/instagram',
       referenceImage: getAssetPath('assets/cover_trend/cover_trend_ref5.jpg'),
       covers: [
         getAssetPath('assets/cover_trend/cover_trend5-1.png'),
@@ -160,7 +165,15 @@ function TrendingDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, 
                     </div>
                     <p className="trending-detail-card-source">
                       <img src={getAssetPath("assets/icon_link.png")} alt="" className="trending-detail-source-icon" />
-                      <span>Source: {trending.source}</span>
+                      <span>
+                        Source: {
+                          trending.sourceUrl ? (
+                            <a href={trending.sourceUrl} target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline'}}>
+                              {trending.source}
+                            </a>
+                          ) : trending.source
+                        }, May 2026
+                      </span>
                     </p>
                   </div>
                 </div>

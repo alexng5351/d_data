@@ -4,41 +4,40 @@ import Sidebar from './Sidebar'
 import CoverCard from './CoverCard'
 import { getAssetPath } from '../utils'
 
-// 封面素材信息映射
-export const getCoverInfo = (id) => {
-  const coverData = {
-    1: { count: 3, extensions: ['png', 'png', 'png'] },
-    2: { count: 2, extensions: ['png', 'png'] },
-    3: { count: 2, extensions: ['png', 'png'] },
-    4: { count: 2, extensions: ['png', 'png'] },
-    5: { count: 3, extensions: ['png', 'png', 'png'] },
-    6: { count: 2, extensions: ['png', 'png'] },
-    7: { count: 2, extensions: ['png', 'png'] },
-    8: { count: 3, extensions: ['png', 'png', 'png'] },
-    9: { count: 2, extensions: ['png', 'png'] },
-    10: { count: 2, extensions: ['png', 'png'] },
-    11: { count: 2, extensions: ['png', 'png'] },
-    12: { count: 2, extensions: ['png', 'png'] },
-    13: { count: 2, extensions: ['png', 'jpg'] },
-    14: { count: 2, extensions: ['png', 'png'] },
-    15: { count: 2, extensions: ['png', 'png'] },
-    16: { count: 2, extensions: ['png', 'png'] },
-    17: { count: 2, extensions: ['png', 'png'] },
-    18: { count: 2, extensions: ['png', 'png'] },
-    19: { count: 2, extensions: ['png', 'png'] },
-    20: { count: 2, extensions: ['png', 'png'] },
+// 动态扫描所有 cover 素材
+const coverModules = import.meta.glob('/public/assets/cover/cover*-*.png', { eager: true })
+
+// 构建 cover id → 图片列表的映射
+const coverMap = {}
+Object.keys(coverModules).forEach((path) => {
+  const match = path.match(/cover(\d+)-(\d+)\.png$/)
+  if (match) {
+    const id = Number(match[1])
+    const idx = Number(match[2])
+    if (!coverMap[id]) {
+      coverMap[id] = []
+    }
+    coverMap[id].push({ index: idx, path })
   }
-  
+})
+
+// 按索引排序每个 cover 的图片
+Object.keys(coverMap).forEach((id) => {
+  coverMap[id].sort((a, b) => a.index - b.index)
+})
+
+// 封面素材信息映射（动态）
+export const getCoverInfo = (id) => {
   const numId = Number(id)
-  return coverData[numId] || { count: 3, extensions: ['png', 'png', 'png'] }
+  const images = coverMap[numId] || []
+  return { count: images.length, extensions: images.map(() => 'png') }
 }
 
 // 获取封面图片路径数组
 export const getCoverImages = (id) => {
-  const info = getCoverInfo(id)
-  return info.extensions.map((ext, index) => 
-    getAssetPath(`assets/cover/cover${id}-${index + 1}.${ext}`)
-  )
+  const numId = Number(id)
+  const images = coverMap[numId] || []
+  return images.map((item) => getAssetPath(`assets/cover/cover${numId}-${item.index}.png`))
 }
 
 function MainPage({ onCoverClick, onTabChange, collapsed, onToggleCollapse, userTemplates, onAddClick, onManageTemplateClick, onTrendingClick }) {

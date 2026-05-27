@@ -139,6 +139,14 @@
   font-family: 'TikTok Sans VF', sans-serif;
 }
 
+.trending-detail-card-source a {
+  transition: color 0.2s ease;
+}
+
+.trending-detail-card-source a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .trending-detail-source-icon {
   width: 14px;
   height: 14px;
