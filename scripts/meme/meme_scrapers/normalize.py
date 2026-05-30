@@ -32,6 +32,7 @@ def normalize_item(raw: RawMemeItem, index: int) -> dict:
         "description": clean_text(raw.description),
         "source_platform": platform,
         "source_url": clean_text(raw.source_url),
+        "page_url": clean_text(raw.page_url),
         "raw_gif_url": clean_text(raw.raw_gif_url),
         "raw_image_url": clean_text(raw.raw_image_url),
         "media_type": "unknown",

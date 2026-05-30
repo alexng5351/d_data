@@ -20,7 +20,13 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse, onMemeClick }) {
         const response = await fetch('/data/meme/meme_candidates.json')
         const data = await response.json()
         const sortedItems = [...(data.items || [])].sort((a, b) => (a.index || 0) - (b.index || 0))
-        setMemeData(sortedItems)
+        // 只展示 status 为 generated 且有 generated_variants 的词条
+        const filteredItems = sortedItems.filter(item => 
+          item.status === 'generated' && 
+          item.generated_variants && 
+          item.generated_variants.length > 0
+        )
+        setMemeData(filteredItems)
         
         // 使用 JSON 中的 last_updated 日期
         if (data.last_updated) {

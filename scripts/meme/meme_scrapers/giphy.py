@@ -178,6 +178,7 @@ def extract_giphy_nodes(page: Any, limit: int) -> list[dict[str, str]]:
                 "cover_url": cover_url,
                 "title": title,
                 "native_id": native_id,
+                "page_url": f"https://giphy.com/gifs/{native_id}",
             }
         )
     return items
@@ -221,6 +222,7 @@ class GiphyScraper(BaseScraper):
                 name=item["title"],
                 description=item["title"],
                 native_id=item["native_id"],
+                page_url=item.get("page_url", ""),
                 popularity_signal={},
                 extra={
                     "cover_url": item.get("cover_url", ""),

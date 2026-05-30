@@ -1,56 +1,7 @@
 {
-  "last_updated": "2026-05-30T07:38:39Z",
+  "last_updated": "2026-05-30T16:05:00",
   "source": "giphy,reddit",
   "items": [
-    {
-      "id": "giphy_JmBXdjfIblJDi",
-      "name": "Sup Giraffe GIF",
-      "short_name": "Sup Giraffe GIF",
-      "description": "Sup Giraffe GIF",
-      "source_platform": "giphy",
-      "source_url": "https://media.giphy.com/media/JmBXdjfIblJDi/giphy.gif",
-      "raw_image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-      "media_type": "animated",
-      "frame_png_path": "/images/meme/frames/giphy_JmBXdjfIblJDi.png",
-      "popularity_signal": {},
-      "index": 1,
-      "status": "generated",
-      "scraped_at": "2026-05-29T19:11:35Z",
-      "last_seen_at": "2026-05-29T19:11:35.261437+00:00",
-      "emotion": "打招呼",
-      "visual_features": [
-        "长颈鹿",
-        "点头动作",
-        "正面特写",
-        "幽默感"
-      ],
-      "risk_level": "low",
-      "risk_note": "无风险，动物类表情包，传播性强",
-      "emotion_clarity_score": 5,
-      "social_usability_score": 5,
-      "subject_focus_score": 5,
-      "visual_simplicity_score": 4,
-      "recognizability_64px_score": 4,
-      "meme_popularity_score": 5,
-      "meme_versatility_score": 5,
-      "ai_decision": "accept",
-      "ai_reason": "动作生动且具有强烈的拟人化打招呼含义，非常适合社交互动场景，具备病毒式传播潜质",
-      "generated_at": "2026-05-30T06:07:22Z",
-      "generated_variants": [
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530060538_73dcf93e-dcc7-4fe3-b1d2-e22230bbdfb0.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530060552_c4c9a82f-96f7-4acd-aeff-7078bd6732f9.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530060626_3cf7ca28-12bb-4470-98b1-acab4fd5ffa3.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530060640_fac6135f-0ce3-4e72-8fb6-330198ee9f13.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530060708_6d749a53-f600-47bd-92bc-e3b0f915904e.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530060717_aa134a02-c507-4fbb-84e3-55b90c332a85.png"
-        }
-      ]
-    },
     {
       "id": "giphy_3o7aD5oU9qcCuAe9SU",
       "name": "Bob Ross Omg GIF by Originals",
@@ -98,7 +49,9 @@
           "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530060912_f7a52b67-12c2-49ea-b210-93618e043b6c.png",
           "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530060923_67380f6a-cdf1-481b-aef2-75988851395f.png"
         }
-      ]
+      ],
+      "page_url": "https://giphy.com/gifs/3o7aD5oU9qcCuAe9SU",
+      "title": "Bob Ross Omg GIF by Originals"
     },
     {
       "id": "giphy_3o7btYetccbRYL4WVW",
@@ -146,7 +99,9 @@
           "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530061215_83f02293-5322-4303-a190-1fbc399fac3b.png",
           "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530061225_d2ca6928-5b19-43bc-aa87-c6bc33e2d5c7.png"
         }
-      ]
+      ],
+      "page_url": "https://giphy.com/gifs/3o7btYetccbRYL4WVW",
+      "title": "Confused Disbelief"
     },
     {
       "id": "giphy_Kwi0Iu9MxxOgg",
@@ -179,7 +134,8 @@
       "meme_popularity_score": 5,
       "meme_versatility_score": 5,
       "ai_decision": "reject",
-      "ai_reason": "涉及政治人物，触发硬过滤规则"
+      "ai_reason": "涉及政治人物，触发硬过滤规则",
+      "page_url": "https://giphy.com/gifs/Kwi0Iu9MxxOgg"
     },
     {
       "id": "giphy_jny0iQsB2l82S4n5Af",
@@ -228,7 +184,9 @@
           "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530061438_1bef187b-f610-4f7d-93a6-efa0db535c24.png",
           "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530061501_34458461-7f29-4c5c-97e8-8e2d702fcb42.png"
         }
-      ]
+      ],
+      "page_url": "https://giphy.com/gifs/jny0iQsB2l82S4n5Af",
+      "title": "Will Ferrell Wow GIF by slicedbread"
     },
     {
       "id": "giphy_TdovX2iZAFoGRDMNUq",
@@ -263,56 +221,8 @@
       "meme_versatility_score": 5,
       "ai_decision": "accept",
       "ai_reason": "极高传播力的经典吃瓜表情，社交场景极其通用",
-      "generate_error": "3 张变体全部生成失败"
-    },
-    {
-      "id": "giphy_1P8E2CLWXqpOXyzCSd",
-      "name": "The Simpsons Ok GIF by slicedbread",
-      "short_name": "The Simpsons Ok GIF by slicedbread",
-      "description": "The Simpsons Ok GIF by slicedbread",
-      "source_platform": "giphy",
-      "source_url": "https://media.giphy.com/media/1P8E2CLWXqpOXyzCSd/giphy.gif",
-      "raw_image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-      "media_type": "animated",
-      "frame_png_path": "/images/meme/frames/giphy_1P8E2CLWXqpOXyzCSd.png",
-      "popularity_signal": {},
-      "index": 7,
-      "status": "generated",
-      "scraped_at": "2026-05-29T19:11:35Z",
-      "last_seen_at": "2026-05-29T19:11:35.261437+00:00",
-      "emotion": "敷衍",
-      "visual_features": [
-        "辛普森角色",
-        "竖大拇指",
-        "半睁眼",
-        "动画画风"
-      ],
-      "risk_level": "low",
-      "risk_note": "无明显风险，属于经典动画表情包",
-      "emotion_clarity_score": 5,
-      "social_usability_score": 5,
-      "subject_focus_score": 5,
-      "visual_simplicity_score": 4,
-      "recognizability_64px_score": 5,
-      "meme_popularity_score": 5,
-      "meme_versatility_score": 5,
-      "ai_decision": "accept",
-      "ai_reason": "表情极具辨识度，完美契合日常交流中表达敷衍、认可或调侃的场景，传播潜力大",
-      "generated_at": "2026-05-30T06:29:06Z",
-      "generated_variants": [
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530062559_74187326-70ba-4bbf-bf4c-3cd57cf49327.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530062628_bc408ef3-f83f-4c62-ad04-4226ee6a5109.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530062703_f82c89b1-14f6-4841-96fa-28487670b1e9.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530062734_955120cd-612f-47ec-b4c9-c4bd3a08aec9.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530062803_46ae3e73-a246-4608-a736-cc63c561ee69.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530062826_bc99ecfb-20a7-472a-ac68-a1160f3daa5b.png"
-        }
-      ]
+      "generate_error": "3 张变体全部生成失败",
+      "page_url": "https://giphy.com/gifs/TdovX2iZAFoGRDMNUq"
     },
     {
       "id": "giphy_zhRA0okWxTGiu78uSk",
@@ -346,7 +256,8 @@
       "meme_popularity_score": 2,
       "meme_versatility_score": 2,
       "ai_decision": "reject",
-      "ai_reason": "画面构图过于分散，主体占比极小，在小尺寸下完全无法辨识，不具备作为表情包的传播潜力"
+      "ai_reason": "画面构图过于分散，主体占比极小，在小尺寸下完全无法辨识，不具备作为表情包的传播潜力",
+      "page_url": "https://giphy.com/gifs/zhRA0okWxTGiu78uSk"
     },
     {
       "id": "giphy_pGpQufIcSqqoML3kwa",
@@ -395,7 +306,9 @@
           "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530062238_58b83c85-04d8-4b89-9baa-b4fd5c285557.png",
           "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530062259_3e76c45c-7f51-4d07-a014-ed4c8b6c1b87.png"
         }
-      ]
+      ],
+      "page_url": "https://giphy.com/gifs/pGpQufIcSqqoML3kwa",
+      "title": "Happy Stephen Curry GIF by NBC Olympics"
     },
     {
       "id": "giphy_wLK6lCNLfMGDxBgCzh",
@@ -444,7 +357,9 @@
           "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530073821_543125f7-ae5b-459a-a47b-57c962c5bfa4.png",
           "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530073834_41cd5bb7-afb5-4d41-8cbc-ef647cce25e0.png"
         }
-      ]
+      ],
+      "page_url": "https://giphy.com/gifs/wLK6lCNLfMGDxBgCzh",
+      "title": "Suspicious Billie Eilish GIF by Chicken Shop Date"
     },
     {
       "id": "reddit_1tk4v0o",
@@ -498,7 +413,9 @@
           "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530063504_20a7d65f-377a-40a3-b549-53ce11151baa.png"
         }
       ],
-      "last_updated": "2026-05-30T15:14:15.473737"
+      "last_updated": "2026-05-30T15:14:15.473737",
+      "page_url": "https://www.reddit.com/comments/1tk4v0o",
+      "title": "me irl"
     },
     {
       "id": "reddit_1tr0g3i",
@@ -536,7 +453,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片包含多人及大量文字，无法作为简洁的单体Emoji使用",
-      "last_updated": "2026-05-30T15:14:15.473742"
+      "last_updated": "2026-05-30T15:14:15.473742",
+      "page_url": "https://www.reddit.com/comments/1tr0g3i"
     },
     {
       "id": "reddit_1tr0foh",
@@ -574,7 +492,8 @@
       "meme_versatility_score": 4,
       "ai_decision": "reject",
       "ai_reason": "图片中包含大面积文字内容，不符合表情包精简原则，且情绪传达高度依赖文字叙事，不适合作为独立Emoji表情使用",
-      "last_updated": "2026-05-30T15:14:15.473743"
+      "last_updated": "2026-05-30T15:14:15.473743",
+      "page_url": "https://www.reddit.com/comments/1tr0foh"
     },
     {
       "id": "reddit_1tqqj14",
@@ -613,7 +532,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片包含多格场景及文字，视觉信息冗余，不符合Meme Emoji简洁直接的转译标准",
-      "last_updated": "2026-05-30T15:14:15.473744"
+      "last_updated": "2026-05-30T15:14:15.473744",
+      "page_url": "https://www.reddit.com/comments/1tqqj14"
     },
     {
       "id": "reddit_1tr4eic",
@@ -651,7 +571,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片包含大段说明文字，且情绪不够单一明确，不符合Meme Emoji即时传播要求",
-      "last_updated": "2026-05-30T15:14:15.473745"
+      "last_updated": "2026-05-30T15:14:15.473745",
+      "page_url": "https://www.reddit.com/comments/1tr4eic"
     },
     {
       "id": "reddit_1tr5a65",
@@ -690,7 +611,8 @@
       "meme_versatility_score": 4,
       "ai_decision": "reject",
       "ai_reason": "图片中文字内容过长且占据主体，虽然梗文化属性强，但作为Meme Emoji使用时，文字信息在缩略图下不可读且视觉干扰大。",
-      "last_updated": "2026-05-30T15:14:15.473745"
+      "last_updated": "2026-05-30T15:14:15.473745",
+      "page_url": "https://www.reddit.com/comments/1tr5a65"
     },
     {
       "id": "reddit_1tqtysf",
@@ -728,7 +650,8 @@
       "meme_versatility_score": 3,
       "ai_decision": "reject",
       "ai_reason": "文字占据画面比例过高，作为社交场景的Emoji使用时转译难度大，视觉重心被文本干扰",
-      "last_updated": "2026-05-30T15:14:15.473746"
+      "last_updated": "2026-05-30T15:14:15.473746",
+      "page_url": "https://www.reddit.com/comments/1tqtysf"
     },
     {
       "id": "reddit_1tqvbec",
@@ -766,7 +689,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片包含大量文字，构图过于复杂，且存在多主体，无法作为独立表情包使用",
-      "last_updated": "2026-05-30T15:14:15.473747"
+      "last_updated": "2026-05-30T15:14:15.473747",
+      "page_url": "https://www.reddit.com/comments/1tqvbec"
     },
     {
       "id": "reddit_1tq8p41",
@@ -805,115 +729,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "文字过多且高度依赖特定语境，不符合Meme Emoji的视觉传达标准",
-      "last_updated": "2026-05-30T15:14:15.473748"
-    },
-    {
-      "id": "reddit_1tqo0rr",
-      "name": "MRW an unmanned rocket belonging to a billionaire’s vanity space program blows up on the launchpad",
-      "short_name": "Billionaire Space Program Failure",
-      "description": "MRW an unmanned rocket belonging to a billionaire’s vanity space program blows up on the launchpad",
-      "source_platform": "reddit",
-      "source_url": "https://preview.redd.it/ripfbagakz3h1.gif?format=png8&s=a791ae0ff528bf429d5ffce27c30ddfdc9fe044a",
-      "raw_image_url": "https://preview.redd.it/ripfbagakz3h1.gif?format=png8&s=a791ae0ff528bf429d5ffce27c30ddfdc9fe044a",
-      "media_type": "animated",
-      "frame_png_path": "/images/meme/frames/reddit_1tqo0rr.png",
-      "popularity_signal": {
-        "score": 3719,
-        "num_comments": 51,
-        "subreddit": "reactiongifs"
-      },
-      "index": 20,
-      "status": "generated",
-      "scraped_at": "2026-05-29T19:11:35Z",
-      "last_seen_at": "2026-05-29T19:11:35.261437+00:00",
-      "emotion": "吃瓜",
-      "visual_features": [
-        "侧脸特写",
-        "表情微妙",
-        "带耳机麦克风",
-        "橙色纯色背景"
-      ],
-      "risk_level": "low",
-      "risk_note": "无明显风险，公众人物表情包，符合传播规范",
-      "emotion_clarity_score": 4,
-      "social_usability_score": 5,
-      "subject_focus_score": 5,
-      "visual_simplicity_score": 5,
-      "recognizability_64px_score": 4,
-      "meme_popularity_score": 5,
-      "meme_versatility_score": 5,
-      "ai_decision": "accept",
-      "ai_reason": "表情极具感染力且语境通用，非常适合在社交媒体表达看戏、调侃等内心戏，具备极强的病毒式传播潜力",
-      "generated_at": "2026-05-29T20:40:53Z",
-      "generated_variants": [
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529203921_e546e897-f15c-40d7-883e-8865bf8ca142.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529203931_220c06b9-dbf3-48d0-a69e-25517f91e82e.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529204006_bd74eb85-b8a7-4da0-bf9b-c86c85fc622f.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529204014_32a7c15f-95b7-4693-932d-55bb0c1c82fb.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529204042_8e0d0b06-8f2a-4212-ade3-af9ad8fa9aef.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529204049_10ed8036-87fa-4630-94b4-bc2aa0abd2b5.png"
-        }
-      ],
-      "last_updated": "2026-05-30T15:14:15.473749"
-    },
-    {
-      "id": "reddit_1tr2601",
-      "name": "MRW my neighbor asks 'Don't I want to make money at your garage sale, with everything priced at $1 or less?'",
-      "short_name": "Confused at lowball offer",
-      "description": "MRW my neighbor asks 'Don't I want to make money at your garage sale, with everything priced at $1 or less?'",
-      "source_platform": "reddit",
-      "source_url": "https://preview.redd.it/z0ktpuflx24h1.gif?format=png8&s=3d9400bb92f3d807bec3cf76c4d50ca18ae0b8e9",
-      "raw_image_url": "https://preview.redd.it/z0ktpuflx24h1.gif?format=png8&s=3d9400bb92f3d807bec3cf76c4d50ca18ae0b8e9",
-      "media_type": "animated",
-      "frame_png_path": "/images/meme/frames/reddit_1tr2601.png",
-      "popularity_signal": {
-        "score": 77,
-        "num_comments": 7,
-        "subreddit": "reactiongifs"
-      },
-      "index": 21,
-      "status": "generated",
-      "scraped_at": "2026-05-29T19:11:35Z",
-      "last_seen_at": "2026-05-29T19:11:35.261437+00:00",
-      "emotion": "无语",
-      "visual_features": [
-        "眼神呆滞",
-        "表情僵硬",
-        "西装男性",
-        "特写镜头"
-      ],
-      "risk_level": "low",
-      "risk_note": "无政治或敏感风险，为电影画面",
-      "emotion_clarity_score": 5,
-      "social_usability_score": 5,
-      "subject_focus_score": 4,
-      "visual_simplicity_score": 4,
-      "recognizability_64px_score": 4,
-      "meme_popularity_score": 5,
-      "meme_versatility_score": 5,
-      "ai_decision": "accept",
-      "ai_reason": "表情极具代表性，完美诠释‘无语’或‘死机’状态，高度适用于多种互动场景。",
-      "generated_at": "2026-05-29T20:50:41Z",
-      "generated_variants": [
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529204910_554ce4f0-99be-4334-bb7a-e83c40c9ab9b.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529204918_fa385359-db5f-441f-afab-d5bb3809a8f3.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529204947_0b3e99b4-a955-4bb7-a8b2-b88d96153e0a.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529204957_1a4141e9-6b5e-432b-9f79-6c0f0ea7c2ba.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529205027_4a8f0302-dc57-42d4-ae82-3a7e77b585e5.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529205035_e57c1520-3c19-4327-99f6-4f552f1d33d4.png"
-        }
-      ],
-      "last_updated": "2026-05-30T15:14:15.473750"
+      "last_updated": "2026-05-30T15:14:15.473748",
+      "page_url": "https://www.reddit.com/comments/1tq8p41"
     },
     {
       "id": "reddit_1tq5o9j",
@@ -967,7 +784,9 @@
           "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529205237_6f1cce66-2b23-4c0d-9481-4c8e19b7ad5e.png"
         }
       ],
-      "last_updated": "2026-05-30T15:14:15.473750"
+      "last_updated": "2026-05-30T15:14:15.473750",
+      "page_url": "https://www.reddit.com/comments/1tq5o9j",
+      "title": "Unrequited Celebrity Crush"
     },
     {
       "id": "reddit_1tqo55i",
@@ -1021,7 +840,9 @@
           "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529205641_555ca7b2-9a93-45e9-908c-1bcb767ecab7.png"
         }
       ],
-      "last_updated": "2026-05-30T15:14:15.473751"
+      "last_updated": "2026-05-30T15:14:15.473751",
+      "page_url": "https://www.reddit.com/comments/1tqo55i",
+      "title": "Post-Coitus Confusion"
     },
     {
       "id": "reddit_1tqjwlo",
@@ -1060,61 +881,8 @@
       "meme_versatility_score": 3,
       "ai_decision": "reject",
       "ai_reason": "图片中自带大段文本干扰，且人物表情在缩略图下辨识度有限，作为通用表情包使用门槛较高",
-      "last_updated": "2026-05-30T15:14:15.473752"
-    },
-    {
-      "id": "reddit_1tqo1at",
-      "name": "MRW I get a random phonecall from an unknown number and it's listed as \"jail/prison\"",
-      "short_name": "Unknown Prison Caller Panic",
-      "description": "MRW I get a random phonecall from an unknown number and it's listed as \"jail/prison\"",
-      "source_platform": "reddit",
-      "source_url": "https://preview.redd.it/wyl94n4fkz3h1.gif?format=png8&s=42babe8fa2dfe964c9e9506bfc69a25129a8f440",
-      "raw_image_url": "https://preview.redd.it/wyl94n4fkz3h1.gif?format=png8&s=42babe8fa2dfe964c9e9506bfc69a25129a8f440",
-      "media_type": "animated",
-      "frame_png_path": "/images/meme/frames/reddit_1tqo1at.png",
-      "popularity_signal": {
-        "score": 48,
-        "num_comments": 0,
-        "subreddit": "reactiongifs"
-      },
-      "index": 25,
-      "status": "generated",
-      "scraped_at": "2026-05-29T19:11:35Z",
-      "last_seen_at": "2026-05-29T19:11:35.261437+00:00",
-      "emotion": "无语",
-      "visual_features": [
-        "动漫角色",
-        "眼神鄙夷",
-        "主体突出",
-        "构图简洁"
-      ],
-      "risk_level": "low",
-      "risk_note": "低风险，动漫角色表情，无敏感内容",
-      "emotion_clarity_score": 5,
-      "social_usability_score": 5,
-      "subject_focus_score": 5,
-      "visual_simplicity_score": 5,
-      "recognizability_64px_score": 5,
-      "meme_popularity_score": 4,
-      "meme_versatility_score": 5,
-      "ai_decision": "accept",
-      "ai_reason": "表情极其标准且具有通用性，一眼即懂，非常适合作为互动回复表情包",
-      "generated_at": "2026-05-29T20:59:02Z",
-      "generated_variants": [
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529205723_1e171f8f-b4b8-4d31-bbcf-bd4379979ae0.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529205735_70f6d646-a5b9-4885-9212-7af0826cf40f.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529205807_b9d41ca1-7dca-457d-8c32-3db085707723.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529205820_70562f5f-27ad-4431-961d-c971bd678cd0.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529205847_b2ee02ef-7213-443c-9770-1bbf7e186fdf.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529205857_6a3e5e40-1716-45ec-b45a-edcfefab370b.png"
-        }
-      ],
-      "last_updated": "2026-05-30T15:14:15.473753"
+      "last_updated": "2026-05-30T15:14:15.473752",
+      "page_url": "https://www.reddit.com/comments/1tqjwlo"
     },
     {
       "id": "reddit_1tp376m",
@@ -1136,7 +904,8 @@
       "scraped_at": "2026-05-29T19:11:35Z",
       "last_seen_at": "2026-05-29T19:11:35.261437+00:00",
       "reject_reason": "screening_error: TimeoutError",
-      "last_updated": "2026-05-30T15:14:15.473754"
+      "last_updated": "2026-05-30T15:14:15.473754",
+      "page_url": "https://www.reddit.com/comments/1tp376m"
     },
     {
       "id": "reddit_1tolrwt",
@@ -1190,60 +959,9 @@
           "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529210114_564b883f-44e9-4a98-be0d-4e8db7735978.png"
         }
       ],
-      "last_updated": "2026-05-30T15:14:15.473755"
-    },
-    {
-      "id": "reddit_1to923h",
-      "name": "MRW the only thing I need to do on my day off is make a single brief phone call",
-      "short_name": "Procrastinating one simple task",
-      "description": "MRW the only thing I need to do on my day off is make a single brief phone call",
-      "source_platform": "reddit",
-      "source_url": "https://preview.redd.it/ahculojruh3h1.gif?format=png8&s=5f576feb49898bc1003ff1c5c431908a99039cc7",
-      "raw_image_url": "https://preview.redd.it/ahculojruh3h1.gif?format=png8&s=5f576feb49898bc1003ff1c5c431908a99039cc7",
-      "media_type": "animated",
-      "frame_png_path": "/images/meme/frames/reddit_1to923h.png",
-      "popularity_signal": {
-        "score": 1316,
-        "num_comments": 7,
-        "subreddit": "reactiongifs"
-      },
-      "index": 28,
-      "status": "generated",
-      "scraped_at": "2026-05-29T19:11:35Z",
-      "last_seen_at": "2026-05-29T19:11:35.261437+00:00",
-      "emotion": "抗拒",
-      "visual_features": [
-        "男子拖拽书包",
-        "身体姿态抗拒",
-        "生活化场景"
-      ],
-      "risk_level": "low",
-      "risk_note": "无风险，为经典影视片段",
-      "emotion_clarity_score": 4,
-      "social_usability_score": 4,
-      "subject_focus_score": 4,
-      "visual_simplicity_score": 3,
-      "recognizability_64px_score": 3,
-      "meme_popularity_score": 4,
-      "meme_versatility_score": 4,
-      "ai_decision": "accept",
-      "ai_reason": "生动刻画了对琐事拖延和抗拒的心理，具有很高的社交互动共鸣潜力",
-      "generated_at": "2026-05-29T21:03:52Z",
-      "generated_variants": [
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529210154_c2d0760a-d561-4def-b1ee-cf8e0734708a.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529210204_e08cd6cf-0bb1-4fcd-9957-caf9732d63a4.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529210253_dd49acbb-82eb-4e29-987f-b378cda67776.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529210301_88da17c7-fb94-4ecc-94fe-6313315af962.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529210337_a9e59abd-5eef-4767-8556-f06792258935.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529210346_d577b88e-5136-4359-b305-9ec9ba55f4f4.png"
-        }
-      ],
-      "last_updated": "2026-05-30T15:14:15.473755"
+      "last_updated": "2026-05-30T15:14:15.473755",
+      "page_url": "https://www.reddit.com/comments/1tolrwt",
+      "title": "Coworker Secret Revealed"
     },
     {
       "id": "reddit_1to975b",
@@ -1281,7 +999,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片环境复杂，主体不够突出，缩略后难以识别，不符合高频社交互动场景的使用需求",
-      "last_updated": "2026-05-30T15:14:15.473756"
+      "last_updated": "2026-05-30T15:14:15.473756",
+      "page_url": "https://www.reddit.com/comments/1to975b"
     },
     {
       "id": "reddit_1r4jnof",
@@ -1320,7 +1039,8 @@
       "meme_versatility_score": 4,
       "ai_decision": "reject",
       "ai_reason": "图片中文字叠加较多，且构图包含双层画面，作为即时交互的Emoji表情显得过于复杂，缩放后可辨识度较低。",
-      "last_updated": "2026-05-30T15:14:15.473757"
+      "last_updated": "2026-05-30T15:14:15.473757",
+      "page_url": "https://www.reddit.com/comments/1r4jnof"
     },
     {
       "id": "reddit_1trahuc",
@@ -1358,7 +1078,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "由于包含大量文字且视觉主体不明确，缩放后难以识别，不适合作为Meme Emoji使用",
-      "last_updated": "2026-05-30T15:14:15.473758"
+      "last_updated": "2026-05-30T15:14:15.473758",
+      "page_url": "https://www.reddit.com/comments/1trahuc"
     },
     {
       "id": "reddit_1tqujt6",
@@ -1380,7 +1101,8 @@
       "scraped_at": "2026-05-29T19:11:35Z",
       "last_seen_at": "2026-05-29T19:11:35.261437+00:00",
       "reject_reason": "screening_error: TimeoutError",
-      "last_updated": "2026-05-30T15:14:15.473759"
+      "last_updated": "2026-05-30T15:14:15.473759",
+      "page_url": "https://www.reddit.com/comments/1tqujt6"
     },
     {
       "id": "reddit_1tqlobm",
@@ -1419,7 +1141,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "文字过多且包含攻击性内容，视觉转译困难，难以作为通用Meme使用",
-      "last_updated": "2026-05-30T15:14:15.473760"
+      "last_updated": "2026-05-30T15:14:15.473760",
+      "page_url": "https://www.reddit.com/comments/1tqlobm"
     },
     {
       "id": "reddit_1tqzfpy",
@@ -1457,7 +1180,8 @@
       "meme_versatility_score": 1,
       "ai_decision": "reject",
       "ai_reason": "图片文字过多，不具备作为表情包的传播力和通用性",
-      "last_updated": "2026-05-30T15:14:15.473760"
+      "last_updated": "2026-05-30T15:14:15.473760",
+      "page_url": "https://www.reddit.com/comments/1tqzfpy"
     },
     {
       "id": "reddit_1tr9jls",
@@ -1495,7 +1219,8 @@
       "meme_versatility_score": 1,
       "ai_decision": "reject",
       "ai_reason": "图片包含大量文字且构图复杂，不符合简洁表情包标准，且涉及争议性话题",
-      "last_updated": "2026-05-30T15:14:15.473761"
+      "last_updated": "2026-05-30T15:14:15.473761",
+      "page_url": "https://www.reddit.com/comments/1tr9jls"
     },
     {
       "id": "reddit_1tr3tg3",
@@ -1534,7 +1259,8 @@
       "meme_versatility_score": 4,
       "ai_decision": "reject",
       "ai_reason": "虽然情绪表达准确且极具传播力，但原图内嵌了长段情境文字，无法作为通用的独立表情符号使用",
-      "last_updated": "2026-05-30T15:14:15.473762"
+      "last_updated": "2026-05-30T15:14:15.473762",
+      "page_url": "https://www.reddit.com/comments/1tr3tg3"
     },
     {
       "id": "reddit_1tqwfxp",
@@ -1573,7 +1299,8 @@
       "meme_versatility_score": 3,
       "ai_decision": "reject",
       "ai_reason": "图片包含大量文字和三格场景，作为表情符号视觉过于复杂，无法在缩略图下清晰呈现",
-      "last_updated": "2026-05-30T15:14:15.473763"
+      "last_updated": "2026-05-30T15:14:15.473763",
+      "page_url": "https://www.reddit.com/comments/1tqwfxp"
     },
     {
       "id": "reddit_1tr6h7u",
@@ -1627,7 +1354,9 @@
           "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530054137_cf27bbc2-dd93-4c56-980e-e8d9103251bd.png"
         }
       ],
-      "last_updated": "2026-05-30T15:14:15.473764"
+      "last_updated": "2026-05-30T15:14:15.473764",
+      "page_url": "https://www.reddit.com/comments/1tr6h7u",
+      "title": "Just because"
     },
     {
       "id": "reddit_1tqvq0g",
@@ -1665,7 +1394,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "文字占比过高且作为主要信息载体，不适合缩略为表情包使用，视觉冗余严重",
-      "last_updated": "2026-05-30T15:14:15.473764"
+      "last_updated": "2026-05-30T15:14:15.473764",
+      "page_url": "https://www.reddit.com/comments/1tqvq0g"
     },
     {
       "id": "reddit_1trbig5",
@@ -1703,7 +1433,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片中包含大段文字且构图过于复杂，缩略为64px后视觉辨识度极低，不符合Meme Emoji高效传播的需求",
-      "last_updated": "2026-05-30T15:14:15.473767"
+      "last_updated": "2026-05-30T15:14:15.473767",
+      "page_url": "https://www.reddit.com/comments/1trbig5"
     },
     {
       "id": "reddit_1trckx1",
@@ -1757,7 +1488,9 @@
           "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530054405_8d3808ce-a774-4a1f-bebf-1f6c79515605.png"
         }
       ],
-      "last_updated": "2026-05-30T15:14:15.473767"
+      "last_updated": "2026-05-30T15:14:15.473767",
+      "page_url": "https://www.reddit.com/comments/1trckx1",
+      "title": "Finally Financially Stable"
     },
     {
       "id": "reddit_1tr654g",
@@ -1796,7 +1529,8 @@
       "meme_versatility_score": 5,
       "ai_decision": "reject",
       "ai_reason": "图片文字叠加过多，不符合Meme Emoji的视觉极简原则",
-      "last_updated": "2026-05-30T15:14:15.473768"
+      "last_updated": "2026-05-30T15:14:15.473768",
+      "page_url": "https://www.reddit.com/comments/1tr654g"
     },
     {
       "id": "reddit_1tr7ctz",
@@ -1834,7 +1568,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "画面主体不突出，包含大量文字叠加，不符合Meme Emoji简洁易读的筛选标准",
-      "last_updated": "2026-05-30T15:14:15.473769"
+      "last_updated": "2026-05-30T15:14:15.473769",
+      "page_url": "https://www.reddit.com/comments/1tr7ctz"
     },
     {
       "id": "reddit_1trcnr2",
@@ -1873,7 +1608,8 @@
       "meme_versatility_score": 5,
       "ai_decision": "reject",
       "ai_reason": "图片属于典型图文模版，包含大量文字，作为Emoji表情传播时视觉负担过重，无法通过缩略图准确识别文字内容。",
-      "last_updated": "2026-05-30T15:14:15.473770"
+      "last_updated": "2026-05-30T15:14:15.473770",
+      "page_url": "https://www.reddit.com/comments/1trcnr2"
     },
     {
       "id": "reddit_1tqf1au",
@@ -1911,7 +1647,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "命中硬过滤规则，文字干扰严重，识别度低，社交场景通用性弱",
-      "last_updated": "2026-05-30T15:14:15.473771"
+      "last_updated": "2026-05-30T15:14:15.473771",
+      "page_url": "https://www.reddit.com/comments/1tqf1au"
     },
     {
       "id": "reddit_1tqrll6",
@@ -1949,7 +1686,8 @@
       "meme_versatility_score": 1,
       "ai_decision": "reject",
       "ai_reason": "命中了硬过滤规则中的强政治敏感性及大量文字叠加问题，不符合表情包视觉简洁及快速传播的需求",
-      "last_updated": "2026-05-30T15:14:15.473771"
+      "last_updated": "2026-05-30T15:14:15.473771",
+      "page_url": "https://www.reddit.com/comments/1tqrll6"
     },
     {
       "id": "reddit_1tqlfwc",
@@ -1988,7 +1726,8 @@
       "meme_versatility_score": 3,
       "ai_decision": "reject",
       "ai_reason": "受限于具体的政治时事梗，脱离语境后传播力较弱，且硬过滤命中",
-      "last_updated": "2026-05-30T15:14:15.473772"
+      "last_updated": "2026-05-30T15:14:15.473772",
+      "page_url": "https://www.reddit.com/comments/1tqlfwc"
     },
     {
       "id": "reddit_1tq06uc",
@@ -2026,7 +1765,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片包含强政治争议性叙事，且文字极其密集，严重影响表情包的社交通用性和转译效率",
-      "last_updated": "2026-05-30T15:14:15.473773"
+      "last_updated": "2026-05-30T15:14:15.473773",
+      "page_url": "https://www.reddit.com/comments/1tq06uc"
     },
     {
       "id": "reddit_1tq3llq",
@@ -2065,7 +1805,8 @@
       "meme_versatility_score": 3,
       "ai_decision": "reject",
       "ai_reason": "图片上覆盖大量文字，导致缩略显示时视觉干扰过大，不符合独立表情符号的使用标准",
-      "last_updated": "2026-05-30T15:14:15.473774"
+      "last_updated": "2026-05-30T15:14:15.473774",
+      "page_url": "https://www.reddit.com/comments/1tq3llq"
     },
     {
       "id": "reddit_1troa9h",
@@ -2103,7 +1844,8 @@
       "meme_versatility_score": 5,
       "ai_decision": "reject",
       "ai_reason": "图片包含大段文字叠加，属于模因模板而非简洁的表情符号，硬过滤不通过",
-      "last_updated": "2026-05-30T15:14:15.473775"
+      "last_updated": "2026-05-30T15:14:15.473775",
+      "page_url": "https://www.reddit.com/comments/1troa9h"
     },
     {
       "id": "reddit_1trkcat",
@@ -2142,7 +1884,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片中包含大量文字叠加，构图复杂，不适合作为精简的meme表情，且未能聚焦单一主体。",
-      "last_updated": "2026-05-30T15:14:15.473775"
+      "last_updated": "2026-05-30T15:14:15.473775",
+      "page_url": "https://www.reddit.com/comments/1trkcat"
     },
     {
       "id": "reddit_1trg73s",
@@ -2181,7 +1924,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片核心在于文字表达，视觉上不满足Meme Emoji简洁直接的传播需求",
-      "last_updated": "2026-05-30T15:14:15.473776"
+      "last_updated": "2026-05-30T15:14:15.473776",
+      "page_url": "https://www.reddit.com/comments/1trg73s"
     },
     {
       "id": "reddit_1tref2z",
@@ -2219,7 +1963,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片包含大量文字且需要特定文本才能理解，不具备作为表情包的通用性，且存在争议性议题",
-      "last_updated": "2026-05-30T15:14:15.473777"
+      "last_updated": "2026-05-30T15:14:15.473777",
+      "page_url": "https://www.reddit.com/comments/1tref2z"
     },
     {
       "id": "reddit_1trdr8s",
@@ -2258,7 +2003,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "文字信息量过大，在移动端缩略显示下难以识别，不符合meme表情包简洁易用的特征",
-      "last_updated": "2026-05-30T15:14:15.473778"
+      "last_updated": "2026-05-30T15:14:15.473778",
+      "page_url": "https://www.reddit.com/comments/1trdr8s"
     },
     {
       "id": "reddit_1trpxkw",
@@ -2297,7 +2043,8 @@
       "meme_versatility_score": 1,
       "ai_decision": "reject",
       "ai_reason": "图片包含大量文字且涉及高度争议的社会题材，不适合作为通用表情包使用",
-      "last_updated": "2026-05-30T15:14:15.473779"
+      "last_updated": "2026-05-30T15:14:15.473779",
+      "page_url": "https://www.reddit.com/comments/1trpxkw"
     },
     {
       "id": "reddit_1trqfyo",
@@ -2319,7 +2066,8 @@
       "scraped_at": "2026-05-30T05:30:38Z",
       "last_seen_at": "2026-05-30T05:30:38.217615+00:00",
       "reject_reason": "screening_error: TimeoutError",
-      "last_updated": "2026-05-30T15:14:15.473780"
+      "last_updated": "2026-05-30T15:14:15.473780",
+      "page_url": "https://www.reddit.com/comments/1trqfyo"
     },
     {
       "id": "reddit_1trns01",
@@ -2358,7 +2106,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片文字叠加严重且具有特定攻击性，不适合作为通用表情符号",
-      "last_updated": "2026-05-30T15:14:15.473780"
+      "last_updated": "2026-05-30T15:14:15.473780",
+      "page_url": "https://www.reddit.com/comments/1trns01"
     },
     {
       "id": "reddit_1trfalk",
@@ -2397,7 +2146,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片文字干扰严重，主体模糊且依赖特定游戏情境，社交场景通用性不足",
-      "last_updated": "2026-05-30T15:14:15.473781"
+      "last_updated": "2026-05-30T15:14:15.473781",
+      "page_url": "https://www.reddit.com/comments/1trfalk"
     },
     {
       "id": "reddit_1trjnce",
@@ -2435,61 +2185,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "文字内容过多且涉及负面敏感议题，不适合作为通用表情包使用",
-      "last_updated": "2026-05-30T15:14:15.473782"
-    },
-    {
-      "id": "reddit_1tre4xj",
-      "name": "No I wont give my personal data away",
-      "short_name": "No I wont give my personal data away",
-      "description": "No I wont give my personal data away",
-      "source_platform": "reddit",
-      "source_url": "https://preview.redd.it/dbui3wiwv44h1.jpeg?auto=webp&s=bcaa609e95c1fbdd7776c9ee7f23b28d0a6ea72c",
-      "raw_image_url": "https://preview.redd.it/dbui3wiwv44h1.jpeg?auto=webp&s=bcaa609e95c1fbdd7776c9ee7f23b28d0a6ea72c",
-      "media_type": "static",
-      "frame_png_path": "/images/meme/frames/reddit_1tre4xj.png",
-      "popularity_signal": {
-        "score": 6165,
-        "num_comments": 174,
-        "subreddit": "memes"
-      },
-      "index": 60,
-      "status": "generated",
-      "scraped_at": "2026-05-30T05:35:37Z",
-      "last_seen_at": "2026-05-30T05:35:37.657526+00:00",
-      "emotion": "拒绝",
-      "visual_features": [
-        "拒绝姿态",
-        "表情冷漠",
-        "双图对照",
-        "海绵宝宝章鱼哥"
-      ],
-      "risk_level": "low",
-      "risk_note": "无敏感内容，使用流行梗图模版",
-      "emotion_clarity_score": 5,
-      "social_usability_score": 4,
-      "subject_focus_score": 4,
-      "visual_simplicity_score": 2,
-      "recognizability_64px_score": 3,
-      "meme_popularity_score": 4,
-      "meme_versatility_score": 4,
-      "ai_decision": "accept",
-      "ai_reason": "经典meme模版，精准表达拒绝意图，具备高度社交传播性",
-      "generated_at": "2026-05-30T05:46:39Z",
-      "generated_variants": [
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530054450_7db54dc5-1a9e-4c36-98ce-454431468811.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530054502_650deff5-2af1-4c59-9ff9-b9db0b98a6e4.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530054530_62bc1953-1392-4b91-aa10-dab161c5c0b4.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530054541_87ccbbe2-58de-47c6-88a6-3ec521a83dda.png"
-        },
-        {
-          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530054612_ce863abb-7dd5-4360-9e88-bcea10dd673b.png",
-          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530054632_3001b6da-0304-47ee-ac31-4929aeb4aa3c.png"
-        }
-      ],
-      "last_updated": "2026-05-30T15:14:15.473783"
+      "last_updated": "2026-05-30T15:14:15.473782",
+      "page_url": "https://www.reddit.com/comments/1trjnce"
     },
     {
       "id": "reddit_1trgon9",
@@ -2528,7 +2225,8 @@
       "meme_versatility_score": 3,
       "ai_decision": "reject",
       "ai_reason": "图片中包含大段文字，作为Meme表情在缩略图下难以阅读，且视觉复杂度超过了表情包的简洁性要求",
-      "last_updated": "2026-05-30T15:14:15.473784"
+      "last_updated": "2026-05-30T15:14:15.473784",
+      "page_url": "https://www.reddit.com/comments/1trgon9"
     },
     {
       "id": "reddit_1trpjby",
@@ -2566,7 +2264,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "该内容属于典型的长文本互动梗，依赖文字阅读而非视觉情绪表达，不符合表情包的视觉属性要求，且文字过多导致硬过滤未通过。",
-      "last_updated": "2026-05-30T15:14:15.473784"
+      "last_updated": "2026-05-30T15:14:15.473784",
+      "page_url": "https://www.reddit.com/comments/1trpjby"
     },
     {
       "id": "reddit_1tre8do",
@@ -2604,7 +2303,8 @@
       "meme_versatility_score": 4,
       "ai_decision": "reject",
       "ai_reason": "存在大量文字叠加且主要依赖文本叙事，不符合表情包独立传播的简洁要求",
-      "last_updated": "2026-05-30T15:14:15.473785"
+      "last_updated": "2026-05-30T15:14:15.473785",
+      "page_url": "https://www.reddit.com/comments/1tre8do"
     },
     {
       "id": "reddit_1traqou",
@@ -2643,7 +2343,8 @@
       "meme_versatility_score": 2,
       "ai_decision": "reject",
       "ai_reason": "图片包含文字过多且包含多组复杂信息，无法缩减为高质量的表情包使用",
-      "last_updated": "2026-05-30T15:14:15.473786"
+      "last_updated": "2026-05-30T15:14:15.473786",
+      "page_url": "https://www.reddit.com/comments/1traqou"
     },
     {
       "id": "reddit_1tronyx",
@@ -2665,7 +2366,8 @@
       "scraped_at": "2026-05-30T05:35:37Z",
       "last_seen_at": "2026-05-30T05:35:37.657526+00:00",
       "reject_reason": "screening_error: TimeoutError",
-      "last_updated": "2026-05-30T15:14:15.473787"
+      "last_updated": "2026-05-30T15:14:15.473787",
+      "page_url": "https://www.reddit.com/comments/1tronyx"
     }
   ]
 }

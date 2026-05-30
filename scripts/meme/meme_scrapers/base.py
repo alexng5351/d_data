@@ -14,6 +14,7 @@ class RawMemeItem:
     raw_image_url: str = ""
     raw_gif_url: str = ""
     native_id: str = ""
+    page_url: str = ""
     popularity_signal: dict[str, Any] = field(default_factory=dict)
     extra: dict[str, Any] = field(default_factory=dict)
 

@@ -12,7 +12,7 @@ function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, targ
   const hasGeneratedVariant = (meme) =>
     Array.isArray(meme.generated_variants) && meme.generated_variants.some((variant) => getVariantUrl(variant))
   const isDisplayableMeme = (meme) =>
-    meme.status === 'generated' && Boolean(meme.source_url) && hasGeneratedVariant(meme) && hasDisplayTitle(meme)
+    meme.status === 'generated' && hasGeneratedVariant(meme) && hasDisplayTitle(meme)
 
   const [selectedEmoji, setSelectedEmoji] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -112,11 +112,11 @@ function MemeDetailPage({ onBack, onTabChange, collapsed, onToggleCollapse, targ
                         <img src={getAssetPath("assets/icon_link.png")} alt="" className="meme-detail-source-icon" />
                         <span>
                           Source: {
-                            meme.source_url ? (
-                              <a href={meme.source_url} target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline'}}>
-                                Giphy
+                            meme.page_url ? (
+                              <a href={meme.page_url} target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline'}}>
+                                {meme.source_platform || 'Giphy'}
                               </a>
-                            ) : 'Giphy'
+                            ) : (meme.source_platform || 'Giphy')
                           }
                           {dataDate && (
                             <span>, {dataDate}</span>

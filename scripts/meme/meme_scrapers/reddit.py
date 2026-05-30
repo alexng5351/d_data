@@ -127,6 +127,7 @@ class RedditScraper(BaseScraper):
                         name=name,
                         description=name,
                         native_id=native_id,
+                        page_url=f"https://www.reddit.com/comments/{native_id}",
                         popularity_signal={
                             "score": int(post.get("score") or 0),
                             "num_comments": int(post.get("num_comments") or 0),
