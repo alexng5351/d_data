@@ -108,7 +108,12 @@ function EmojiDetailModal({ emoji, isOpen, onClose }) {
               onClick={handleEmojiClick}
             />
             <div className="emoji-detail-description">
-              {emoji.description || 'This is a beautifully designed emoji that you can use in your creative projects.'}
+              {emoji.description || (
+                <>
+                  Say it without words.<br />
+                  TikTok's emoji bring your reactions to life.
+                </>
+              )}
             </div>
           </div>
           

@@ -1,0 +1,95 @@
+{\rtf1\ansi\ansicpg936\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 [\
+  \{\
+    "scene": "opinion_social_emotion",\
+    "scene_cn": "\uc0\u35266 \u28857 \u34920 \u36798 &\u31038 \u20132 \u24773 \u32490 ",\
+    "matched_scene_tags": ["Opinion", "Social Emotion", "Statement", "Mood"],\
+    "queries": [\
+      "opinion quote instagram story template with photo",\
+      "social mood poster template with image vertical",\
+      "relatable quote cover template with photography",\
+      "emotional statement collage template with photo"\
+    ],\
+    "target_accept_count": 4\
+  \},\
+  \{\
+    "scene": "personal_experience_interest_lifestyle",\
+    "scene_cn": "\uc0\u20010 \u20154 \u32463 \u21382 &\u20852 \u36259 \u29983 \u27963 ",\
+    "matched_scene_tags": ["Personal Story", "Interest", "Lifestyle", "Daily Life"],\
+    "queries": [\
+      "personal story instagram cover template with photography",\
+      "daily life photo collage cover template",\
+      "hobby lifestyle journal template vertical with photo",\
+      "weekend recap scrapbook cover template with image"\
+    ],\
+    "target_accept_count": 4\
+  \},\
+  \{\
+    "scene": "fashion_beauty_record",\
+    "scene_cn": "\uc0\u26102 \u23578 \u31359 \u25645 &\u21464 \u32654 \u35760 \u24405 ",\
+    "matched_scene_tags": ["Fashion", "Outfit", "Beauty", "Glow Up"],\
+    "queries": [\
+      "outfit diary cover template vertical with photo",\
+      "fashion lookbook collage template with portrait",\
+      "beauty routine instagram story template photography",\
+      "glow up transformation cover template with image"\
+    ],\
+    "target_accept_count": 4\
+  \},\
+  \{\
+    "scene": "pets_healing_moments",\
+    "scene_cn": "\uc0\u23478 \u26377 \u33804 \u23456 &\u27835 \u24840 \u30636 \u38388 ",\
+    "matched_scene_tags": ["Pet", "Cute Animal", "Healing", "Cozy Moment"],\
+    "queries": [\
+      "cute pet photo collage template",\
+      "dog diary cover template vertical with photo",\
+      "cat scrapbook instagram story template photography",\
+      "cozy pet moments cover template with image"\
+    ],\
+    "target_accept_count": 4\
+  \},\
+  \{\
+    "scene": "living_space_lifestyle",\
+    "scene_cn": "\uc0\u29983 \u27963 \u31354 \u38388 &\u29983 \u27963 \u26041 \u24335 ",\
+    "matched_scene_tags": ["Living Space", "Home Decor", "Lifestyle", "Interior"],\
+    "queries": [\
+      "home decor cover template vertical with photography",\
+      "room makeover collage template with photo",\
+      "cozy apartment lifestyle instagram story template with image",\
+      "interior design moodboard cover template photography"\
+    ],\
+    "target_accept_count": 4\
+  \},\
+  \{\
+    "scene": "practical_knowledge_tutorial",\
+    "scene_cn": "\uc0\u23454 \u29992 \u30693 \u35782 &\u32463 \u39564 \u25945 \u31243 ",\
+    "matched_scene_tags": ["Tutorial", "How To", "Practical Knowledge", "Tips"],\
+    "queries": [\
+      "how to tutorial cover template vertical with photo",\
+      "tips and tricks instagram story template with photography",\
+      "educational carousel cover template with image",\
+      "step by step guide cover design photography"\
+    ],\
+    "target_accept_count": 4\
+  \},\
+  \{\
+    "scene": "shopping_decision_product_recommendation",\
+    "scene_cn": "\uc0\u28040 \u36153 \u20915 \u31574 &\u22909 \u29289 \u25512 \u33616 ",\
+    "matched_scene_tags": ["Shopping", "Product Recommendation", "Review", "Buying Guide"],\
+    "queries": [\
+      "product recommendation cover template with photo",\
+      "shopping haul collage template vertical photography",\
+      "product review instagram story template with image",\
+      "buying guide cover design template with photo"\
+    ],\
+    "target_accept_count": 4\
+  \}\
+]}

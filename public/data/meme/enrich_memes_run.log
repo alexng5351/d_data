@@ -1,0 +1,21 @@
+[2026-05-30 13:35:42] 开始进行 meme AI 筛选评分
+[2026-05-30 13:35:42] 读取现有数据：/Users/bytedance/AICover_2.0/public/data/meme/meme_candidates_dev.json，env=dev，共有 65 条，待处理 9 条
+[2026-05-30 13:35:43] 评估 1/9：Definitely 😂
+[2026-05-30 13:35:51]       ✅ 决策=reject | 风险=medium | 核心分=4/4/3 | 情绪=嘲讽
+[2026-05-30 13:35:51] 评估 2/9：Sometimes i lowkey get scared of how accurate he really gets
+[2026-05-30 13:36:04]       ✅ 决策=reject | 风险=low | 核心分=4/4/3 | 情绪=惊恐
+[2026-05-30 13:36:04] 评估 3/9：Booktok be wilding sometimes
+[2026-05-30 13:36:16]       ✅ 决策=reject | 风险=medium | 核心分=5/4/4 | 情绪=震惊
+[2026-05-30 13:36:16] 评估 4/9：No I wont give my personal data away
+[2026-05-30 13:36:28]       ✅ 决策=accept | 风险=low | 核心分=5/4/3 | 情绪=拒绝
+[2026-05-30 13:36:28] 评估 5/9：Why? Why??
+[2026-05-30 13:36:40]       ✅ 决策=reject | 风险=low | 核心分=4/4/2 | 情绪=质问
+[2026-05-30 13:36:40] 评估 6/9：Biggest lie in world
+[2026-05-30 13:36:52]       ✅ 决策=reject | 风险=low | 核心分=5/2/1 | 情绪=共鸣
+[2026-05-30 13:36:52] 评估 7/9：Global economics
+[2026-05-30 13:37:04]       ✅ 决策=reject | 风险=low | 核心分=5/5/4 | 情绪=尴尬
+[2026-05-30 13:37:04] 评估 8/9：Tale as old as time
+[2026-05-30 13:37:17]       ✅ 决策=reject | 风险=low | 核心分=4/3/2 | 情绪=自嘲
+[2026-05-30 13:37:17] 评估 9/9：Gameoverse meme
+[2026-05-30 13:39:24]       ❌ 评分失败：Gameoverse meme | TimeoutError: meme_ai_screening 轮询超时，最后错误: -
+[2026-05-30 13:39:24] 写入完成：/Users/bytedance/AICover_2.0/public/data/meme/meme_candidates_dev.json | 成功处理 8 条，失败并标记 rejected 1 条

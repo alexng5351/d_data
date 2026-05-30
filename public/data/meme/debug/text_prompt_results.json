@@ -1,0 +1,586 @@
+[
+  {
+    "frame": "frame_2.png",
+    "text_prompt": null,
+    "sticker_url": null,
+    "status": "failed",
+    "error": "创建响应中未找到 task_id/run_id/id",
+    "detail": {
+      "frame": "frame_2.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_2.png",
+      "started_at": "2026-05-29 01:11:18",
+      "upload_response": {
+        "data": {
+          "url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/bttfym1s2x8uzaa4mc5emlqsn.png",
+          "tosKey": "/musically-maliva-obj/aigc_tool/files/bttfym1s2x8uzaa4mc5emlqsn.png",
+          "path": "/obj",
+          "domain": "sf-static.tiktokcdn.com"
+        },
+        "statusCode": 0
+      },
+      "uploaded_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/bttfym1s2x8uzaa4mc5emlqsn.png",
+      "create": {
+        "endpoint": "https://crate.tiktok-row.net/api/workflow/run",
+        "payload": {
+          "project_id": "7641896827951777799",
+          "group_id": "group-ESV1Jw7",
+          "api_key": "wk_2e25d1fb37d8a769bdb821fa38eec238147ccbd97f87b4928fd981b12f4b3648",
+          "inputs": {
+            "image": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/bttfym1s2x8uzaa4mc5emlqsn.png"
+          }
+        },
+        "response": {
+          "message": "[\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"projectId\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"groupId\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"object\",\n    \"received\": \"string\",\n    \"path\": [\n      \"inputs\",\n      \"image\"\n    ],\n    \"message\": \"Expected object, received string\"\n  }\n]"
+        }
+      },
+      "status": "failed",
+      "error": "创建响应中未找到 task_id/run_id/id",
+      "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 117, in <module>\nRuntimeError: 创建响应中未找到 task_id/run_id/id\n",
+      "finished_at": "2026-05-29 01:11:24"
+    }
+  },
+  {
+    "frame": "frame_3.png",
+    "text_prompt": null,
+    "sticker_url": null,
+    "status": "failed",
+    "error": "创建响应中未找到 task_id/run_id/id",
+    "detail": {
+      "frame": "frame_3.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_3.png",
+      "started_at": "2026-05-29 01:11:24",
+      "upload_response": {
+        "data": {
+          "url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/izhxq7okdo70o5hhxvjuoiap7.png",
+          "tosKey": "/musically-maliva-obj/aigc_tool/files/izhxq7okdo70o5hhxvjuoiap7.png",
+          "path": "/obj",
+          "domain": "sf-static.tiktokcdn.com"
+        },
+        "statusCode": 0
+      },
+      "uploaded_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/izhxq7okdo70o5hhxvjuoiap7.png",
+      "create": {
+        "endpoint": "https://crate.tiktok-row.net/api/workflow/run",
+        "payload": {
+          "project_id": "7641896827951777799",
+          "group_id": "group-ESV1Jw7",
+          "api_key": "wk_2e25d1fb37d8a769bdb821fa38eec238147ccbd97f87b4928fd981b12f4b3648",
+          "inputs": {
+            "image": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/izhxq7okdo70o5hhxvjuoiap7.png"
+          }
+        },
+        "response": {
+          "message": "[\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"projectId\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"groupId\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"object\",\n    \"received\": \"string\",\n    \"path\": [\n      \"inputs\",\n      \"image\"\n    ],\n    \"message\": \"Expected object, received string\"\n  }\n]"
+        }
+      },
+      "status": "failed",
+      "error": "创建响应中未找到 task_id/run_id/id",
+      "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 117, in <module>\nRuntimeError: 创建响应中未找到 task_id/run_id/id\n",
+      "finished_at": "2026-05-29 01:11:30"
+    }
+  },
+  {
+    "frame": "frame_4.png",
+    "text_prompt": null,
+    "sticker_url": null,
+    "status": "failed",
+    "error": "创建响应中未找到 task_id/run_id/id",
+    "detail": {
+      "frame": "frame_4.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_4.png",
+      "started_at": "2026-05-29 01:11:30",
+      "upload_response": {
+        "data": {
+          "url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/wdpw2uhtw2y6jhlre6grrseoo.png",
+          "tosKey": "/musically-maliva-obj/aigc_tool/files/wdpw2uhtw2y6jhlre6grrseoo.png",
+          "path": "/obj",
+          "domain": "sf-static.tiktokcdn.com"
+        },
+        "statusCode": 0
+      },
+      "uploaded_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/wdpw2uhtw2y6jhlre6grrseoo.png",
+      "create": {
+        "endpoint": "https://crate.tiktok-row.net/api/workflow/run",
+        "payload": {
+          "project_id": "7641896827951777799",
+          "group_id": "group-ESV1Jw7",
+          "api_key": "wk_2e25d1fb37d8a769bdb821fa38eec238147ccbd97f87b4928fd981b12f4b3648",
+          "inputs": {
+            "image": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/wdpw2uhtw2y6jhlre6grrseoo.png"
+          }
+        },
+        "response": {
+          "message": "[\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"projectId\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"groupId\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"object\",\n    \"received\": \"string\",\n    \"path\": [\n      \"inputs\",\n      \"image\"\n    ],\n    \"message\": \"Expected object, received string\"\n  }\n]"
+        }
+      },
+      "status": "failed",
+      "error": "创建响应中未找到 task_id/run_id/id",
+      "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 117, in <module>\nRuntimeError: 创建响应中未找到 task_id/run_id/id\n",
+      "finished_at": "2026-05-29 01:11:35"
+    }
+  },
+  {
+    "frame": "frame_5.png",
+    "text_prompt": null,
+    "sticker_url": null,
+    "status": "failed",
+    "error": "创建响应中未找到 task_id/run_id/id",
+    "detail": {
+      "frame": "frame_5.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_5.png",
+      "started_at": "2026-05-29 01:11:35",
+      "upload_response": {
+        "data": {
+          "url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/xozsx7i7okukxcitfuxphrkdg.png",
+          "tosKey": "/musically-maliva-obj/aigc_tool/files/xozsx7i7okukxcitfuxphrkdg.png",
+          "path": "/obj",
+          "domain": "sf-static.tiktokcdn.com"
+        },
+        "statusCode": 0
+      },
+      "uploaded_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/xozsx7i7okukxcitfuxphrkdg.png",
+      "create": {
+        "endpoint": "https://crate.tiktok-row.net/api/workflow/run",
+        "payload": {
+          "project_id": "7641896827951777799",
+          "group_id": "group-ESV1Jw7",
+          "api_key": "wk_2e25d1fb37d8a769bdb821fa38eec238147ccbd97f87b4928fd981b12f4b3648",
+          "inputs": {
+            "image": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/xozsx7i7okukxcitfuxphrkdg.png"
+          }
+        },
+        "response": {
+          "message": "[\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"projectId\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"groupId\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"object\",\n    \"received\": \"string\",\n    \"path\": [\n      \"inputs\",\n      \"image\"\n    ],\n    \"message\": \"Expected object, received string\"\n  }\n]"
+        }
+      },
+      "status": "failed",
+      "error": "创建响应中未找到 task_id/run_id/id",
+      "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 117, in <module>\nRuntimeError: 创建响应中未找到 task_id/run_id/id\n",
+      "finished_at": "2026-05-29 01:11:41"
+    }
+  },
+  {
+    "frame": "frame_2.png",
+    "text_prompt": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为一只愤怒的黄色卡通猫咪，保留图1中的核心表情特征：紧皱的双眉、极度愤怒的眼神、以及因嘶吼而呈现倒U型的夸张大嘴。采用2.5D emoji风格，柔和的矢量渐变填充，圆润简洁的轮廓，轻微的立体感，无描边，无写实纹理。猫咪头部和肩部占据画面中心75%，白色背景，1:1正方形构图，主体不切边。负向约束：无写实纹理，无皮毛细节，无写实阴影，无镜面高光，无复杂背景，不要写实形象，不要新增身体结构。",
+    "sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171252_b249cf8c-088e-4651-841c-563e773de482.png",
+    "status": "completed",
+    "error": null,
+    "detail": {
+      "frame": "frame_2.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_2.png",
+      "started_at": "2026-05-29 01:11:59",
+      "uploaded_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/rgqlqugk6tdo55uvlugva7iv4.png",
+      "run_instance_id": "run_7644990725544788232",
+      "status": "completed",
+      "sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171252_b249cf8c-088e-4651-841c-563e773de482.png",
+      "node_statuses": {
+        "meme_reference_image": "completed",
+        "emoji_style_reference_image": "completed",
+        "text_prompt": "completed",
+        "image_generate": "completed",
+        "image_remove_bg": "completed"
+      },
+      "final_detail": {
+        "data": {
+          "runInstanceId": "run_7644990725544788232",
+          "status": "completed",
+          "createdAt": "2026-05-28T17:12:03Z",
+          "progress": {
+            "total": 5,
+            "completed": 5,
+            "failed": 0,
+            "skipped": 0,
+            "cancelled": 0
+          },
+          "nodes": {
+            "meme_reference_image": {
+              "status": "completed"
+            },
+            "emoji_style_reference_image": {
+              "status": "completed"
+            },
+            "text_prompt": {
+              "status": "completed",
+              "output": {
+                "type": "text",
+                "value": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为一只愤怒的黄色卡通猫咪，保留图1中的核心表情特征：紧皱的双眉、极度愤怒的眼神、以及因嘶吼而呈现倒U型的夸张大嘴。采用2.5D emoji风格，柔和的矢量渐变填充，圆润简洁的轮廓，轻微的立体感，无描边，无写实纹理。猫咪头部和肩部占据画面中心75%，白色背景，1:1正方形构图，主体不切边。负向约束：无写实纹理，无皮毛细节，无写实阴影，无镜面高光，无复杂背景，不要写实形象，不要新增身体结构。"
+              }
+            },
+            "image_generate": {
+              "status": "completed",
+              "output": {
+                "type": "image",
+                "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171238_97aa6bc0-234f-460e-b94b-d5188195ec3c.png"
+              }
+            },
+            "image_remove_bg": {
+              "status": "completed",
+              "output": {
+                "type": "image",
+                "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171252_b249cf8c-088e-4651-841c-563e773de482.png"
+              }
+            }
+          },
+          "completedAt": "2026-05-28T17:12:58.618Z",
+          "outputs": {
+            "text_prompt": {
+              "type": "text",
+              "value": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为一只愤怒的黄色卡通猫咪，保留图1中的核心表情特征：紧皱的双眉、极度愤怒的眼神、以及因嘶吼而呈现倒U型的夸张大嘴。采用2.5D emoji风格，柔和的矢量渐变填充，圆润简洁的轮廓，轻微的立体感，无描边，无写实纹理。猫咪头部和肩部占据画面中心75%，白色背景，1:1正方形构图，主体不切边。负向约束：无写实纹理，无皮毛细节，无写实阴影，无镜面高光，无复杂背景，不要写实形象，不要新增身体结构。"
+            },
+            "image_generate": {
+              "type": "image",
+              "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171238_97aa6bc0-234f-460e-b94b-d5188195ec3c.png"
+            },
+            "image_remove_bg": {
+              "type": "image",
+              "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171252_b249cf8c-088e-4651-841c-563e773de482.png"
+            }
+          },
+          "billing": {
+            "totalNodes": 5,
+            "executedNodes": 5,
+            "skippedNodes": 0,
+            "nodeDetails": [
+              {
+                "key": "text_prompt",
+                "model": "gemini-3.1-fl",
+                "tokens": null
+              },
+              {
+                "key": "image_generate",
+                "model": "nano-banana2",
+                "tokens": null
+              },
+              {
+                "key": "image_remove_bg",
+                "model": "saliency_seg",
+                "tokens": null
+              }
+            ]
+          }
+        },
+        "statusCode": 0
+      },
+      "text_prompt": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为一只愤怒的黄色卡通猫咪，保留图1中的核心表情特征：紧皱的双眉、极度愤怒的眼神、以及因嘶吼而呈现倒U型的夸张大嘴。采用2.5D emoji风格，柔和的矢量渐变填充，圆润简洁的轮廓，轻微的立体感，无描边，无写实纹理。猫咪头部和肩部占据画面中心75%，白色背景，1:1正方形构图，主体不切边。负向约束：无写实纹理，无皮毛细节，无写实阴影，无镜面高光，无复杂背景，不要写实形象，不要新增身体结构。",
+      "finished_at": "2026-05-29 01:12:58"
+    }
+  },
+  {
+    "frame": "frame_3.png",
+    "text_prompt": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为一只金色的悲伤蛙（Pepe the Frog），保留其标志性的悲伤眼神、下垂的眼角和紧闭的弧形嘴唇，表情呈现出经典郁闷的meme特征。风格采用TikTok emoji的2.5D渲染效果，使用柔和的矢量纯色与平滑的径向渐变，具有圆润的立体感。主体占画面75%，放置在纯净白色背景中心，四周均匀留白。整体设计简洁，无写实纹理、无描边、无阴影投影，呈现高辨识度的卡通图标感。",
+    "sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171337_41eceec6-cf99-4deb-ae4d-e539845c4eef.png",
+    "status": "completed",
+    "error": null,
+    "detail": {
+      "frame": "frame_3.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_3.png",
+      "started_at": "2026-05-29 01:12:58",
+      "uploaded_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/rdzmbup7h7lyna1qb1qf22xll.png",
+      "run_instance_id": "run_7644991144941584648",
+      "status": "completed",
+      "sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171337_41eceec6-cf99-4deb-ae4d-e539845c4eef.png",
+      "node_statuses": {
+        "meme_reference_image": "completed",
+        "emoji_style_reference_image": "completed",
+        "text_prompt": "completed",
+        "image_generate": "completed",
+        "image_remove_bg": "completed"
+      },
+      "final_detail": {
+        "data": {
+          "runInstanceId": "run_7644991144941584648",
+          "status": "completed",
+          "createdAt": "2026-05-28T17:13:02Z",
+          "progress": {
+            "total": 5,
+            "completed": 5,
+            "failed": 0,
+            "skipped": 0,
+            "cancelled": 0
+          },
+          "nodes": {
+            "meme_reference_image": {
+              "status": "completed"
+            },
+            "emoji_style_reference_image": {
+              "status": "completed"
+            },
+            "text_prompt": {
+              "status": "completed",
+              "output": {
+                "type": "text",
+                "value": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为一只金色的悲伤蛙（Pepe the Frog），保留其标志性的悲伤眼神、下垂的眼角和紧闭的弧形嘴唇，表情呈现出经典郁闷的meme特征。风格采用TikTok emoji的2.5D渲染效果，使用柔和的矢量纯色与平滑的径向渐变，具有圆润的立体感。主体占画面75%，放置在纯净白色背景中心，四周均匀留白。整体设计简洁，无写实纹理、无描边、无阴影投影，呈现高辨识度的卡通图标感。"
+              }
+            },
+            "image_generate": {
+              "status": "completed",
+              "output": {
+                "type": "image",
+                "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171326_e885bf56-f096-42ba-b586-9269635a150d.png"
+              }
+            },
+            "image_remove_bg": {
+              "status": "completed",
+              "output": {
+                "type": "image",
+                "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171337_41eceec6-cf99-4deb-ae4d-e539845c4eef.png"
+              }
+            }
+          },
+          "completedAt": "2026-05-28T17:13:41.120Z",
+          "outputs": {
+            "text_prompt": {
+              "type": "text",
+              "value": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为一只金色的悲伤蛙（Pepe the Frog），保留其标志性的悲伤眼神、下垂的眼角和紧闭的弧形嘴唇，表情呈现出经典郁闷的meme特征。风格采用TikTok emoji的2.5D渲染效果，使用柔和的矢量纯色与平滑的径向渐变，具有圆润的立体感。主体占画面75%，放置在纯净白色背景中心，四周均匀留白。整体设计简洁，无写实纹理、无描边、无阴影投影，呈现高辨识度的卡通图标感。"
+            },
+            "image_generate": {
+              "type": "image",
+              "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171326_e885bf56-f096-42ba-b586-9269635a150d.png"
+            },
+            "image_remove_bg": {
+              "type": "image",
+              "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171337_41eceec6-cf99-4deb-ae4d-e539845c4eef.png"
+            }
+          },
+          "billing": {
+            "totalNodes": 5,
+            "executedNodes": 5,
+            "skippedNodes": 0,
+            "nodeDetails": [
+              {
+                "key": "text_prompt",
+                "model": "gemini-3.1-fl",
+                "tokens": null
+              },
+              {
+                "key": "image_generate",
+                "model": "nano-banana2",
+                "tokens": null
+              },
+              {
+                "key": "image_remove_bg",
+                "model": "saliency_seg",
+                "tokens": null
+              }
+            ]
+          }
+        },
+        "statusCode": 0
+      },
+      "text_prompt": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为一只金色的悲伤蛙（Pepe the Frog），保留其标志性的悲伤眼神、下垂的眼角和紧闭的弧形嘴唇，表情呈现出经典郁闷的meme特征。风格采用TikTok emoji的2.5D渲染效果，使用柔和的矢量纯色与平滑的径向渐变，具有圆润的立体感。主体占画面75%，放置在纯净白色背景中心，四周均匀留白。整体设计简洁，无写实纹理、无描边、无阴影投影，呈现高辨识度的卡通图标感。",
+      "finished_at": "2026-05-29 01:13:41"
+    }
+  },
+  {
+    "frame": "frame_4.png",
+    "text_prompt": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji风格图标。核心特征：一名黄色卡通皮肤的男子，极度震惊的夸张表情，双眼圆睁，瞳孔微缩，嘴巴张大呈O型，双手分别紧贴在两侧脸颊上，面部表情具有强烈的戏剧性反应感。风格要求：采用TikTok emoji的2.5D渲染效果，圆润简洁，平滑的矢量渐变，轻微的立体浮雕感，高辨识度，明亮清晰。构图要求：主体占画面80%，正中对齐，四周留白，白色背景。负向约束：无写实纹理，无复杂背景，无描边，无真实鼻梁或唇纹，非圆球形脸，无新增身体结构。",
+    "sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171420_14f21c20-8c15-4706-bcb5-af76364b2835.png",
+    "status": "completed",
+    "error": null,
+    "detail": {
+      "frame": "frame_4.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_4.png",
+      "started_at": "2026-05-29 01:13:41",
+      "uploaded_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/nl78hb9d5g0eq2atsqp7znscs.png",
+      "run_instance_id": "run_7644991429407752455",
+      "status": "completed",
+      "sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171420_14f21c20-8c15-4706-bcb5-af76364b2835.png",
+      "node_statuses": {
+        "meme_reference_image": "completed",
+        "emoji_style_reference_image": "completed",
+        "text_prompt": "completed",
+        "image_generate": "completed",
+        "image_remove_bg": "completed"
+      },
+      "final_detail": {
+        "data": {
+          "runInstanceId": "run_7644991429407752455",
+          "status": "completed",
+          "createdAt": "2026-05-28T17:13:44Z",
+          "progress": {
+            "total": 5,
+            "completed": 5,
+            "failed": 0,
+            "skipped": 0,
+            "cancelled": 0
+          },
+          "nodes": {
+            "meme_reference_image": {
+              "status": "completed"
+            },
+            "emoji_style_reference_image": {
+              "status": "completed"
+            },
+            "text_prompt": {
+              "status": "completed",
+              "output": {
+                "type": "text",
+                "value": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji风格图标。核心特征：一名黄色卡通皮肤的男子，极度震惊的夸张表情，双眼圆睁，瞳孔微缩，嘴巴张大呈O型，双手分别紧贴在两侧脸颊上，面部表情具有强烈的戏剧性反应感。风格要求：采用TikTok emoji的2.5D渲染效果，圆润简洁，平滑的矢量渐变，轻微的立体浮雕感，高辨识度，明亮清晰。构图要求：主体占画面80%，正中对齐，四周留白，白色背景。负向约束：无写实纹理，无复杂背景，无描边，无真实鼻梁或唇纹，非圆球形脸，无新增身体结构。"
+              }
+            },
+            "image_generate": {
+              "status": "completed",
+              "output": {
+                "type": "image",
+                "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171408_111d718f-c959-4301-94b6-6ab2aeea3af4.png"
+              }
+            },
+            "image_remove_bg": {
+              "status": "completed",
+              "output": {
+                "type": "image",
+                "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171420_14f21c20-8c15-4706-bcb5-af76364b2835.png"
+              }
+            }
+          },
+          "completedAt": "2026-05-28T17:14:23.589Z",
+          "outputs": {
+            "text_prompt": {
+              "type": "text",
+              "value": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji风格图标。核心特征：一名黄色卡通皮肤的男子，极度震惊的夸张表情，双眼圆睁，瞳孔微缩，嘴巴张大呈O型，双手分别紧贴在两侧脸颊上，面部表情具有强烈的戏剧性反应感。风格要求：采用TikTok emoji的2.5D渲染效果，圆润简洁，平滑的矢量渐变，轻微的立体浮雕感，高辨识度，明亮清晰。构图要求：主体占画面80%，正中对齐，四周留白，白色背景。负向约束：无写实纹理，无复杂背景，无描边，无真实鼻梁或唇纹，非圆球形脸，无新增身体结构。"
+            },
+            "image_generate": {
+              "type": "image",
+              "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171408_111d718f-c959-4301-94b6-6ab2aeea3af4.png"
+            },
+            "image_remove_bg": {
+              "type": "image",
+              "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171420_14f21c20-8c15-4706-bcb5-af76364b2835.png"
+            }
+          },
+          "billing": {
+            "totalNodes": 5,
+            "executedNodes": 5,
+            "skippedNodes": 0,
+            "nodeDetails": [
+              {
+                "key": "text_prompt",
+                "model": "gemini-3.1-fl",
+                "tokens": null
+              },
+              {
+                "key": "image_generate",
+                "model": "nano-banana2",
+                "tokens": null
+              },
+              {
+                "key": "image_remove_bg",
+                "model": "saliency_seg",
+                "tokens": null
+              }
+            ]
+          }
+        },
+        "statusCode": 0
+      },
+      "text_prompt": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji风格图标。核心特征：一名黄色卡通皮肤的男子，极度震惊的夸张表情，双眼圆睁，瞳孔微缩，嘴巴张大呈O型，双手分别紧贴在两侧脸颊上，面部表情具有强烈的戏剧性反应感。风格要求：采用TikTok emoji的2.5D渲染效果，圆润简洁，平滑的矢量渐变，轻微的立体浮雕感，高辨识度，明亮清晰。构图要求：主体占画面80%，正中对齐，四周留白，白色背景。负向约束：无写实纹理，无复杂背景，无描边，无真实鼻梁或唇纹，非圆球形脸，无新增身体结构。",
+      "finished_at": "2026-05-29 01:14:23"
+    }
+  },
+  {
+    "frame": "frame_5.png",
+    "text_prompt": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为正在哭泣的黄色卡通人脸，核心特征包括：双眼紧闭且流出夸张的蓝色泪水，嘴角向下呈极度悲伤状，眉头紧锁，双手抬起捂住双眼两侧。采用TikTok风格的2.5D emoji表现手法，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度，白色背景。主体占画面75%-80%，四周均匀留白，1:1正方形构图。无写实纹理，无描边，无阴影，非写实卡通风格。",
+    "sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171506_279e699f-2e1e-4d8c-9afa-c8c134522a30.png",
+    "status": "completed",
+    "error": null,
+    "detail": {
+      "frame": "frame_5.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_5.png",
+      "started_at": "2026-05-29 01:14:23",
+      "uploaded_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/ectbsu7unu64h345gixg8p8pb.png",
+      "run_instance_id": "run_7644991476644282632",
+      "status": "completed",
+      "sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171506_279e699f-2e1e-4d8c-9afa-c8c134522a30.png",
+      "node_statuses": {
+        "meme_reference_image": "completed",
+        "emoji_style_reference_image": "completed",
+        "text_prompt": "completed",
+        "image_generate": "completed",
+        "image_remove_bg": "completed"
+      },
+      "final_detail": {
+        "data": {
+          "runInstanceId": "run_7644991476644282632",
+          "status": "completed",
+          "createdAt": "2026-05-28T17:14:27Z",
+          "progress": {
+            "total": 5,
+            "completed": 5,
+            "failed": 0,
+            "skipped": 0,
+            "cancelled": 0
+          },
+          "nodes": {
+            "meme_reference_image": {
+              "status": "completed"
+            },
+            "emoji_style_reference_image": {
+              "status": "completed"
+            },
+            "text_prompt": {
+              "status": "completed",
+              "output": {
+                "type": "text",
+                "value": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为正在哭泣的黄色卡通人脸，核心特征包括：双眼紧闭且流出夸张的蓝色泪水，嘴角向下呈极度悲伤状，眉头紧锁，双手抬起捂住双眼两侧。采用TikTok风格的2.5D emoji表现手法，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度，白色背景。主体占画面75%-80%，四周均匀留白，1:1正方形构图。无写实纹理，无描边，无阴影，非写实卡通风格。"
+              }
+            },
+            "image_generate": {
+              "status": "completed",
+              "output": {
+                "type": "image",
+                "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171451_0c3a9e3b-d590-4c8d-b18d-8634712d73ee.png"
+              }
+            },
+            "image_remove_bg": {
+              "status": "completed",
+              "output": {
+                "type": "image",
+                "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171506_279e699f-2e1e-4d8c-9afa-c8c134522a30.png"
+              }
+            }
+          },
+          "completedAt": "2026-05-28T17:15:12.268Z",
+          "outputs": {
+            "text_prompt": {
+              "type": "text",
+              "value": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为正在哭泣的黄色卡通人脸，核心特征包括：双眼紧闭且流出夸张的蓝色泪水，嘴角向下呈极度悲伤状，眉头紧锁，双手抬起捂住双眼两侧。采用TikTok风格的2.5D emoji表现手法，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度，白色背景。主体占画面75%-80%，四周均匀留白，1:1正方形构图。无写实纹理，无描边，无阴影，非写实卡通风格。"
+            },
+            "image_generate": {
+              "type": "image",
+              "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171451_0c3a9e3b-d590-4c8d-b18d-8634712d73ee.png"
+            },
+            "image_remove_bg": {
+              "type": "image",
+              "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528171506_279e699f-2e1e-4d8c-9afa-c8c134522a30.png"
+            }
+          },
+          "billing": {
+            "totalNodes": 5,
+            "executedNodes": 5,
+            "skippedNodes": 0,
+            "nodeDetails": [
+              {
+                "key": "text_prompt",
+                "model": "gemini-3.1-fl",
+                "tokens": null
+              },
+              {
+                "key": "image_generate",
+                "model": "nano-banana2",
+                "tokens": null
+              },
+              {
+                "key": "image_remove_bg",
+                "model": "saliency_seg",
+                "tokens": null
+              }
+            ]
+          }
+        },
+        "statusCode": 0
+      },
+      "text_prompt": "以图1为内容参考，以图2为风格参考，生成一个头肩构图的2.5D emoji图标。画面主体为正在哭泣的黄色卡通人脸，核心特征包括：双眼紧闭且流出夸张的蓝色泪水，嘴角向下呈极度悲伤状，眉头紧锁，双手抬起捂住双眼两侧。采用TikTok风格的2.5D emoji表现手法，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度，白色背景。主体占画面75%-80%，四周均匀留白，1:1正方形构图。无写实纹理，无描边，无阴影，非写实卡通风格。",
+      "finished_at": "2026-05-29 01:15:12"
+    }
+  }
+]

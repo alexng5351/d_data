@@ -4,3 +4,5 @@ node_modules
 dist
 build
 Assets/
+public/data/meme/meme_candidates_dev.json
+public/data/meme/archives/

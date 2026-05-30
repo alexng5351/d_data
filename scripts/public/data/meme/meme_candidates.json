@@ -1,0 +1,54 @@
+{
+  "last_updated": "2026-05-29T17:41:24Z",
+  "source": "giphy",
+  "items": [
+    {
+      "id": "giphy_LR5GeZFCwDRcpG20PR",
+      "name": "Smirk Smile GIF by Guidoio_official",
+      "short_name": "Smirk Smile GIF by Guidoio_official",
+      "description": "Smirk Smile GIF by Guidoio_official",
+      "source_platform": "giphy",
+      "source_url": "https://giphy.com/gifs/guidoio-smile-smirk-shrek-LR5GeZFCwDRcpG20PR",
+      "raw_gif_url": "https://media.giphy.com/media/LR5GeZFCwDRcpG20PR/giphy.gif",
+      "raw_image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "media_type": "unknown",
+      "frame_png_path": "/images/meme/frames/giphy_LR5GeZFCwDRcpG20PR.png",
+      "popularity_signal": {},
+      "index": 1,
+      "status": "scraped",
+      "scraped_at": "2026-05-29T17:41:07Z"
+    },
+    {
+      "id": "giphy_NQ5aPNX1cQjxT7KP9M",
+      "name": "Disappointed Instagram GIF",
+      "short_name": "Disappointed Instagram GIF",
+      "description": "Disappointed Instagram GIF",
+      "source_platform": "giphy",
+      "source_url": "https://giphy.com/gifs/sadness-yellow-emoji-floating-NQ5aPNX1cQjxT7KP9M",
+      "raw_gif_url": "https://media.giphy.com/media/NQ5aPNX1cQjxT7KP9M/giphy.gif",
+      "raw_image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "media_type": "unknown",
+      "frame_png_path": "/images/meme/frames/giphy_NQ5aPNX1cQjxT7KP9M.png",
+      "popularity_signal": {},
+      "index": 2,
+      "status": "scraped",
+      "scraped_at": "2026-05-29T17:41:07Z"
+    },
+    {
+      "id": "giphy_qDOI1FqYEyTxkW0MEI",
+      "name": "Text Brat GIF",
+      "short_name": "Text Brat GIF",
+      "description": "Text Brat GIF",
+      "source_platform": "giphy",
+      "source_url": "https://giphy.com/gifs/kata-vid-qDOI1FqYEyTxkW0MEI",
+      "raw_gif_url": "https://media.giphy.com/media/qDOI1FqYEyTxkW0MEI/giphy.gif",
+      "raw_image_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "media_type": "unknown",
+      "frame_png_path": "/images/meme/frames/giphy_qDOI1FqYEyTxkW0MEI.png",
+      "popularity_signal": {},
+      "index": 3,
+      "status": "scraped",
+      "scraped_at": "2026-05-29T17:41:07Z"
+    }
+  ]
+}

@@ -5,35 +5,45 @@ import Sidebar from './Sidebar'
 import EmojiDetailModal from './EmojiDetailModal'
 
 function EmojiPage({ onTabChange, collapsed, onToggleCollapse, onMemeClick }) {
+  const getVariantUrl = (variant) => variant?.removed_bg_url || variant?.url
+  const getMemeTitle = (meme) => meme.short_name || meme.title || ''
+
   const [activeCategoryIndex, setActiveCategoryIndex] = useState(0)
   const [currentDate, setCurrentDate] = useState('')
   const [selectedEmoji, setSelectedEmoji] = useState(null)
   const [showDetailModal, setShowDetailModal] = useState(false)
+  const [memeData, setMemeData] = useState([])
 
   useEffect(() => {
-    const date = new Date()
-    const year = date.getFullYear()
-    const month = String(date.getMonth() + 1).padStart(2, '0')
-    const day = String(date.getDate()).padStart(2, '0')
-    setCurrentDate(`${year}.${month}.${day}`)
+    const loadMemeData = async () => {
+      try {
+        const response = await fetch('/data/meme/meme_candidates.json')
+        const data = await response.json()
+        const sortedItems = [...(data.items || [])].sort((a, b) => (a.index || 0) - (b.index || 0))
+        setMemeData(sortedItems)
+        
+        // 使用 JSON 中的 last_updated 日期
+        if (data.last_updated) {
+          const date = new Date(data.last_updated)
+          const year = date.getFullYear()
+          const month = String(date.getMonth() + 1).padStart(2, '0')
+          const day = String(date.getDate()).padStart(2, '0')
+          setCurrentDate(`${year}.${month}.${day}`)
+        }
+      } catch (error) {
+        console.error('Failed to load meme data:', error)
+      }
+    }
+    loadMemeData()
   }, [])
 
   const categories = ['All', 'Basic', 'Styles', 'Animals', 'Hands', 'Words', 'Others']
-  const trendingMemes = [
-    'Cheating AI Fruit',
-    'Elon Musk and Lei Jun State Dinner Selfie',
-    'Evil Chihuahua Smiling',
-    'Viral Lobster Creature',
-    'Chaotic Pigtail Reaction'
-  ]
 
   const emojiData = {
     basic: [
       { 
         image: getAssetPath('assets/emoji_design/basic/emoji_basic_1.png'), 
-        label: 'Basic 1',
-        title: 'Lobster Slay',
-        description: 'OpenClaw turned "raising lobsters" into a tech craze, making the red lobster an unlikely AI mascot.'
+        label: 'Basic 1'
       },
       { image: getAssetPath('assets/emoji_design/basic/emoji_basic_2.png'), label: 'Basic 2' },
       { image: getAssetPath('assets/emoji_design/basic/emoji_basic_3.png'), label: 'Basic 3' },
@@ -231,36 +241,33 @@ function EmojiPage({ onTabChange, collapsed, onToggleCollapse, onMemeClick }) {
               <span className="trending-title">Today’s Most Viral Memes</span>
             </div>
             <div className="trending-memes">
-              {trendingMemes.map((meme, index) => (
-                <div key={index} className="meme-item" onClick={() => handleMemeItemClick(index === 0 ? null : index)}>
+              {memeData.slice(0, 5).map((meme, index) => (
+                <div key={meme.id || meme.index} className="meme-item" onClick={() => handleMemeItemClick(index)}>
                   <img src={getAssetPath("assets/icon_fire.png")} alt="Fire" className="meme-flame" />
-                  <span className="meme-text">{meme}</span>
+                  <span className="meme-text">{getMemeTitle(meme)}</span>
                 </div>
               ))}
             </div>
           </div>
           <div className="trending-right">
             <img src={getAssetPath("assets/emoji_banner.png")} alt="Emoji Banner" className="emoji-banner" />
-            <div className="emoji-bubble-container emoji-1-container" onClick={() => handleMemeItemClick(null)}>
-              <img src={getAssetPath("assets/bubble.png")} alt="Bubble 1" className="banner-bubble size-208" />
-              <img src={getAssetPath("assets/emoji_design/memes/meme1_emoji1.png")} alt="Emoji 1" className="banner-emoji size-160" />
-            </div>
-            <div className="emoji-bubble-container emoji-2-container" onClick={() => handleMemeItemClick(1)}>
-              <img src={getAssetPath("assets/bubble.png")} alt="Bubble 2" className="banner-bubble size-156" />
-              <img src={getAssetPath("assets/emoji_design/memes/meme2_emoji1.png")} alt="Emoji 2" className="banner-emoji size-120" />
-            </div>
-            <div className="emoji-bubble-container emoji-3-container" onClick={() => handleMemeItemClick(2)}>
-              <img src={getAssetPath("assets/bubble.png")} alt="Bubble 3" className="banner-bubble size-104" />
-              <img src={getAssetPath("assets/emoji_design/memes/meme3_emoji1.png")} alt="Emoji 3" className="banner-emoji size-80" />
-            </div>
-            <div className="emoji-bubble-container emoji-4-container" onClick={() => handleMemeItemClick(3)}>
-              <img src={getAssetPath("assets/bubble.png")} alt="Bubble 4" className="banner-bubble size-221" />
-              <img src={getAssetPath("assets/emoji_design/memes/meme4_emoji1.png")} alt="Emoji 4" className="banner-emoji size-170" />
-            </div>
-            <div className="emoji-bubble-container emoji-5-container" onClick={() => handleMemeItemClick(4)}>
-              <img src={getAssetPath("assets/bubble.png")} alt="Bubble 5" className="banner-bubble size-156" />
-              <img src={getAssetPath("assets/emoji_design/memes/meme5_emoji1.png")} alt="Emoji 5" className="banner-emoji size-120" />
-            </div>
+            {memeData.slice(0, 5).map((meme, index) => {
+              const firstVariant = meme.generated_variants?.[0]
+              const stickerUrl = firstVariant?.removed_bg_url || firstVariant?.url
+              return (
+                <div key={meme.id || meme.index} className={`emoji-bubble-container emoji-${index + 1}-container`} onClick={() => handleMemeItemClick(index)}>
+                  <img src={getAssetPath("assets/bubble.png")} alt={`Bubble ${index + 1}`} className={`banner-bubble size-${[208, 156, 104, 221, 156][index]}`} />
+                  {stickerUrl && (
+                    <img
+                      key={`${meme.id || meme.index}-banner`}
+                      src={stickerUrl}
+                      alt={getMemeTitle(meme)}
+                      className={`banner-emoji size-${[160, 120, 80, 170, 120][index]}`}
+                    />
+                  )}
+                </div>
+              )
+            })}
           </div>
         </div>
 

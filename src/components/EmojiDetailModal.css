@@ -24,6 +24,8 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  width: 800px;
+  max-width: 90vw;
 }
 
 .emoji-detail-modal-header {
