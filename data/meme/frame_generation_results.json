@@ -1,0 +1,39 @@
+{
+  "started_at": "2026-05-30T07:36:26Z",
+  "execution_mode": "pending_candidates_only",
+  "frames": [
+    {
+      "frame": "giphy_wLK6lCNLfMGDxBgCzh.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/giphy_wLK6lCNLfMGDxBgCzh.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/wntprxqr81yupj569l9oi98la.png",
+      "optimizedPrompt": "以图1为内容参考，以图2为风格参考，半身像。卡通黄色皮肤角色，佩戴黑色反戴棒球帽和绿色印花头巾，银色圆环耳饰，身穿简洁白色圆领T恤，呈现一种略带不屑、自信且平淡的表情，双眼微眯，嘴角呈现标志性的抿嘴微笑弧度，双手交叉抱胸，主体呈现 2.5D emoji 风格，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度，白色背景，构图居中，主体占画面 75%–80%，无写实纹理，无描边，无复杂背景。",
+      "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530073702_8d9f5016-b8d6-46a2-ace0-edf7e1dd6813.png",
+      "status": "full_pipeline_completed",
+      "error": null,
+      "started_at": "2026-05-30T07:36:26Z",
+      "text_submit": {
+        "request_id": "f6cfd5e7-1382-4bca-8a61-61e2ee6befd7",
+        "task_id": "7645583991000531218",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "generated_variants": [
+        {
+          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530073702_8d9f5016-b8d6-46a2-ace0-edf7e1dd6813.png",
+          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530073713_a740fbf6-9fec-4d5f-b7e4-5759fec12f59.png"
+        },
+        {
+          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530073741_9de75c90-16e4-46b1-a9ff-8816f49b3485.png",
+          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530073753_89151b77-c95a-463b-b538-e6998bf18be9.png"
+        },
+        {
+          "url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530073821_543125f7-ae5b-459a-a47b-57c962c5bfa4.png",
+          "removed_bg_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260530073834_41cd5bb7-afb5-4d41-8cbc-ef647cce25e0.png"
+        }
+      ],
+      "variant_errors": [],
+      "finished_at": "2026-05-30T07:38:39Z"
+    }
+  ]
+}

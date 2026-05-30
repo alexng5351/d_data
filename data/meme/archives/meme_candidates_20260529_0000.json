@@ -1,0 +1,380 @@
+{
+  "started_at": "2026-05-29T08:05:16Z",
+  "frames": [
+    {
+      "frame": "frame_1.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_1.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/bi9cdhxrjbfxxdas84oug27c8.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考。取景范围：半身。核心特征：一名黄色皮肤的卡通人物，留着短寸发型，身体略微向左侧倾斜，头部向右侧转动，挑起一侧眉毛，露出困惑、质疑且带有轻微嘲讽的标志性表情，身穿简洁白色圆领T恤。整体采用2.5D emoji图标风格，柔和矢量渐变，轻微立体感，圆润简洁，表情夸张，高辨识度，无写实纹理。构图：主体占画面75%-80%，四周均匀留白，主体不切边，1:1正方形构图，白色背景。负向约束：无写实纹理，无皮毛细节，无褶皱，无写实阴影，无深色投影，无镜面高光，无反光，无描边，无复杂背景，主体不切边，不要写实人像，不要半写实脸，不要真实五官比例，不要真实鼻梁、真实嘴唇、真实牙齿，不要肖像感，不要新增图1没有出现的身体结构。",
+      "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529080628_597fc3cd-b3c8-4d06-825f-31d22e9492ce.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529080651_71d6c2ba-1174-4c0d-8953-97451f8eb517.png",
+      "status": "full_pipeline_completed",
+      "error": null,
+      "started_at": "2026-05-29T08:05:44Z",
+      "text_submit": {
+        "request_id": "c3662ced-0031-4a1e-9b18-b9b5ca47bf24",
+        "task_id": "7645221579630166279",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "image_submit": {
+        "request_id": "2fbd5c7b-5920-4908-ac4f-a83676f647b6",
+        "task_id": "7645221610001056008",
+        "run_instance_id": null
+      },
+      "image_poll_status": "success",
+      "remove_bg_submit": {
+        "request_id": "f71ddf12-57b9-4d39-9807-3cd457600d79",
+        "task_id": "7645222004404044040",
+        "run_instance_id": null
+      },
+      "remove_bg_poll_status": "success",
+      "finished_at": "2026-05-29T08:07:02Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 1
+    },
+    {
+      "frame": "frame_1.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_1.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/u95vmw1e86b2s15t9rf5j5dc8.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考。头肩取景。画面主体为一个黄色皮肤的卡通化人物，完美复刻图1中的经典困惑质疑表情：单侧眉毛高高挑起，嘴角呈现出一种怀疑且难以置信的微微歪斜感。角色留着标志性的短发发型，身穿简洁的白色圆领T恤。整体采用2.5D emoji图标风格，柔和的矢量渐变效果，带有轻微的立体感，形象圆润简洁，表情夸张且极具辨识度，无任何写实纹理。构图为1:1正方形，主体占画面75%–80%，背景为纯白色，四周均匀留白。负向提示：无写实纹理、无皮毛细节、无褶皱、无写实阴影、无深色投影、无镜面高光、无反光、无描边、无复杂背景、主体不切边、非真实人像、非半写实脸、非真实五官比例、非真实鼻梁及唇齿、无肖像感。",
+      "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529080747_4a2ded35-dac5-440e-a1b3-e877ef8f1445.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529080806_d22cb098-81aa-4947-bb76-7d3202cc49dc.png",
+      "status": "full_pipeline_completed",
+      "error": null,
+      "started_at": "2026-05-29T08:07:02Z",
+      "text_submit": {
+        "request_id": "2b3d4313-8761-406d-82f5-e62b18fc27d4",
+        "task_id": "7645222146972631304",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "image_submit": {
+        "request_id": "72d74631-03ed-451f-ba7b-826363c9fb26",
+        "task_id": "7645222120414363911",
+        "run_instance_id": null
+      },
+      "image_poll_status": "success",
+      "remove_bg_submit": {
+        "request_id": "c554fc5f-bada-4ae6-941b-9fa112848b01",
+        "task_id": "7645222249921921298",
+        "run_instance_id": null
+      },
+      "remove_bg_poll_status": "success",
+      "finished_at": "2026-05-29T08:08:12Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 2
+    },
+    {
+      "frame": "frame_2.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_2.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/bb1s7r16ii71k4hu5eca3jkdt.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考。取景范围：头肩。黄色卡通化男性角色，短发，佩戴耳钉，穿着格子图案衣服。表情极度震惊，瞪大眼睛，嘴巴夸张地圆张成“O”型。采用TikTok emoji的2.5D图标风格，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度。构图：主体占画面75%–80%，四周均匀留白，1:1正方形构图，白色背景。负向约束：无写实纹理，无褶皱，无写实阴影，无镜面高光，无描边，无复杂背景，主体不切边，不要写实人像，不要半写实脸，不要真实五官比例，不要肖像感。",
+      "image_generate_url": null,
+      "final_sticker_url": null,
+      "status": "failed",
+      "error": "frame_2.png image_generate 轮询超时，最后错误: 请求最终失败: GET https://crate.tiktok-row.net/api/v1/generation/1d7b1618-40a4-4371-a097-9d8b95e1dacd: HTTP 400: {'statusCode': 400, 'message': 'Task not found'}",
+      "started_at": "2026-05-29T08:08:12Z",
+      "text_submit": {
+        "request_id": "fb31fa33-f0b1-48cc-9bad-2476c7026889",
+        "task_id": "7645222367178506504",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "finished_at": "2026-05-29T08:13:40Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 1
+    },
+    {
+      "frame": "frame_2.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_2.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/bk5udfbvy8vmnk8m7lkpk6yl7.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考。头肩取景。一个黄色卡通emoji风格的年轻男性角色，头向一侧转动，双眼向下看，嘴巴极度夸张地张大呈“O”型，表现出极度震惊和不敢置信的表情，保留短发特征。采用TikTok 2.5D emoji图标风格，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度，白色背景，正方形构图，主体占比75%至80%。\n\n负向约束：无写实纹理，无皮毛细节，无褶皱，无写实阴影，无深色投影，无镜面高光，无反光，无描边，无复杂背景，主体不切边，不要写实人像，不要半写实脸，不要真实五官比例，不要真实鼻梁、真实嘴唇、真实牙齿，不要肖像感，不要新增图1没有出现的身体结构。",
+      "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529081423_25908368-ba3a-4423-95d2-38ccf7308b5e.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529081438_3a66d8e2-f2b8-4e3f-a553-56be0891b171.png",
+      "status": "full_pipeline_completed",
+      "error": null,
+      "started_at": "2026-05-29T08:13:40Z",
+      "text_submit": {
+        "request_id": "98160069-a525-4d09-b588-b41e5afe3efe",
+        "task_id": "7645223664597942535",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "image_submit": {
+        "request_id": "5697e2bb-63e2-4a6f-b6db-82130c306186",
+        "task_id": "7645223871616631048",
+        "run_instance_id": null
+      },
+      "image_poll_status": "success",
+      "remove_bg_submit": {
+        "request_id": "c9dec413-a042-47e6-a9f0-15071fc68c0d",
+        "task_id": "7645224019063521554",
+        "run_instance_id": null
+      },
+      "remove_bg_poll_status": "success",
+      "finished_at": "2026-05-29T08:14:46Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 2
+    },
+    {
+      "frame": "frame_3.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_3.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/mvotwlfx4x9azfzaaf7ns47d5.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考，生成半身像。核心特征：大而圆的眼球向侧方极度斜视、略微紧绷的嘴部轮廓、呈现尴尬且困惑的反应感。风格采用2.5D emoji图标风格，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度，无写实纹理。构图为主体占据画面75%-80%，四周均匀留白，主体不切边，1:1正方形构图，白色背景。\n\n负向约束：无写实纹理，无皮毛细节，无褶皱，无写实阴影，无深色投影，无镜面高光，无反光，无描边，无复杂背景，主体不切边，不要写实人像，不要半写实脸，不要真实五官比例，不要真实鼻梁、真实嘴唇、真实牙齿，不要肖像感，不要新增图1没有出现的身体结构。",
+      "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529081531_2a55d17c-e01a-4889-aa3b-1f5e4c1abb14.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529081550_cbc3da79-a408-4ed3-8100-1afb1119b3a6.png",
+      "status": "full_pipeline_completed",
+      "error": null,
+      "started_at": "2026-05-29T08:14:46Z",
+      "text_submit": {
+        "request_id": "87b60b33-699f-4028-8e25-1133a7350ced",
+        "task_id": "7645224058409861394",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "image_submit": {
+        "request_id": "a340cf13-346b-47ce-8d2c-2c2190c822fe",
+        "task_id": "7645224058598670600",
+        "run_instance_id": null
+      },
+      "image_poll_status": "success",
+      "remove_bg_submit": {
+        "request_id": "de17b450-cbe5-4602-ab38-f45b6b7e8c1e",
+        "task_id": "7645224404095811847",
+        "run_instance_id": null
+      },
+      "remove_bg_poll_status": "success",
+      "finished_at": "2026-05-29T08:15:52Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 1
+    },
+    {
+      "frame": "frame_3.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_3.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/vk8awkmptqdncgjlwcy8izxmd.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考。半身构图，呈现一个类似毛绒大脚怪造型的卡通化生物。核心特征包括：圆润秃顶、两侧略微凌乱的毛发，以及标志性的瞪大双眼并向侧方斜视的极度震惊表情。采用TikTok emoji的2.5D图标风格，柔和矢量渐变，轻微立体感，圆润简洁，主体占画面75%–80%，四周均匀留白，1:1正方形构图，白色背景。负向约束：无写实纹理，无皮毛细节，无褶皱，无写实阴影，无深色投影，无镜面高光，无反光，无描边，无复杂背景，主体不切边，不要写实人像，不要半写实脸，不要真实五官比例，不要真实鼻梁、真实嘴唇、真实牙齿，不要肖像感，不要新增图1没有出现的身体结构。",
+      "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529081632_d736cba2-f793-4d1f-9c25-c09d1c27df21.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529081648_760b215a-4432-4f0c-84be-04d0dbb4638f.png",
+      "status": "full_pipeline_completed",
+      "error": null,
+      "started_at": "2026-05-29T08:15:52Z",
+      "text_submit": {
+        "request_id": "e786f092-2c16-49fa-b0f4-4095dc63e745",
+        "task_id": "7645224460563366152",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "image_submit": {
+        "request_id": "12341fc5-0f41-4690-b6b1-fb79323112fa",
+        "task_id": "7645224458961142023",
+        "run_instance_id": null
+      },
+      "image_poll_status": "success",
+      "remove_bg_submit": {
+        "request_id": "d14abe52-7619-4226-919f-ebfd6ca33f17",
+        "task_id": "7645224473649856786",
+        "run_instance_id": null
+      },
+      "remove_bg_poll_status": "success",
+      "finished_at": "2026-05-29T08:16:56Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 2
+    },
+    {
+      "frame": "frame_4.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_4.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/r597pprwb0y9wkwpym1jbjdu5.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考，生成半身卡通角色。核心视觉特征：一位身着深色西装领带的黄色皮肤卡通角色，嘴里叼着一根香烟，右臂高举做挥舞状，表情严肃且充满戏剧性。风格采用TikTok的2.5D emoji图标风格，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度。1:1正方形构图，主体占比75%-80%，四周均匀留白，白色背景。负向约束：无写实纹理，无皮毛细节，无褶皱，无写实阴影，无深色投影，无镜面高光，无反光，无描边，无复杂背景，主体不切边，不要写实人像，不要半写实脸，不要真实五官比例，不要肖像感，不要新增图1没有出现的身体结构。",
+      "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529081742_5babb1c0-2a2a-4804-8aaf-914f291ae51f.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529081756_fc356120-f905-43d2-91d0-d3b42ca276ca.png",
+      "status": "full_pipeline_completed",
+      "error": null,
+      "started_at": "2026-05-29T08:16:56Z",
+      "text_submit": {
+        "request_id": "f012bc8e-4597-490f-b6bf-95ce00a62635",
+        "task_id": "7645224621276414226",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "image_submit": {
+        "request_id": "6fbcec2a-74ec-4b02-be19-7a8406949e51",
+        "task_id": "7645224621276545298",
+        "run_instance_id": null
+      },
+      "image_poll_status": "success",
+      "remove_bg_submit": {
+        "request_id": "32f121dc-14f7-4dbe-8ee0-488c2c000a14",
+        "task_id": "7645224829327261960",
+        "run_instance_id": null
+      },
+      "remove_bg_poll_status": "success",
+      "finished_at": "2026-05-29T08:18:03Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 1
+    },
+    {
+      "frame": "frame_4.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_4.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/m7rnx7klxxqwjmu3rzcv5jtuo.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考。半身构图，一名穿着深色西装打着领带的黄色卡通人物，呈现 2.5D emoji 风格。角色侧身向右，右手高高举起像是在投掷或发泄，嘴里叼着一根细长的雪茄。人物面部表情夸张且带有强烈的戏剧性反应感。采用柔和矢量渐变，轻微立体感，圆润简洁，高辨识度，无写实纹理。主体占画面 75%–80%，四周均匀留白，白色背景，1:1 正方形构图。\n\n负向约束：无写实纹理，无皮毛细节，无褶皱，无写实阴影，无深色投影，无镜面高光，无反光，无描边，无复杂背景，主体不切边，不要写实人像，不要半写实脸，不要真实五官比例，不要真实鼻梁、真实嘴唇、真实牙齿，不要肖像感，不要新增图1没有出现的身体结构。",
+      "image_generate_url": null,
+      "final_sticker_url": null,
+      "status": "failed",
+      "error": "frame_4.png image_generate 轮询超时，最后错误: 请求最终失败: GET https://crate.tiktok-row.net/api/v1/generation/a7620d96-6e2b-47ca-bfed-6a09b06011c1: HTTP 400: {'statusCode': 400, 'message': 'Task not found'}",
+      "started_at": "2026-05-29T08:18:03Z",
+      "text_submit": {
+        "request_id": "c5d68aaa-aeba-4abd-8d46-48a1a47c87c8",
+        "task_id": "7645224893730111752",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "finished_at": "2026-05-29T08:23:29Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 2
+    },
+    {
+      "frame": "frame_5.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_5.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/qhqqoazf180xkphtlrjj9415g.png",
+      "optimizedPrompt": "以图1为内容参考，以图2为风格参考，生成半身卡通图像。核心特征包括：一只黑白配色的猫，神情专注且严肃，正用猫爪敲击笔记本电脑键盘，呈现出一种办公或编程的忙碌感。风格采用2.5D emoji图标风格，柔和矢量渐变，轻微立体感，圆润简洁，表情生动，主体占画面75%-80%，四周均匀留白，1:1正方形构图，白色背景。禁止写实纹理、无皮毛细节、无写实阴影、无描边、无复杂背景。",
+      "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529082415_8d426d42-f8be-45f8-a3c0-51950ab82e6b.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529082435_24da56b5-fba8-42e8-b642-17a7e0b6ad1e.png",
+      "status": "full_pipeline_completed",
+      "error": null,
+      "started_at": "2026-05-29T08:23:29Z",
+      "text_submit": {
+        "request_id": "1b239a99-729c-43a9-b350-c2515c07d87e",
+        "task_id": "7645226254072889608",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "image_submit": {
+        "request_id": "1d3b52a3-5bab-47a7-acf9-03631e805503",
+        "task_id": "7645226370150220039",
+        "run_instance_id": null
+      },
+      "image_poll_status": "success",
+      "remove_bg_submit": {
+        "request_id": "08d19255-8606-4512-b092-52ddd954c543",
+        "task_id": "7645226606360903943",
+        "run_instance_id": null
+      },
+      "remove_bg_poll_status": "success",
+      "finished_at": "2026-05-29T08:24:37Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 1
+    },
+    {
+      "frame": "frame_5.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_5.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/qcw40pbpyo6gqtg920gthmwf3.png",
+      "optimizedPrompt": "以图1为内容参考，以图2为风格参考，全身取景。一只黑白配色的卡通小猫，正在认真地敲击一台银色的笔记本电脑，动作具有极强的专注感，体现出标志性的办公状态。风格采用2.5D emoji图标设计，柔和的矢量渐变，轻微的立体感，圆润简洁的几何形态，表情专注，高辨识度。主体占画面75%–80%，白色背景，四周均匀留白，构图完整。无写实纹理，无皮毛细节，无褶皱，无写实阴影，无深色投影，无镜面高光，无描边，无复杂背景。",
+      "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529082520_add9790a-4b34-46fd-b22f-0cd82afd6821.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529082555_2eef0319-aa57-4145-aef7-67ddb0700138.png",
+      "status": "full_pipeline_completed",
+      "error": null,
+      "started_at": "2026-05-29T08:24:37Z",
+      "text_submit": {
+        "request_id": "9e076ed4-210a-4324-acd0-85d01f50cf96",
+        "task_id": "7645226663168524552",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "image_submit": {
+        "request_id": "fa098035-d143-4735-b4fc-cc6ea4760abd",
+        "task_id": "7645226675042599186",
+        "run_instance_id": null
+      },
+      "image_poll_status": "success",
+      "remove_bg_submit": {
+        "request_id": "f2c4e64a-5a4f-4f76-8abd-7c8a648d165d",
+        "task_id": "7645226772623769863",
+        "run_instance_id": null
+      },
+      "remove_bg_poll_status": "success",
+      "finished_at": "2026-05-29T08:25:57Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 2
+    },
+    {
+      "frame": "frame_2.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_2.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/f6ifti1c32jdo9ri373da7g06.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考，生成一个头肩视角的卡通角色。角色采用黄色皮肤的 emoji 化卡通风格。核心特征包括：极为夸张的“O”型张大嘴巴表情，惊讶且带有冲击感的眼神，额头微微皱起以表现震惊，保留标志性的短寸发型和耳钉。风格采用 TikTok emoji 的 2.5D 风格，具有柔和的矢量渐变、轻微的立体感，圆润简洁，色彩明亮。构图为主体占据画面 75%–80% 的正方形，背景为纯白色。负向约束：无写实纹理，无复杂背景，主体不切边，非真实人像，无写实阴影，无描边，无反光。",
+      "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529082727_63ed9bed-9d0a-449f-b9d7-0500b85b13cf.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529082739_712b04f5-96d3-4fe7-b980-6a487aeea28e.png",
+      "status": "full_pipeline_completed",
+      "error": null,
+      "started_at": "2026-05-29T08:26:37Z",
+      "text_submit": {
+        "request_id": "0f21fbe6-0bfd-4874-8812-9ce665572d1c",
+        "task_id": "7645226963044450568",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "image_submit": {
+        "request_id": "813892cd-e157-48f4-a22c-bc03f1a761f9",
+        "task_id": "7645227076089659666",
+        "run_instance_id": null
+      },
+      "image_poll_status": "success",
+      "remove_bg_submit": {
+        "request_id": "17fb3b99-c583-4692-b0bb-3eb7790d606b",
+        "task_id": "7645227270860325127",
+        "run_instance_id": null
+      },
+      "remove_bg_poll_status": "success",
+      "finished_at": "2026-05-29T08:27:43Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 1,
+      "retry_for_failed_run": true
+    },
+    {
+      "frame": "frame_4.png",
+      "file_path": "/Users/bytedance/AICover_2.0/public/images/meme/frames/frame_4.png",
+      "mode": "full_pipeline",
+      "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/qc6jzyt22t6m74iq15ao2758t.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考，生成半身卡通角色。画面主体为一个穿着西装、打着领带的黄色emoji化人类角色，正处于一种极为愤怒、失去理智的状态，他的一只手高举过头顶正准备挥下砸向桌面，嘴里叼着一根香烟，五官因愤怒而极度扭曲夸张，神情狂躁。采用2.5D emoji图标风格，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度。构图为主体占据画面75%-80%，四周均匀留白，1:1正方形构图，白色背景。负向约束：无写实纹理，无皮毛细节，无褶皱，无写实阴影，无深色投影，无镜面高光，无反光，无描边，无复杂背景，主体不切边，不要写实人像，不要半写实脸，不要真实五官比例，不要真实鼻梁、真实嘴唇、真实牙齿，不要肖像感，不要新增图1没有出现的身体结构。",
+      "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529082833_0c1f3e1b-8f8d-4b5c-964c-9b8f49be5106.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529082838_b7b122f7-c637-41a1-85d6-43d9673bbc55.png",
+      "status": "full_pipeline_completed",
+      "error": null,
+      "started_at": "2026-05-29T08:27:43Z",
+      "text_submit": {
+        "request_id": "0cc083f6-f6c2-47bd-9837-54b657b9c5ac",
+        "task_id": "7645227405254181128",
+        "run_instance_id": null
+      },
+      "text_poll_status": "success",
+      "image_submit": {
+        "request_id": "9dfaeea4-09f3-45c5-8770-f927ae242adc",
+        "task_id": "7645227406345715975",
+        "run_instance_id": null
+      },
+      "image_poll_status": "success",
+      "remove_bg_submit": {
+        "request_id": "adcb70ac-71fe-495c-8f7d-4eff2f668d84",
+        "task_id": "7645227585081393426",
+        "run_instance_id": null
+      },
+      "remove_bg_poll_status": "success",
+      "finished_at": "2026-05-29T08:28:48Z",
+      "extra_generation_batch": "2026-05-29_two_extra_per_frame",
+      "extra_generation_index": 2,
+      "retry_for_failed_run": true
+    }
+  ],
+  "last_updated": "2026-05-29T08:28:48Z"
+}

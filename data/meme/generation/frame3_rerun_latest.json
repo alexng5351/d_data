@@ -1,0 +1,22 @@
+{
+  "frame": "frame_3.png",
+  "mode": "full_pipeline",
+  "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考。半身构图。保留图1中大脚怪（Sasquatch）的标志性特征：圆润的棕色毛发质感头部和肩部结构、向一侧极度偏转的惊恐眼神、略显呆滞与困惑的神情。采用TikTok emoji的2.5D图标风格，柔和的矢量渐变，轻微的立体感，圆润简洁，高辨识度，白色背景。主体占画面75%–80%，居中放置，四周均匀留白，主体不切边，1:1正方形构图。\n\n负向约束：无写实纹理，无皮毛细节，无褶皱，无写实阴影，无深色投影，无镜面高光，无反光，无描边，无复杂背景，主体不切边，不要写实人像，不要半写实脸，不要真实五官比例，不要真实鼻梁、真实嘴唇、真实牙齿，不要肖像感，不要新增图1没有出现的身体结构。",
+  "status": "full_pipeline_completed",
+  "started_at": "2026-05-29T07:59:42Z",
+  "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/mn76p1gc3hoc8vxdh477vy3f0.png",
+  "image_submit": {
+    "request_id": "8acf54fa-84cc-4617-82e5-7173f19da191",
+    "task_id": "7645220263390462215",
+    "run_instance_id": null
+  },
+  "error": "maximum recursion depth exceeded while calling a Python object",
+  "finished_at": "2026-05-29T08:00:25Z",
+  "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529080010_af13deae-fb9e-4f1f-a5e6-a81cfb1c090d.png",
+  "remove_bg_submit": {
+    "request_id": "6a94c473-18da-462f-bbbe-12256a17bf2d",
+    "task_id": "7645220268201640200",
+    "run_instance_id": null
+  },
+  "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529080021_216caef4-ebd2-4ee6-814d-e0b4e8db885b.png"
+}

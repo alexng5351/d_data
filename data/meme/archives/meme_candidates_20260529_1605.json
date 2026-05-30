@@ -1,0 +1,85 @@
+{
+  "last_updated": "2026-05-29",
+  "source": "/data/meme/generation/results_2026-05-29.json",
+  "items": [
+    {
+      "frame": "frame_1.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529034342_9f1446ab-b893-4780-9e77-354373dc52bc.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考，生成一个头肩视角的黄色卡通风格图标。核心特征包含：极度困惑且怀疑的神情，单侧眉毛高高挑起，头部向右侧微微倾斜，嘴角露出略带尴尬和不解的浅笑。风格采用2.5D emoji图标设计，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度，表情夸张。主体占画面75%–80%，四周均匀留白，1:1正方形构图，白色背景。禁止写实纹理，禁止复杂背景，禁止真实五官比例，禁止写实人像，主体不切边。",
+      "name": "Video gif. A woman pulls on Nick Young's arm, trying to hold his hand. Nick looks at her with confusion, but is trying to be polite. The camera zooms on his face and turns to look stare into the camera with a big confused grin on his face. Question marks appear around his head.",
+      "source_url": "https://giphy.com/gifs/nick-young-xL7PDV9frcudO",
+      "gif_url": "https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cGVlMHdzNWJqZWRvaTFqMWxzd29pdGozNDd0eWN0MHY3N210cDV6eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xL7PDV9frcudO/giphy.gif",
+      "frame_png_path": "/images/meme/frames/frame_1.png",
+      "index": 1,
+      "short_name": "Confused Nick Young"
+    },
+    {
+      "frame": "frame_2.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528192145_66d7611f-b2e0-434e-bc43-fce87afe1311.png",
+      "optimizedPrompt": "以图1的内容为参考，以图2的风格为准，生成一张头肩视角的卡通头像。主体为一个黄色的卡通emoji风格人物，精准捕捉图1中的\"震惊\"反应：眉毛极度紧锁并下压，眼睛半睁且带有不可置信的质疑感，嘴巴张大呈O型以表现夸张的惊叹表情。角色保持清爽的短发造型，穿着简洁的格纹图案上衣。风格采用2.5D emoji设计，柔和矢量渐变，轻微立体感，圆润简洁，高辨识度。构图主体占比75%-80%，居中放置，白色背景，无阴影，无写实纹理，无复杂光影，无描边。",
+      "name": "Slam Dunk Wow GIF by NBA",
+      "source_url": "https://giphy.com/gifs/nba-funny-giannis-giannisantetokounmpo-JKskHBDvnIjhGilcX5",
+      "gif_url": "https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cGVlMHdzNWJqZWRvaTFqMWxzd29pdGozNDd0eWN0MHY3N210cDV6eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JKskHBDvnIjhGilcX5/giphy.gif",
+      "frame_png_path": "/images/meme/frames/frame_2.png",
+      "index": 2,
+      "short_name": "Shocked Slam Dunk"
+    },
+    {
+      "frame": "frame_3.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529080021_216caef4-ebd2-4ee6-814d-e0b4e8db885b.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考。半身构图。保留图1中大脚怪（Sasquatch）的标志性特征：圆润的棕色毛发质感头部和肩部结构、向一侧极度偏转的惊恐眼神、略显呆滞与困惑的神情。采用TikTok emoji的2.5D图标风格，柔和的矢量渐变，轻微的立体感，圆润简洁，高辨识度，白色背景。主体占画面75%–80%，居中放置，四周均匀留白，主体不切边，1:1正方形构图。\n\n负向约束：无写实纹理，无皮毛细节，无褶皱，无写实阴影，无深色投影，无镜面高光，无反光，无描边，无复杂背景，主体不切边，不要写实人像，不要半写实脸，不要真实五官比例，不要真实鼻梁、真实嘴唇、真实牙齿，不要肖像感，不要新增图1没有出现的身体结构。",
+      "name": "Meme gif. Strange looking, broken monkey toy has its mouth open like it was going to say something, but then stops, closing its mouth. Its mouth moves like it's thinking. We then get very close to it and it turns its face towards us, but it can’t look at us because its eyes are wrong.",
+      "source_url": "https://giphy.com/gifs/robot-lucy-orangutan-H4zeDO4ocDYqY",
+      "gif_url": "https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cGVlMHdzNWJqZWRvaTFqMWxzd29pdGozNDd0eWN0MHY3N210cDV6eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/H4zeDO4ocDYqY/200.gif",
+      "frame_png_path": "/images/meme/frames/frame_3.png",
+      "index": 3,
+      "short_name": "Awkward Broken Monkey",
+      "run_history": [
+        {
+          "frame": "frame_3.png",
+          "mode": "full_pipeline",
+          "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考。半身构图。保留图1中大脚怪（Sasquatch）的标志性特征：圆润的棕色毛发质感头部和肩部结构、向一侧极度偏转的惊恐眼神、略显呆滞与困惑的神情。采用TikTok emoji的2.5D图标风格，柔和的矢量渐变，轻微的立体感，圆润简洁，高辨识度，白色背景。主体占画面75%–80%，居中放置，四周均匀留白，主体不切边，1:1正方形构图。\n\n负向约束：无写实纹理，无皮毛细节，无褶皱，无写实阴影，无深色投影，无镜面高光，无反光，无描边，无复杂背景，主体不切边，不要写实人像，不要半写实脸，不要真实五官比例，不要真实鼻梁、真实嘴唇、真实牙齿，不要肖像感，不要新增图1没有出现的身体结构。",
+          "status": "full_pipeline_completed",
+          "started_at": "2026-05-29T07:59:42Z",
+          "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/mn76p1gc3hoc8vxdh477vy3f0.png",
+          "image_submit": {
+            "request_id": "8acf54fa-84cc-4617-82e5-7173f19da191",
+            "task_id": "7645220263390462215",
+            "run_instance_id": null
+          },
+          "error": "maximum recursion depth exceeded while calling a Python object",
+          "finished_at": "2026-05-29T08:00:25Z",
+          "image_generate_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529080010_af13deae-fb9e-4f1f-a5e6-a81cfb1c090d.png",
+          "remove_bg_submit": {
+            "request_id": "6a94c473-18da-462f-bbbe-12256a17bf2d",
+            "task_id": "7645220268201640200",
+            "run_instance_id": null
+          },
+          "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260529080021_216caef4-ebd2-4ee6-814d-e0b4e8db885b.png"
+        }
+      ]
+    },
+    {
+      "frame": "frame_4.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528192250_46d099e6-a0c3-4c27-b72f-9ff52f2b6b53.png",
+      "optimizedPrompt": "以图1作为内容参考，以图2作为风格参考。半身构图。画面中央为一个穿着商务西装、系着领带的黄色emoji卡通风格男性角色，处于半身像状态。角色正做出戏剧性的挥手动作，右臂高高举起并向后摆动，嘴角叼着一根香烟，表情严肃且带有强烈的表演感。风格采用2.5D emoji图标质感，柔和的矢量渐变，轻微立体感，圆润简洁，高辨识度。主体占画面75%-80%，四周均匀留白，白色背景。禁止写实纹理、无皮毛细节、无写实阴影、无描边、无真实人像比例，确保角色呈现为扁平化的卡通emoji质感。",
+      "name": "Movie gif. Nicholas Cage as Peter in Vampire's Kiss leaning forward from an office chair with a cigarette hanging out of his mouth, pointing out excitedly.",
+      "source_url": "https://giphy.com/gifs/excited-yes-nicolas-cage-RrVzUOXldFe8M",
+      "gif_url": "https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cGVlMHdzNWJqZWRvaTFqMWxzd29pdGozNDd0eWN0MHY3N210cDV6eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RrVzUOXldFe8M/200.gif",
+      "frame_png_path": "/images/meme/frames/frame_4.png",
+      "index": 4,
+      "short_name": "Excited Nicolas Cage Pointing"
+    },
+    {
+      "frame": "frame_5.png",
+      "final_sticker_url": "https://lf-crate.ibytedtos.com/obj/tt-crate-aigc-tool-prod-us/aigc_tool/files/crate_v1_0_20260528192353_5928ccdf-d949-4ac5-9836-72db4eee0a43.png",
+      "optimizedPrompt": "以图1为内容参考，以图2为风格参考，生成半身卡通图像。一只拟人化的黑色卡通猫，坐在笔记本电脑前，专注地敲击键盘，神情严肃且带有幽默的挫败感，爪子悬在键盘上方，呈现极具辨识度的办公 meme 姿态。风格采用 TikTok 2.5D emoji 图标设计，柔和矢量渐变，轻微立体感，圆润简洁. 主体占画面 75%–80%，白色背景，构图正中，无描边，无写实纹理，无投影，无复杂背景。",
+      "name": "Video gif. A cat sits at a table in front of a laptop, banging its little arms on the keyboard as if it were furiously typing.",
+      "source_url": "https://giphy.com/gifs/JIX9t2j0ZTN9S",
+      "gif_url": "https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cGVlMHdzNWJqZWRvaTFqMWxzd29pdGozNDd0eWN0MHY3N210cDV6eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JIX9t2j0ZTN9S/giphy.gif",
+      "frame_png_path": "/images/meme/frames/frame_5.png",
+      "index": 5,
+      "short_name": "Cat Furiously Typing"
+    }
+  ]
+}

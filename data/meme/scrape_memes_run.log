@@ -1,0 +1,8 @@
+[2026-05-30 00:53:19] 开始抓取热梗 meme 数据
+[2026-05-30 00:53:19] 读取现有数据：/Users/bytedance/AICover_2.0/public/data/meme/meme_candidates.json，已有 5 条
+[2026-05-30 00:53:20] 访问 Giphy Trending 页面：https://giphy.com/categories/memes
+[2026-05-30 00:53:28] 当前页面未提取到候选，尝试备用 Giphy 页面
+[2026-05-30 00:53:28] 访问 Giphy Trending 页面：https://giphy.com/explore/meme
+[2026-05-30 00:53:34] 抓取完成：共 5 条原始候选
+[2026-05-30 00:53:34] 合并结果：新增 5 条，跳过重复 0 条
+[2026-05-30 00:53:34] 写入完成：/Users/bytedance/AICover_2.0/public/data/meme/meme_candidates.json
