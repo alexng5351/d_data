@@ -69,6 +69,24 @@ POLL_INTERVAL_SECONDS = 3
 REQUEST_TIMEOUT_SECONDS = 60
 REQUEST_RETRY_COUNT = 3
 RETRY_BACKOFF_SECONDS = 2
+NUM_VARIANTS = 3
+MAX_ATTEMPTS = 6
+
+QUALITY_CHECK_INSTRUCTION = """请检查这张生成的 meme emoji 图片是否符合生产质检标准。
+
+请只返回结构化 JSON，不要输出任何解释或 Markdown。格式如下：
+{
+  "pass": true/false,
+  "reason": "一句话"
+}
+
+质检标准：
+1. 主体（人物/动物/角色）的视觉面积必须占整张图的 70% 以上。
+2. 图片风格必须明显是卡通/插画风，而不是真实照片，也不是多个 emoji 拼在一起；这代表生图风格化已经生效。
+3. 背景必须简洁，主体必须清晰可辨。
+
+任意一条不满足，pass 必须为 false。
+"""
 
 TEXT_PROMPT_INSTRUCTION = """请分析图1，并基于图1和图2生成中文生图提示词。
 
@@ -161,6 +179,41 @@ def request_json(method: str, url: str, *, headers: Optional[Dict[str, str]] = N
             if attempt < REQUEST_RETRY_COUNT:
                 time.sleep(RETRY_BACKOFF_SECONDS * attempt)
     raise RuntimeError(f"请求最终失败: {method} {url}: {last_error}")
+
+
+def extract_json_object(text: str) -> Dict[str, Any]:
+    stripped = text.strip()
+    if stripped.startswith("```"):
+        stripped = stripped.strip("`").strip()
+        if stripped.lower().startswith("json"):
+            stripped = stripped[4:].strip()
+    try:
+        parsed = json.loads(stripped)
+    except Exception:
+        start = stripped.find("{")
+        end = stripped.rfind("}")
+        if start < 0 or end < start:
+            raise
+        parsed = json.loads(stripped[start:end + 1])
+    if not isinstance(parsed, dict):
+        raise ValueError("质检结果不是 JSON object")
+    return parsed
+
+
+def check_variant_quality(image_url: str) -> Tuple[bool, str]:
+    """调用 Gemini 对生成图片做视觉质检；异常时默认通过，避免阻塞流水线。"""
+    try:
+        prompt_submit = submit_text_prompt(image_url, QUALITY_CHECK_INSTRUCTION)
+        output, _ = poll_result(prompt_submit, "text", "variant quality_check")
+        parsed = extract_json_object(output)
+        passed = parsed.get("pass")
+        reason = str(parsed.get("reason") or "未提供原因")
+        if not isinstance(passed, bool):
+            raise ValueError(f"pass 字段不是 bool: {parsed}")
+        return passed, reason
+    except Exception as exc:
+        log(f"      质检调用异常，默认通过: {exc}")
+        return True, f"质检异常默认通过：{exc}"
 
 
 def upload_file_to_crate(file_path: Path) -> str:
@@ -672,46 +725,61 @@ def process_frame(frame_path: Path, *, full_pipeline: bool) -> Dict[str, Any]:
 
         generated_variants: List[Dict[str, Any]] = []
         variant_errors: List[Dict[str, Any]] = []
-        for variant_idx in range(3):
-            variant_no = variant_idx + 1
+        for attempt_idx in range(MAX_ATTEMPTS):
+            attempt_no = attempt_idx + 1
             try:
-                log(f"      🎲 开始生成变体 {variant_no}/3")
+                log(f"      🎲 开始生成尝试 {attempt_no}/{MAX_ATTEMPTS}（目标合格 {len(generated_variants)}/{NUM_VARIANTS}）")
                 image_submit = submit_image_generate(internal_url, optimized_prompt)
-                image_url, image_payload = poll_result(image_submit, "image", f"{frame_path.name} image_generate variant {variant_no}")
-                log(f"      ✅ image_generate 变体 {variant_no}/3 成功: {image_url}")
+                image_url, image_payload = poll_result(image_submit, "image", f"{frame_path.name} image_generate attempt {attempt_no}")
+                log(f"      ✅ image_generate 尝试 {attempt_no}/{MAX_ATTEMPTS} 成功: {image_url}")
+
+                quality_passed, quality_reason = check_variant_quality(image_url)
+                log(f"      🔎 质检结果 attempt {attempt_no}/{MAX_ATTEMPTS}: {'pass' if quality_passed else 'fail'} - {quality_reason}")
+                if not quality_passed:
+                    variant_errors.append({
+                        "attempt_idx": attempt_idx,
+                        "url": image_url,
+                        "quality_pass": False,
+                        "quality_reason": quality_reason,
+                    })
+                    continue
 
                 remove_bg_submit = submit_remove_bg(image_url)
-                final_url, final_payload = poll_result(remove_bg_submit, "image", f"{frame_path.name} image_remove_bg variant {variant_no}")
-                log(f"      ✅ image_remove_bg 变体 {variant_no}/3 成功: {final_url}")
+                final_url, final_payload = poll_result(remove_bg_submit, "image", f"{frame_path.name} image_remove_bg attempt {attempt_no}")
+                log(f"      ✅ image_remove_bg 尝试 {attempt_no}/{MAX_ATTEMPTS} 成功: {final_url}")
 
                 generated_square_path = crop_to_square(image_url)
                 removed_bg_square_path = crop_to_square(final_url)
                 square_image_path = removed_bg_square_path
-                log(f"      ✂️ 1:1 后处理完成 变体 {variant_no}/3: generated={generated_square_path}, removed_bg={removed_bg_square_path}")
+                log(f"      ✂️ 1:1 后处理完成 attempt {attempt_no}/{MAX_ATTEMPTS}: generated={generated_square_path}, removed_bg={removed_bg_square_path}")
 
-                variant_result = {
+                generated_variants.append({
                     "url": image_url,
                     "removed_bg_url": final_url,
-                }
-                generated_variants.append(variant_result)
+                    "quality_pass": True,
+                    "quality_reason": quality_reason,
+                })
+                if len(generated_variants) >= NUM_VARIANTS:
+                    break
             except Exception as exc:
                 error_message = f"{type(exc).__name__}: {exc}"
                 variant_errors.append({
-                    "variant_idx": variant_idx,
+                    "attempt_idx": attempt_idx,
                     "error": error_message,
                 })
-                log(f"      ❌ 变体 {variant_no}/3 生成失败: {error_message}")
+                log(f"      ❌ 尝试 {attempt_no}/{MAX_ATTEMPTS} 生成失败: {error_message}")
 
         result["generated_variants"] = generated_variants
         result["variant_errors"] = variant_errors
+        result["partial"] = 0 < len(generated_variants) < NUM_VARIANTS
         if generated_variants:
             result["image_generate_url"] = generated_variants[0].get("url")
             result["status"] = "full_pipeline_completed"
-            log(f"      ✅ {frame_path.name} 完成 {len(generated_variants)}/3 张变体")
+            log(f"      ✅ {frame_path.name} 完成 {len(generated_variants)}/{NUM_VARIANTS} 张合格变体")
         else:
             result["status"] = "failed"
-            result["error"] = "3 张变体全部生成失败"
-            log(f"      ❌ {frame_path.name} 3 张变体全部生成失败")
+            result["error"] = f"{MAX_ATTEMPTS} 次尝试后 0 张合格变体"
+            log(f"      ❌ {frame_path.name} {MAX_ATTEMPTS} 次尝试后 0 张合格变体")
         return result
     except Exception as exc:
         result["status"] = "failed"
@@ -766,7 +834,7 @@ def save_meme_candidates(data: Dict[str, Any], json_path: Path) -> None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate meme stickers from pending candidates")
     parser.add_argument("--env", choices=["prod", "dev"], default="prod", help="数据环境：prod 读写正式 JSON，dev 读写测试 JSON")
-    parser.add_argument("--limit", type=int, default=5, help="每次最多生图的条数，默认 5 条")
+    parser.add_argument("--limit", type=int, default=10, help="每次最多生图的条数，默认 10 条")
     return parser.parse_args()
 
 
@@ -847,6 +915,7 @@ def main() -> int:
                 generated_variants = result.get("generated_variants") or []
                 if generated_variants:
                     candidate["status"] = "generated"
+                    candidate["partial"] = bool(result.get("partial"))
                     candidate["generated_at"] = utc_now_iso()
                     candidate.pop("generate_error", None)
                     candidate["generated_variants"] = [
@@ -857,11 +926,11 @@ def main() -> int:
                         for item in generated_variants
                         if item.get("url")
                     ]
-                    log(f"✅ 已生成并回写 status=generated: {frame_path.name} | variants={len(generated_variants)}/3")
+                    log(f"✅ 已生成并回写 status=generated: {frame_path.name} | variants={len(generated_variants)}/{NUM_VARIANTS}")
                 else:
                     candidate["status"] = "generate_failed"
-                    candidate["generate_error"] = result.get("error") or "3 张变体全部生成失败"
-                    log(f"❌ {frame_path.name} 3 张变体全部失败，已回写 status=generate_failed")
+                    candidate["generate_error"] = result.get("error") or f"{NUM_VARIANTS} 张变体全部生成失败"
+                    log(f"❌ {frame_path.name} {NUM_VARIANTS} 张变体全部失败，已回写 status=generate_failed")
             except Exception as exc:
                 error_message = f"{type(exc).__name__}: {exc}"
                 log(f"❌ 生图失败：{candidate.get('frame_filename', candidate.get('id', '?'))} | {error_message}")

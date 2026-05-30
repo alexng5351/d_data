@@ -53,7 +53,7 @@ except Exception as e:
 
   log "▶️  生成 meme sticker 图片"
   set +e
-  python3 scripts/meme/generate_stickers.py --env "$ENVIRONMENT" --limit 5
+  python3 scripts/meme/generate_stickers.py --env "$ENVIRONMENT" --limit 10
   local generate_exit_code=$?
   set -e
   if [ "$generate_exit_code" -ne 0 ]; then
