@@ -6,3 +6,7 @@ build
 Assets/
 public/data/meme/meme_candidates_dev.json
 public/data/meme/archives/
+
+.env
+.env.*
+!.env.example
