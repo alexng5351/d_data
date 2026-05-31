@@ -10,3 +10,4 @@ public/data/meme/archives/
 .env
 .env.*
 !.env.example
+scripts/meme/lark_bot.py
