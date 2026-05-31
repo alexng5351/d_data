@@ -1,8 +1,0 @@
-{
-  "frame": "frame_3.png",
-  "mode": "full_pipeline",
-  "optimizedPrompt": "以图1为内容参考，以图2为风格参考，头肩取景。呈现一个卡通化、毛茸茸的大脚怪角色，保留图1中标志性的惊恐表情：向一侧斜视的夸张大眼睛、平直微张的嘴巴，展现出尴尬、不知所措的反应感。风格采用2.5D emoji图标风格，圆润简洁，色彩采用柔和的棕色系矢量渐变，具有轻微的立体感，强调毛发的块面化处理而非写实纹理。构图主体占据画面75%-80%，四周均匀留白，白色背景。负向约束：无写实纹理，无皮毛细节，无褶皱，无写实阴影，无镜面高光，无描边，无复杂背景，主体不切边，非写实卡通形象。",
-  "internal_url": "https://sf-static.tiktokcdn.com/obj/musically-maliva-obj/aigc_tool/files/qmebhmhwty6208uljqd31k5ym.png",
-  "status": "failed",
-  "error": "[Errno 32] Broken pipe"
-}

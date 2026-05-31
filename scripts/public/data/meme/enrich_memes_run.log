@@ -1,2 +1,0 @@
-[2026-05-30 01:35:24] 开始进行 meme AI 筛选评分
-[2026-05-30 01:35:24] ERROR FileNotFoundError: 找不到 meme 数据文件：/Users/bytedance/AICover_2.0/scripts/public/data/meme/meme_candidates.json

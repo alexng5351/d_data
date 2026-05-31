@@ -11,3 +11,12 @@ public/data/meme/archives/
 .env.*
 !.env.example
 scripts/meme/lark_bot.py
+# Generated previews / local outputs
+output/
+temp/
+# Pipeline debug artifacts and logs
+public/data/meme/debug/
+public/data/meme/generation/
+public/data/meme/*.log
+public/data/meme/*results*.json
+scripts/public/
