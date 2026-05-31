@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-BASE_DIR = SCRIPT_DIR.parent.parent.parent
+BASE_DIR = SCRIPT_DIR.parent.parent
 MEME_DATA_DIR = BASE_DIR / "public" / "data" / "meme"
 MEME_JSON = MEME_DATA_DIR / "meme_candidates.json"
 MEME_DEV_JSON = MEME_DATA_DIR / "meme_candidates_dev.json"
